@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cp3ap17vlbuc0"
+path="res://.godot/imported/mushroom bird.mp3-661f6538fb0df1be76a6a28653f1a96e.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/mushroom bird.mp3"
+dest_files=["res://.godot/imported/mushroom bird.mp3-661f6538fb0df1be76a6a28653f1a96e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

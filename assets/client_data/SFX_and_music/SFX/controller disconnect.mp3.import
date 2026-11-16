@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjv5uajf2nogh"
+path="res://.godot/imported/controller disconnect.mp3-b7e8e500b0ac70b71ac464d64952f2b6.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/controller disconnect.mp3"
+dest_files=["res://.godot/imported/controller disconnect.mp3-b7e8e500b0ac70b71ac464d64952f2b6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

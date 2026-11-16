@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wybvx5q1x4de"
+path="res://.godot/imported/great frog.mp3-b21a89b78dd086aff27f14cfd018a76e.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/great frog.mp3"
+dest_files=["res://.godot/imported/great frog.mp3-b21a89b78dd086aff27f14cfd018a76e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dgvrrstahp73u"
+path="res://.godot/imported/low drone.mp3-c423a242a03998bce500becbaaa0b52b.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/low drone.mp3"
+dest_files=["res://.godot/imported/low drone.mp3-c423a242a03998bce500becbaaa0b52b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

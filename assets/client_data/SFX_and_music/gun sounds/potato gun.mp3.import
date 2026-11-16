@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://blgusdnk1xk25"
+path="res://.godot/imported/potato gun.mp3-28f82f75fdc780735aa2893ce2dce26c.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/gun sounds/potato gun.mp3"
+dest_files=["res://.godot/imported/potato gun.mp3-28f82f75fdc780735aa2893ce2dce26c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

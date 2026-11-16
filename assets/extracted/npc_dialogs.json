@@ -1,0 +1,2492 @@
+{
+  "triggers": {
+    "1": {
+      "branches": [
+        {
+          "talkID": 7,
+          "text": "Good job!  There's always Green Bouncers running loose around here.  But for now you have to find the guy that cut down your platform you were on.  He was carrying a hatchet and dressed in full black, so he shouldn't be hard to find.  If you don't find him soon he's going to cause mischief on our village.  Go on ahead, we'll stay here.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "You've found the Black Hooded Hatchet?!  Good going!  Now you must find their hideout.  We have got to stop him and their cult before they succeed in doing something purely evil.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "The Black Hooded Hatchet",
+          "field": "completed"
+        }
+      ]
+    },
+    "2": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to my store, please buy whatever you would like.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "3": {
+      "branches": [
+        {
+          "talkID": 8,
+          "text": "Welcome to the wonderful world of Helmet Heroes!  Here you will find plenty of other people from around the world to interact with!  Watch out for monsters though!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "4": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Fighting monsters makes you stronger.  As you kill monsters you gain experience and you can level up.  You can also get better weapons and armor to make you powerful.  ..Also, if you press down while on solid ground you can slide.  Practice it out on this incline.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "5": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I think I'm pretty strong, but this area next to me is pretty tough.  Make sure you got some good gear and are strong enough to fight the enemies in there.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "6": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Are you getting the hang of things?  This area is what they call Mushroom Alley.  I wish I were a mushroom...  Did you know that bows are generally stronger than guns, hit vs hit?  Guns can fire at a higher rate of fire but don't pack as much of a punch as good old fashion arrows.  This is partially because arrows are much larger in size compared to a bullet.  Not only that, but bows are designed for the mightiest of archers.  The draw force that is required to pull back a high level bow makes them extremely powerful compared to a gun.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "7": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I like to chill.  No..  I LOVE to chill.  I think I'm a chill guy don't you?  If I had a coin for everytime I said the word chill, I'd have about 1 coin in total.  Wait, that's not right...",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "8": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "I've got way too many potions on me.  Here, I will use one on you, it will heal you to full health.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "9": {
+      "branches": [
+        {
+          "talkID": 18,
+          "text": "Hey man, how's it going?  I like just being at the beach, it's so relaxing.  I need to get up and go somewhere at some point though, it's making me so lazy.  I haven't seen my pal Cleveland in a few months now.  Say...  I have a letter for him, do you think you could give it to him for me?  He lives in Mushroom Village.  Thanks!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Hey man, how's it going?  I like just being at the beach, it's so relaxing.  I need to get up and go somewhere at some point though, it's making me so lazy.  I haven't seen my pal Cleveland in a few months now.  Say...  I have a letter for him, do you think you could give it to him for me?  ...Oh wait, you're carrying too many items, nevermind.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Take your time, no rush.  I do need Clevelend to get that letter sometime this century though.  I'd do it myself but I'm busy doing nothing.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Thanks for delivering my letter to Cleveland!  Cleveland can be a pretty cool guy.  He loves living in Mushroom Village, but personally I like it here on the beach.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Give Cleveland His Letter",
+          "field": "started"
+        },
+        {
+          "mission": "Give Cleveland His Letter",
+          "field": "started"
+        },
+        {
+          "mission": "Give Cleveland His Letter",
+          "field": "completed"
+        }
+      ]
+    },
+    "10": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Living in Mushroom Village sure is awesome.  It's one of the busiest places I've ever seen!  I want to join a guild one day, that way I can make some new friends.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 19,
+          "text": "You've got a letter for me from Arny?  Cool, thanks!  I bet you wanted to read the letter didn't you?  If you would have read it, I probably would have slapped you silly!  Thanks again!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I love Mushroom Village.  I like to call it 'Mush Vill' for short.  I think it sounds way cooler.  Just say it with me, 'Mush Vill'.  Feels great doesn't it?  You can thank me later.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Give Cleveland His Letter",
+          "field": "started"
+        },
+        {
+          "mission": "Give Cleveland His Letter",
+          "field": "started"
+        },
+        {
+          "mission": "Give Cleveland His Letter",
+          "field": "completed"
+        }
+      ]
+    },
+    "11": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to Mushroom Village!  I love it here, they've got weapon and armor shops, food, hotels, and even a few pretty girls.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "12": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Hey man, can't a guy climb some boxes in peace!?  Just joking.  Do you wan't to buy anything?  I specialize in coconut products of all kind!",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "13": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Coconut this, coconut that..  All the boss has me do all day is make stuff out of coconuts.  All I want to do is sit around and do nothing and get paid.  Is that so much to ask?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "14": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Get out of here, don't talk to me!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 10,
+          "text": "...You!?  I thought that fall would have knocked you out for good.  Are you gonna try and do something about it?  I'll cut down whatever I want, whenever I want.  My clan already has much bigger plans than you anyway, so get lost!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 11,
+          "text": "I thought I told you to get out of here!?  I'm not going to give you any information about my clan so stop asking... Their headquarters isn far away past a beach, so you'll never find them, so SCRAM!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Leave me alone already!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "The Black Hooded Hatchet",
+          "field": "started"
+        },
+        {
+          "mission": "The Black Hooded Hatchet",
+          "field": "started"
+        },
+        {
+          "mission": "The Black Hooded Hatchet",
+          "field": "completed"
+        },
+        {
+          "mission": "Find the Cult's Hideout",
+          "field": "started"
+        }
+      ]
+    },
+    "15": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I like to stand right in the sunlight.  It makes me feel like I'm cool.  I mean, even if I didn't stand in the sunlight, I'd still be cool, but I'm even cooler when I'm in the light.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "16": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "Welcome to my hotel.  With a good nights sleep, we can heal you back to full health.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "17": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "All I want to do is watch some TV, is that so much to ask?  The stupid thing must be broke, because it's not turning on!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "18": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I thought I had to toot once, but it was something much greater.  ...It was AWESOME!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "19": {
+      "branches": [
+        {
+          "talkID": 12,
+          "text": "Yea, go ahead make fun of me because I'm poor.  I don't have a lot of money, so I can never eat.  What's a couple of coins good for?!  I'm really hungry, all I need is something to eat.  Do you think you could give me 6 apples?  I would be very grateful.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "So... Hungry... Need... Apples...",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 13,
+          "text": "Yum yum, apples!  Just what I needed!  I still don't have much money, but at least I'm not hungry anymore.  Thanks man!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Thanks for the apples, they were delicious.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Get Hambone Apples",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Hambone Apples",
+          "field": "started"
+        },
+        {
+          "mission": "Get Hambone Apples",
+          "field": "started"
+        }
+      ]
+    },
+    "20": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome, welcome!  I am Shane the Shield Man, or Shane Shield for short.  You came all the way to my house, surely you are interested in buying some shields?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "21": {
+      "branches": [
+        {
+          "talkID": 14,
+          "text": "Dude, like I just want a shield.  Is that so much to ask?  Like, man...  Like I think I wanted a shield dude since I was like, a baby or something man.  Like, man...  Like I totally want a shield so bad dude.  I don't even care if it's a garbage can lid.  Ya know, I think I'd kinda like a garbage can lid dude!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Dude man, I want a garbage can lid.  I don't care if it has garbage on it, maybe I like the smell of garbage dude.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Dude are you trying to make me jealous or something man?  Real cool, you have a garbage can lid equipped.  Real cool dude...",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 15,
+          "text": "Bro, nice garbage can lid dude, I think I'll take it!  Thanks bro, I always wanted a garbage can lid.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Bro, dude, man.  Like... I love the garbage can lid dude. Not because I like the smell of garbage or anything...  Actually dude, that's exactly why.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Man, dude, bro, man, dude... Like dude, man.  Bro?  Dude!  Bro dude man...  DUDE!  ..Oh sorry, I didn't see you there!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "started"
+        },
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "started"
+        },
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "started"
+        },
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "started"
+        },
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Brody a Garbage Can Lid",
+          "field": "completed"
+        }
+      ]
+    },
+    "22": {
+      "branches": [
+        {
+          "talkID": 16,
+          "text": "I'm just not strong enough to do anything.  Anytime I try to go anywhere I get hurt real easily. Do you think you could get me some cool new gear?  That way, maybe I would stand a chance when monsters decide to attack me.  Something like, say... A sickle would be awesome!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Man, I need that sickle soon!  I'm just not strong enough.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "If you planned on giving me that sickle, you should probably un-equip it before you give me it.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 17,
+          "text": "Thanks man!  This sickle is awesome!  Now maybe I'll be able to attack enemies with more power",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Thanks again man.  The world will now fear me, for I am... JIM SANDERS - SICKLE... GUY... DUDE... Sickle... Ah, just some guy with a sickle.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Hey, gingers DO have souls!  ...And sickles.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "started"
+        },
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "started"
+        },
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "started"
+        },
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "started"
+        },
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Jim Sanders Some Gear",
+          "field": "completed"
+        }
+      ]
+    },
+    "23": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "V'elcome my friend, to my end of the woods!  Pretty cool place I have wouldn't you say?  This is where I live, eating leaves and drinking dirt all day.  ...Nah, I'm just kidding I don't drink dirt.  Anyway, I have some things for sale.  Maybe you would like to take a look?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "24": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "What do you want?  No you don't know me, but you have probably met my brother Anoop, so don't call me Anoop because it's not my name.  So what do you want?  Are you just going to stand there and look at me?  This ain't a nice place to be, so if you want something you better buy it or scram!",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "25": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "My brother Kyle stacked all his attack, now when he gets hit by enemies he takes alot of damage.  I think he's dumb for doing it, I like to balance everything out.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "26": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "My brother Ron likes to be 'well rounded', but I just call him 'well idiot'. Like I always say, the best defense is a good offense!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "27": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "My two cousins Ron and Kyle just argue all day, it's really annoying.  The thing is, I'm not sure who to agree with.  In my opinion, I like to stack my HP, that way I never die.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "28": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "People call us folks who live in Fairyville weird but I don't think we're weird, we're just odd that's all.  Some people even call us dumb but we ain't dumb, we stupid.  It doesn't even make me angry when people talk about us, it just makes me mad.  People need to stop.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "29": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Dude, what's up!?  Luckily you knew where I was.  I put that 'store' sign in my house in case anybody came in and couldn't find me.  It's what I like to call a great idea.  So do you want to buy anything?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "30": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Be careful going into there, it's very dangerous.  You can be attacked by anybody in there, and if you die you will lose half of your money.  One day, I'll be strong enough to destroy anybody in there!  Right now, I'm kind of scared though...  If you want to get onto the kill leaderboards, PVP kills only count in this area, NOT the sparing grounds.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "31": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "In the sparring ground you can be attacked by anybody, but luckily if you die no money will be taken away.  Sometimes I go in there to spar against my buddies and see who will win.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "32": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "Hello.  If you plan on fighting against anybody in the PVP areas then it's best to be at full health.  I can heal you.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "33": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "Weapons and healing all in one place!  Pretty handy isn't it?  I'll heal you.  Don't worry, I'm a licensed professional.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "34": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Come one, come all!  Weapons, armor, helmets, we've got it all!  Need to take down another player?  I'm sure some of my equipment will help you.  ..And people told me this was a bad place to open up shop, ha!",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "35": {
+      "branches": [
+        {
+          "talkID": 20,
+          "text": "Hey, who are you?!  You don't look like you belong here.  I would suggest you get the heck out of here pronto!  Now, if you looked like one of us, maybe I could give you something cool.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Oh hey!...  Wait a second...  Are you trying to trick me?  Get lost punk!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I thought I told you to SCRAM! If you don't look like one of us than you 'aint!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I gave you your money, so leave me alone.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Look Like a Black Hood",
+          "field": "started"
+        },
+        {
+          "mission": "Look Like a Black Hood",
+          "field": "started"
+        },
+        {
+          "mission": "Look Like a Black Hood",
+          "field": "completed"
+        }
+      ]
+    },
+    "36": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "E.V.I.L.?  You don't know what it stands for?  What are you dumb?  Everybody knows E.V.I.L. stands for...  it stands for... Elephant.. Violin... Image..  Lemon.  Wait, that might be a little bit off.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "37": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Hey buddy, I don't like you.  Why?  I don't need a reason!  This is our hideout, and if anyone dislikes it, I will pinch them!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "38": {
+      "branches": [
+        {
+          "talkID": 22,
+          "text": "This is the biggest, baddest, cult you will EVER find in your ENTIRE life.  We have everything you could ever need here.  Trees, ground, graves, trees and a massive 4 foot clubhouse big enough to fit at least 200 people.  Luckily I get to chill in the clubhouse all day.  ..If you are here looking for Mad Ricky, he's not here right now.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "40": {
+      "branches": [
+        {
+          "talkID": 23,
+          "text": "Trying to start a farm is rough.  I figured this would be the best place to start a watermelon farm.  The problem is, I don't have any watermelon seeds!  Do you think you could get me some watermelon?  That way I could use the watermelon seeds from them to plant a farm.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "This watermelon farm isn't going very well...  Maybe if I had some watermelon I could use the seeds from them.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Thanks for the watermelons man, they were delicious.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Get Gordon Watermelon",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Gordon Watermelon",
+          "field": "started"
+        },
+        {
+          "mission": "Get Gordon Watermelon",
+          "field": "started"
+        }
+      ]
+    },
+    "41": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "This is a dangerous place around these parts.  I'm going to take a good guess and say you could use healing.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "42": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Them great frogs can be tough you know.  You have to have some of the top level equipment in order to survive against them.  You came all this way, why not buy some equipment from my shop?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "43": {
+      "branches": [
+        {
+          "talkID": 25,
+          "text": "Living out here is tough.  The great frogs keep us from going outside very often.  If we do, they will hurt us or even kill us.  Some of them are friendlier than others, but I don't want to take my chances.  I've always wanted a Monster Skull that I could put on display.  Do you think you could get me one?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "If I had a rare Monster Skull, I'd be famous!  Well maybe not famous, but people would think I was cool.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Hey man!  You don't have to flaunt it!  Why don't you take that helmet off and give it to little ol' me?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 26,
+          "text": "Gimme that Monster Skull!  ...Thanks!  Everyone will love me now that I have a monster skull.  This has got to be the coolest thing I've ever saw!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I love the monster skull you got for me.  Thanks man, I love you.  ...Wow wow!  ...Not like that.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "started"
+        },
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "started"
+        },
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "started"
+        },
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "started"
+        },
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Pablo a Monster Skull",
+          "field": "completed"
+        }
+      ]
+    },
+    "44": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to my humble library.  I can sell you some books if you would like.  They say there is no power greater than knowledge.  So why not read?  You never know, it may help you out.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "45": {
+      "branches": [
+        {
+          "talkID": 27,
+          "text": "Welcome, welcome!  I am the creator of the widely known 'Guild system'!  If you would like to join or create a guild, you can do it through me.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "46": {
+      "branches": [
+        {
+          "talkID": 46,
+          "text": "I've got some top quality stuff for sale if you're interested.  I bet you could use it if you plan on taking down any of them frogs.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "47": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I love it out here, it's so nice and peaceful by the water.  ..Do you travel alot?  I have heard there are guilds in Mushroom Village.  Is it true?  If so, I want to join one!  I think it'd be cool to make some new friends.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "48": {
+      "branches": [
+        {
+          "talkID": 28,
+          "text": "There are so many types of monsters, I which I could see them all.  Some of them are so powerful though, I'm afraid I might get knocked out if I get too close.  Say, when you filled you Hero-Pedia up with all of the monsters info do you think you could show me?  I love to learn about all the new monsters there are!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Thanks for showing me all the Hero-Pedia enemy info.  I know it sounds crazy, but I love knowing about monsters.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Show Joshua All Enemies",
+          "field": "started"
+        },
+        {
+          "mission": "Show Joshua All Enemies",
+          "field": "started"
+        },
+        {
+          "mission": "Show Joshua All Enemies",
+          "field": "completed"
+        },
+        {
+          "mission": "Show Joshua All Enemies",
+          "field": "started"
+        },
+        {
+          "mission": "Show Joshua All Enemies",
+          "field": "completed"
+        }
+      ]
+    },
+    "49": {
+      "branches": [
+        {
+          "talkID": 30,
+          "text": "Fairyville is a cool town and all, but don't you think it's a little dull?  I mean come on!  This place doesn't scare me at all!  It has to be the least scary place I have ever been to in my entire life.  Everyone likes a little scare don't they?  I thought this witch hat I had on would bring some scare, but it doesn't.  Say, do you think you could get me a hockey mask?  I'm sure one of those things would creep people out.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I sure do wish I had that hockey mask so I could scare people.  But a certain someone still hasn't gotten it for me yet.  ..Not mentioning any names.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Are you trying to scare ME with that hockey mask?  You can't scare me, I'm the queen of scare.  Now about you take it off and give me the mask?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 31,
+          "text": "Thanks for the hockey mask!  Now that I have this I can start bringing some scare into this town!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Do you think now that I got this hockey mask that I can smash my head off of anything I want and it won't hurt?  ..Oh.  ..Well, neither did I.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "started"
+        },
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "started"
+        },
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "started"
+        },
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "started"
+        },
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "completed"
+        },
+        {
+          "mission": "Get Scarlet a Hockey Mask",
+          "field": "completed"
+        }
+      ]
+    },
+    "50": {
+      "branches": [
+        {
+          "talkID": 32,
+          "text": "So how about my buddy told me about the legend of 'The Lost Warrior'.  Have you ever heard about him?  Legend has it that deep in a forest somewhere around here a warrior was killed.  They say that right before he died he engraved the items he was wearing into stone.  What if you saw someone wearing his exact same items?  If I saw somebody like that, I would probably cry.  ..Not because I'm a baby though, but because I would have something in my eye.  Both eyes.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 33,
+          "text": "Y-Y-You're the long lost warrior!  The legend is wrong, you didn't die!  Oh my gosh, I can't stop crying!  ...I just have something in my eyes that's all.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I wish I knew more about the Legend of the Lost Warrior.  I wish I was alive to see him in person when he died.  What if he's not actually dead?!  ..Naw that was hundreds of years ago, there's no way he's alive now.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "You know, I was thinking about it..  I think you may have tricked me, there is no Lost Warrior anymore is there?  ...Or... Is there?...",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Look Like the Lost Warrior",
+          "field": "started"
+        },
+        {
+          "mission": "Look Like the Lost Warrior",
+          "field": "started"
+        },
+        {
+          "mission": "Look Like the Lost Warrior",
+          "field": "completed"
+        }
+      ]
+    },
+    "51": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Hey you!  Have you seen anything suspicious going on?  If you see someone who looks like they're not playing like a human would, like they're using illegal programs to automatically press their keys, then I can help you.  I sell alarms.  Use these ONLY on players who you believe are cheating.  These are very powerful items, so don't falsely use them to annoy players or you could end up getting yourself in trouble.  Alarms will disable players who are botting.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "52": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Bbbrrrr..  It's cold out huh?  Well duh, there's snow on the ground, what do you expect!  I could sell you some weapons, they will help warm you right up! ...Oh, weapons don't warm you up?  Well buy some anyway.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "54": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "Cold, cold, cold!  You want healed young one?  I can heal you.  If you plan on going through that portal to the right you're going to need it.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "55": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Shoes shoes shoes!  Get your shoes here!  You wanna buy some shoes man?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "56": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Through this portal is a GVG area.  It allows guilds to fight other guilds.  If you go in there with a fellow guild member, you won't be able to hurt them!  This makes it easy to team up on other players from other guilds.  Like the sparing grounds, money is not lost if you die in here.  If you kill somebody in here and you are in a guild, you will add one to your guilds total kills.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "57": {
+      "branches": [
+        {
+          "talkID": 34,
+          "text": "Hehehe.  I love going around writing graffiti on stuff.  My passion is drawing items and clothing.  I've been just about everywhere now.  I tell you what, I bet you can't find all my graffiti marks.  The only way you can prove it, is by equipping the items I drew in my graffiti.  There are two items to wear from my graffiti.  Ready, go!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 35,
+          "text": "Good job!  You completed my puzzle!  You're one swell fellow you know that.  Good luck on your journey.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Hey, you don't seem to be wearing the things pictured in my graffiti art.  Go forth and find my graffiti!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 35,
+          "text": "Good job!  You completed my puzzle!  You're one swell fellow you know that.  Good luck on your journey.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Hey, you don't seem to be wearing the things pictured in my graffiti art.  Go forth and find my graffiti!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "You know me, I love graffiti!  Hopefully I don't get busted for painting on random things.  ..Oh well!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Solve Jimmy's Puzzle",
+          "field": "started"
+        },
+        {
+          "mission": "Solve Jimmy's Puzzle",
+          "field": "started"
+        },
+        {
+          "mission": "Solve Jimmy's Puzzle",
+          "field": "completed"
+        }
+      ]
+    },
+    "58": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Stop!  I know you want to buy something out of my store.  There's no way you came down here and risked your life NOT to buy something.  Choose from whatever you like, I have all kinds of great equipment.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "59": {
+      "branches": [
+        {
+          "talkID": 36,
+          "text": "This dungeon is a scary place isn't it?  I am able to take down a goo cube, but not without the help of some of my friends.  I once walked into the same room as a brick monster and the next thing I knew I was dead.  Anyway, I got a mission for you.  It's a bit of a puzzle.  Talk to me again, and I will give you the clues.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I will list you some people, you must find them and talk to them.  The number I give after their name is the number letter you should write down according to what they say.  Do not count punctuation.  For example if I said 'What's up?  How are you?' and I have you the number #10, the resulting letter would be 'W'.  ...Now here are your clues: Marget #3, Thomas #8, Daniel #18, Wallace #9, Ted #3, Ron Anderson #38, Michael #10.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 37,
+          "text": "Well done!  You've solved my puzzle!  I love making puzzles as you can tell.  Good job, and be safe out there.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I will list you some people, you must find them and talk to them.  The number I give after their name is the number letter you should write down according to what they say.  Do not count punctuation.  For example if I said 'What's up?  How are you?' and I have you the number #10, the resulting letter would be 'W'.  ...Now here are your clues: Sneed #57, Keith #34, Gary #6, Alfred #9, Travis #1, Chipper #30.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 37,
+          "text": "Well done!  You've solved my puzzle!  I love making puzzles as you can tell.  Good job, and be safe out there.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "You're pretty good at solving puzzles aren't you?  Keep on keepin' on!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Complete Albert's Puzzle",
+          "field": "started"
+        },
+        {
+          "mission": "Complete Albert's Puzzle",
+          "field": "completed"
+        }
+      ]
+    },
+    "60": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to my store.  I specialize in selling equipment for girls.  You know, pink girly stuff!  If any of this stuff interests you, go ahead and buy some.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "61": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "Hello traveler.  Do you need to be healed?  I can heal you, I am a trained and licensed nurse.  Here you are, back to full health.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "62": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome... to the future!  Well, not really but everyone here loves robots and technology.  I am the local weapon and armor shop guy.  Can I interest you in anything?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "63": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to Robo City home of the robos.  In Robo City electricity rules all.  If you mess with the robos or their electricity things could get ugly.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "64": {
+      "branches": [
+        {
+          "talkID": 38,
+          "text": "I LOVE robots!  I think they are the coolest thing in the whole wide world.  I tried to pet one once, but it punched me square in the face and knocked me out.  I didn't know some of them could be so mean!  If you see one, just be careful, they're not always friendly!   ...Oh hey, you look like you like to travel.  My second favorite thing is pumpkins.  Do you think you could get me two pumpkin helmets?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Say, you don't seem to have the two pumpkins I asked for.  That's ok, I'll just sit here and cry and worship robots until you come back with two pumpkin helmets for little ol' me...",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Hey, how am I supposed to take the pumpkin helmets from you if you have one of them equipped?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 39,
+          "text": "Thanks for the pumpkin helmets!  Maybe now I can have something else to do instead of worship robots all day.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Thanks for the pumpkin helmets, they're so cool looking!  Maybe if I wear it long enough, my head will BECOME a pumpkin!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Get Cassie Pumpkin Helmets",
+          "field": "started"
+        },
+        {
+          "mission": "Get Cassie Pumpkin Helmets",
+          "field": "started"
+        },
+        {
+          "mission": "Get Cassie Pumpkin Helmets",
+          "field": "completed"
+        }
+      ]
+    },
+    "65": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Robo City sure is a cool place to be isn't it?  It's even cooler to live in Robo City.  I do all the paper work for the robots.  When a robot creates another robot, there is a lot paperwork that is involved.  What else would I have all of these drawers for?  They hold all my paperwork.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "66": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to my tree fort.  I live out here in the rain forest away from everyone else.  It's peaceful out here but it can be very dangerous.  Some people come here just to see the lotus eyes, then short after they wind up in the hospital or dead.  Be careful out here, it's a dangerous place in the rain forest.  Say, do you need to buy anything?  I specialize in a many variety of food and potions.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "67": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Out here in the wastelands is a scary place. Not only is it scary, but it's empty.  It's so empty I get bored just standing here.  I tell you what, sometimes I even get so bored I just punch myself in the face for fun.  Doesn't sound like a bad idea does it?  ...Watch yourself out here, night stalkers aren't friendly enemies.  One of my friends caught one and kept it as a pet.  The next day, it ate him for breakfast.  ..You better believe it.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "68": {
+      "branches": [
+        {
+          "talkID": 40,
+          "text": "Hey man, how's it going?  Have you met my brother Albert?  He likes to spend most of his free time in the dungeon making puzzles and riddles for travelers.  He taught me how to make good puzzles too..  Talk to me again and I'll give you my puzzle to solve.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Here is my puzzle for you.  The number I give after their name is the number letter you should write down according to what they say.  Do not count punctuation.   Here are the clues: Blaire #29, Chad #2, Lewis #5, Cleveland #4, Barbara #2, Chipper #5.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 41,
+          "text": "Well done!  You've solved my puzzle!  I love making puzzles as you can tell.  Good job, and be safe out there.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Here is my puzzle for you.  The number I give after their name is the number letter you should write down according to what they say.  Do not count punctuation.   Here are the clues: Wayne #7, Snoop #6, Mitchel #10, Ralph #18, Alpipa #27.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 41,
+          "text": "Well done!  You've solved my puzzle!  I love making puzzles as you can tell.  Good job, and be safe out there.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Good work solving my puzzle.  And by the way, watch out for Carnelia, she's mean!  Along with puzzles I also like random facts.  Did you know that the skull crusher items are made from the bones of night stalkers?  The bones are then chemically infused with super strong metals to make them even tougher than beholder items.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Complete Billbert's Puzzle",
+          "field": "started"
+        },
+        {
+          "mission": "Complete Billbert's Puzzle",
+          "field": "completed"
+        }
+      ]
+    },
+    "69": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I love my pets.  Even though pets can be very good fighters, you must always love them and treat them as you would like to be treated.  A loved pet also makes a stronger pet.  When a pet's love is high, it has a better chance of gaining more whenever it levels up.  So always make sure to keep your pet's love meter up.  And also, choose your companion pet wisely, you cannot remove a pet as your companion unless you permanently release him.  A pet that is your companion will feel extra loved, therefore making him potentially stronger than your other pets.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "70": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to my home and shop.  I live here out in the darkness and I make a living from selling beholder and other high level items.  Dark Beholders are very very strong creatures.  It's an amazing thing that you've made it here.  Perhaps I can interest you in some equipment?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "71": {
+      "branches": [
+        {
+          "talkID": 42,
+          "text": "You are in the biggest building not only in Petropolis, but the biggest building on Elandra Island.  Here in this building we raise pets.  You can adopt them here.  Here are the ones I have ready for adoption.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "72": {
+      "branches": [
+        {
+          "talkID": 43,
+          "text": "Pets pets pets!  You should always treat pets will love and respect.  A pet's base stats are indicative of their stats throughout their life as they level up.  This means, if one pet has a higher power than another, it is more likely to increase it's power during a level up.  ..Anyway, would you like to adopt some pets?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "73": {
+      "branches": [
+        {
+          "talkID": 44,
+          "text": "A pet is a man's best friend.  Each pet has 3 different modes available to choose from.  Choose the mode that best fits your playing style.  During their 3rd form, some pets can even be ridden.  Would you like to give one of our precious pets a new home?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "74": {
+      "branches": [
+        {
+          "talkID": 45,
+          "text": "All pets are born with the natural ability to form and travel in bubbles.  This is a unique ability they have that seperates them from the enemy world.  When a pet gets too far from you or is confused, they will often bubble to be next to you.  You can even tell the pet to bubble by pressing the Q key.  Remember that, it can often come in handy.  Aren't pets amazing creatures?  Would you like to adopt a new friend?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "75": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I hate being on the bottom floor, why can't I sell stuff on the top floor?  ..Oh well.  Anyway, I specialize in selling pet helmets, are there any I could interest you in?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "76": {
+      "branches": [
+        {
+          "talkID": 46,
+          "text": "Dude, I saw this guy with with a Marshraptor!  Man, those things look awesome!  Right now my Marshy has evolved, so he is a Marshruto.  I can't wait until he turns into a Marshraptor!  ..I tell you what, it's tough collecting pets.  I want to get 4 pets one day.  Do you have what it takes to get 4 pets?  I bet you can't.  I triple dog dare you!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "You don't have what it takes to complete my triple dog dare?  Can't you collect 4 pets?  Maybe I will collect them before you do.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Your quite skilled you know that?  To collect 4 pets is awesome.  Me?  I guess I'll just sit here and cry because I'm not as awesome as you.  That, or maybe I'll eat some burgers.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Collect 4 Pets",
+          "field": "started"
+        },
+        {
+          "mission": "Collect 4 Pets",
+          "field": "completed"
+        },
+        {
+          "mission": "Collect 4 Pets",
+          "field": "completed"
+        }
+      ]
+    },
+    "77": {
+      "branches": [
+        {
+          "talkID": 48,
+          "text": "I used to have a Tebra a while ago...  But one day I was mad at him and I released him..  And now I miss him very badly.  I can't help but cry when I see a little Tebra.  I shouldn't have been so mad at him, he was just a little creature.  I was hoping that one day he would become a Tebrumpt and I could ride him, but he was taking too long and he made me mad.  Oh, what I wouldn't give just to see someone riding a pet...",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Even though I know I'll never see my Tebra again, it sure would make me happy just to see someone with a smile on their face riding a pet they love.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Thanks for showing me your pet mount.  It gave me hope that maybe one day I will find another pet to call my companion.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Ride a Pet",
+          "field": "started"
+        },
+        {
+          "mission": "Ride a Pet",
+          "field": "completed"
+        },
+        {
+          "mission": "Ride a Pet",
+          "field": "completed"
+        }
+      ]
+    },
+    "78": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Weapons, armor, helmets, I've got it all!  Most people come to check out Petropolis for it's pets, but I like to sell equipment in hopes that they'll spend their money with me.  Hehe!  If you buy a helmet, I'll give you half of a 2 year old already chewed up browny made from dirt.  Sounds like one awesome deal doesn't it?  ..Ok, maybe I'm lying, but you should still buy something.",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "79": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Pets pets pets!  They're so awesome!  There are keys to keeping your pet happy and keeping his love up as much as possible.  Pets as you can imagine, like food.  Food can help raise their love.  Also, it's very mean to let a pet die.  Pets also get sad if they don't get used often.  You know what's the worst though?  Not using a pet and leaving him passed out with 0 health, that will surely lower their love fast.  A pet's love is a hard thing to manage, so don't study it too carefully because you never can tell.  Some people drive themselves MAD trying to get the pets love perfect.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "80": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Just like us humans, there are many different ways to set up your pet!  Since pets don't have range or magic, instead they have luck, healing, and speed.  Archer based items usually increase a pets luck, magician based items usually increase its healing ability, and cowboy items increase the owner's movement speed.  The luck helps give the owner a better chance of receiving drops from enemies.  The healing allows the pet to heal the owner more health every so often.  Sometimes when my pet levels up it doesn't gain any points, which stinks.  But sometimes it gains a lot!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "81": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "If you buy a pet, be very careful with them.  A new pet starts at level one, so don't take them into areas with monsters too strong for them.  Think about it, would you try and fight strong monsters if you were level one?  No!  So don't be mean and make a pet fight a monster that will hurt him!   ..Also, did you know that a pet's feet are close to the same size as us humans?  That means they can wear the same shoes as we can!  One last thing.  A pet feels more love the more pets you have.  Pets like being with other pets, so its always good to own several pets.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "82": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Did you know, that inactive pets still play an important roll?  Inactive pets that are not knocked out can use their spirit to effect their owner.  We like to call them 'pet spirit orbs'.  The orbs grow bigger and stronger as a pet levels up.  These orbs add to a users power, range, and magic.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "83": {
+      "branches": [],
+      "mission_checks": []
+    },
+    "84": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "I'm what they call a 'train-o-holic'.  I think about trains all day and all night, non-stop.  I'm constantly thinking about trains.  Infact, I wish I was a train.  I could stop if I wanted to.  There used to be a train that ran from Mushroom Village here at Aqualantis.  I sure do miss those days, and those trains.  Man do I love trains.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "85": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Have you ever noticed it smells kind of weird when you're underwater?  It smells like strawberries down here.  If you press DOWN when you're near the bottom or top of a pipe, you will get sucked into the pipe.  It feels like it's going to rip your head off, but it doesn't.  Did you know simply by having a pet active it helps increase your chance of catching a fish?  By 20ms to be exact.  Hehe!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "86": {
+      "branches": [
+        {
+          "talkID": 51,
+          "text": "It's a nice place out here in Aqualantis.  I spend most of my time swimming.  I'd go with a few of my buddies, but they're all afraid of the fish.  What a bunch of sissies.  I also like to fish.  Fish can come in handy, they can be eaten or sold for money.  How about I saw a shiny lion fish once!  It was AMAZING!  Unfortunately I wasn't able to catch it though, it was too quick for me.  You know what?  Do you think you could catch every type of fish, and then show me your Heropedia when you've caught them all?  That would be so cool!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 52,
+          "text": "Wow, nice job!  It looks like you've caught all of the different fish types.  You really are an amazing fisherman.  I... I think I might cry now at the site of all these beautiful fish.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "There you are.  You're the one that caught all of those fish!  I was telling my friends about you, they were amazed by your fishing skills.  My one friend was so amazed his jaw dropped down to the ground when I told him.  Now he has trouble eating.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Catch Every Fish",
+          "field": "started"
+        },
+        {
+          "mission": "Catch Every Fish",
+          "field": "completed"
+        }
+      ]
+    },
+    "87": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to my fishing castle.  It's not a very big castle, but I still like to call it a castle.  Have you been fishing lately?  If not, you're going to need a fishing pole.  One pole is all you need, but you have to train your fishing skills to become better.  So how about you buy a fishing pole from me?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "88": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "Aqualantis is an amazing city.  It's where everyone starts their fishing journey.  It's a rough world out there though and you're always getting smashed up by monsters.  Perhaps I could heal you?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "90": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Trees are a beauty of nature, they can be used for so many different things.  Cutting down trees is good for harnessing their wood but be sure to plant trees as well.  The world needs more trees!  Not only that, it's good for your chopping level.  Each time you plant a tree, you gain chopping experience.  On another note, the larger the tree the more logs it produces.  Each tree has three forms.  In their 1st sapling form, trees produce little to no wood when cut down.  So it's best to let them grow to their 3rd and fullest form.  By the way, use the C key to target trees.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "91": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "This is my own personal swimming hole.  Everyone I know loves swimming under the waterfall.  If your cold then swim by me, I give off a warm feeling if your near.  Not only do I have the ability to make water warmer, if I'm in snowy flatts I also have the amazing ability to create yellow snow.  My friends call me a magician because of it.  Haha, I'm just that awesome!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "92": {
+      "branches": [
+        {
+          "talkID": 53,
+          "text": "Ahoy there matey, could I interest yee in wood fabrication?  I can help yee take some of em' there logs yee might have and turn em' intah' some processed wood.  Ya see, wood is better for building things.  Yee can't build anything out of just plain logs!  Ya need a good slid chunk of wood!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "93": {
+      "branches": [
+        {
+          "talkID": 54,
+          "text": "Do you have any logs on you?  If so, here at Pablo's I can refine and process those logs into ready-to-use wood.  Wood is needed to built all sorts of weapons and armor.  Now what might I help you craft?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "94": {
+      "branches": [
+        {
+          "talkID": 55,
+          "text": "I, like my brother Wood Man Tim, also can help you craft processed wood.  You will need 10 of a log to make it into good wood that can be crafted with.  By the way, did you know fish are a vital part of crafting?  The fish don't get killed or smooshed into equipment, they are just needed because their scales and body contain important DNA that must be replicated when crafting weapons and armors.  That way, the fish aren't harmed.  Now what can I help you with?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "95": {
+      "branches": [
+        {
+          "talkID": 56,
+          "text": "Yo yo yo!  Welcome to the crafting area.  We can help you craft items out of the materials you collect.  I have some armor perhaps I could help craft for you?  Now what can I interest you in?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "96": {
+      "branches": [
+        {
+          "talkID": 57,
+          "text": "I like to stay in here away from the dark beholder and kreetons.  Not because I'm scared, but because they're afraid of me.  I don't want to frighten them, you know?  Anyway, I can help you build some armor and such.  What would you like to build.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "97": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to the Pet Adoption District.  Here you will find a bunch pets that other players have placed up for adoption.  These pets can range from very strong to weak.  Either way, they are in need of a loving owner and home, so please adopt them!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "98": {
+      "branches": [
+        {
+          "talkID": 58,
+          "text": "It's a rough rough world out here.  This land here is hot, deadly, and full of death.  I reckon' I don't know how much longer I can take the heat...  If the heat doesn't get to me, I'm sure a magmagon will.  If only I could have one last bit of fun, like a game or puzzle.  My brothers Albert and Bilbert always liked puzzles.  You, you brave brave soul.  Could you solve my puzzle?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Here's how the riddle works.  I will give you a hint, the hint will be referencing a person that you can talk to.  You must find this person and wear the same shirt as them.   Here is your hint: 'I like to chill.'",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 59,
+          "text": "Wow, nice job!  You've solved my puzzle.  This is what I've lived my entire life for.  All of my life has led up to this one, special, amazing moment.  What a gift you are.  My life dream has finally come true.  Seeing somebody in a red shirt.  Wow, I sure do set my goals in life high.  Occasionally I amaze even myself.  ...I take that back, I ALWAYS amaze myself!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Here's how the riddle works.  I will give you a hint, the hint will be referencing a person that you can talk to.  You must find this person and wear the same shirt as them.   Here is your hint: 'We may be dumb, but we ain't stupid.  I ain't angry, I'm just mad!'",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 59,
+          "text": "Wow, nice job!  You've solved my puzzle.  This is what I've lived my entire life for.  All of my life has led up to this one, special, amazing moment.  What a gift you are.  My life dream has finally come true.  Seeing somebody in a white shirt.  Wow, I sure do set my goals in life high.  Occasionally I amaze even myself.  ...I take that back, I ALWAYS amaze myself!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "I reckon' I should thank you again for doing that puzzle of mine.  It sure was an amazing sight.  Now I'm back to square one, sitting here roasting to death 'cause it's so hot.  Maybe if I spit on myself I can survive. ... *sniff*, *hock*, *spit!*",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Solve Philbert's Puzzle",
+          "field": "started"
+        },
+        {
+          "mission": "Solve Philbert's Puzzle",
+          "field": "completed"
+        }
+      ]
+    },
+    "99": {
+      "branches": [
+        {
+          "talkID": 60,
+          "text": "It's a hot, mean, nasty world out here.  You have to be the toughest of the tough to survive.  How about I craft some new equipment for you?  You can never go wrong with wearing the best equipment that is available, especially when your in an area as rough as this.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "100": {
+      "branches": [
+        {
+          "talkID": 61,
+          "text": "Wooo!  It's hotter than a magmagon's rear end after eating a habanero!  I bet I could be of some help to you.  Would you like me to craft some items?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "101": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "You can never overprotect your pet.  Only the best of the best for my pet is what I say!  I can sell you some high level pet helmets, are you interested?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "102": {
+      "branches": [
+        {
+          "talkID": 62,
+          "text": "I bet you could use some strong equipment!  There's no doubt you will need it in a savage place like this.  I can offer you some, but you must pay a hefty price.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "103": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "The trains went out of business some time ago.  Operating costs for the trains became to high, so they had to shut em' down.  So now if you want to get to Aqualantis you're going to have to walk the tracks.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "104": {
+      "branches": [
+        {
+          "talkID": 63,
+          "text": "Man, I tell ya what..  I've seen some POWERFUL players walk through here.  Some of them were so powerful, they were making everything around them blow away!  It's my goal to one day become so powerful, that everyone talks about me and my high energy levels.  I tell ya what, I bet you can't reach an energy level of 9000.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Energy, energy, energy!  I'm so weak right now, but I am getting stronger.  I hit a max energy level of 2,450!  That may not be super high, but it's high to me.  Have you worked on reaching an energy level of 9,000 yet?  I bet you can't!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 0,
+          "text": "Wow!!  You hit an energy level over 9,000!  Your nuts!  I wish I could be as powerful as you...  I've seen guys even higher than 9,000 though.  The strongest guy I've ever seen was around 17,000.  CRAZY POWERFUL!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": [
+        {
+          "mission": "Reach High Energy Level",
+          "field": "started"
+        },
+        {
+          "mission": "Reach High Energy Level",
+          "field": "completed"
+        }
+      ]
+    },
+    "105": {
+      "branches": [
+        {
+          "talkID": 64,
+          "text": "This acid is rough out here.  It burns, it's slippery, and it makes me trip.  It'd make for a good addition to a weapon though.  Image you covered your weapon in acid.  Ouch!  I've got some things I can sell and craft for you.  It's good to keep a stock of equipment out here in a dangerous place like this.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "106": {
+      "branches": [
+        {
+          "talkID": 65,
+          "text": "I tell you what boy, it sure is a nasty world out here.  Krakens and acid are enough to drive you crazy.  You better be equipped with the best gear there is if you want to survive.  Perhaps I could interest you in some?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "107": {
+      "branches": [
+        {
+          "talkID": 66,
+          "text": "Hello, I am Isaac Jr.  I am the son of my father.  My father is also my dad.  You must be very strong to have made your way all the way here.  I can sell you some weapons and armor to help you in your journey.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "108": {
+      "branches": [
+        {
+          "talkID": 67,
+          "text": "This is my shack, it ain't half bad is it?  It's a rough place out here in Acid Village.  Honestly I didn't even want to live out here, but I travelled out here and was never able to go back because of the Krakens.  ...Anyway bro, I got this gun I stole from Isaac's shop.  Would you want to buy it?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "109": {
+      "branches": [
+        {
+          "talkID": 9,
+          "text": "Suh dude?  Running this healing shack I get quite a lot of visitors who have got rekt by krakens and bullopedes.  You look like you got owned pretty bad.  Maybe you should git good?  I'll heal you up so you can go pwn noobs and bullopedes.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        },
+        {
+          "talkID": 9,
+          "text": "Suh?  Do you like it here in my healing shack?  A lot of folks come here who have gotten pretty shrekt by bullopedes.  I've been eaten by a bullopede once, but some leet haxor person came and saved me.  I'll heal you incase you need to take on an almighty bullopede.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "110": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Shoes, let's get some shoes.  I love shoes.  I am Sam's twin brother.  We make a pretty good living off of selling shoes.  Would you like to buy some?",
+          "hasNext": false,
+          "hasShop": true,
+          "hasSell": true
+        }
+      ],
+      "mission_checks": []
+    },
+    "111": {
+      "branches": [
+        {
+          "talkID": 68,
+          "text": "Cloud Kingdom, the amazing place in the world.  You will never feel as serene as you do here.  It is a truly amazing place.  Have you managed to get past the vicious omega fluffs?  Anyway, how about I sell you some SERIOUS equipment?",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "112": {
+      "branches": [
+        {
+          "talkID": 69,
+          "text": "Weapons...  That is the only thing that will help you tackle these super wicked omega fluffs.  They may have a charming name, but let me tell you what..  They will rip you a new one!",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    },
+    "113": {
+      "branches": [
+        {
+          "talkID": 0,
+          "text": "Welcome to Cloud Kingdom the most fascinating place in all of the world.  Even though it is a purely beautiful place, there still lurks the omega fluffs in all corners.",
+          "hasNext": true,
+          "hasShop": false,
+          "hasSell": false
+        }
+      ],
+      "mission_checks": []
+    }
+  },
+  "talk_actions": {
+    "6": {
+      "action": "tutorial",
+      "mission": "",
+      "text": ""
+    },
+    "7": {
+      "action": "mission_start",
+      "mission": "The Black Hooded Hatchet",
+      "text": ""
+    },
+    "8": {
+      "action": "dialog",
+      "mission": "",
+      "text": "If you see someone else who you would like to talk to, use the bar located at the bottom to type your message."
+    },
+    "9": {
+      "action": "heal",
+      "mission": "",
+      "text": ""
+    },
+    "10": {
+      "action": "mission_complete",
+      "mission": "The Black Hooded Hatchet",
+      "text": ""
+    },
+    "11": {
+      "action": "mission_start",
+      "mission": "Find the Cult's Hideout",
+      "text": ""
+    },
+    "12": {
+      "action": "mission_start",
+      "mission": "Get Hambone Apples",
+      "text": ""
+    },
+    "13": {
+      "action": "mission_complete",
+      "mission": "Get Hambone Apples",
+      "text": ""
+    },
+    "14": {
+      "action": "mission_start",
+      "mission": "Get Brody a Garbage Can Lid",
+      "text": ""
+    },
+    "15": {
+      "action": "mission_complete",
+      "mission": "Get Brody a Garbage Can Lid",
+      "text": ""
+    },
+    "16": {
+      "action": "mission_start",
+      "mission": "Get Jim Sanders Some Gear",
+      "text": ""
+    },
+    "17": {
+      "action": "mission_complete",
+      "mission": "Get Jim Sanders Some Gear",
+      "text": ""
+    },
+    "18": {
+      "action": "mission_start",
+      "mission": "Give Cleveland His Letter",
+      "text": ""
+    },
+    "19": {
+      "action": "mission_complete",
+      "mission": "Give Cleveland His Letter",
+      "text": ""
+    },
+    "20": {
+      "action": "mission_start",
+      "mission": "Look Like a Black Hood",
+      "text": ""
+    },
+    "21": {
+      "action": "mission_complete",
+      "mission": "Look Like a Black Hood",
+      "text": ""
+    },
+    "22": {
+      "action": "mission_complete",
+      "mission": "Find the Cult's Hideout",
+      "text": ""
+    },
+    "23": {
+      "action": "mission_start",
+      "mission": "Get Gordon Watermelon",
+      "text": ""
+    },
+    "24": {
+      "action": "mission_complete",
+      "mission": "Get Gordon Watermelon",
+      "text": ""
+    },
+    "25": {
+      "action": "mission_start",
+      "mission": "Get Pablo a Monster Skull",
+      "text": ""
+    },
+    "26": {
+      "action": "mission_complete",
+      "mission": "Get Pablo a Monster Skull",
+      "text": ""
+    },
+    "27": {
+      "action": "guild",
+      "mission": "",
+      "text": ""
+    },
+    "28": {
+      "action": "mission_start",
+      "mission": "Show Joshua All Enemies",
+      "text": ""
+    },
+    "29": {
+      "action": "mission_complete",
+      "mission": "Show Joshua All Enemies",
+      "text": ""
+    },
+    "30": {
+      "action": "mission_start",
+      "mission": "Get Scarlet a Hockey Mask",
+      "text": ""
+    },
+    "31": {
+      "action": "mission_complete",
+      "mission": "Get Scarlet a Hockey Mask",
+      "text": ""
+    },
+    "32": {
+      "action": "mission_start",
+      "mission": "Look Like the Lost Warrior",
+      "text": ""
+    },
+    "33": {
+      "action": "mission_complete",
+      "mission": "Look Like the Lost Warrior",
+      "text": ""
+    },
+    "34": {
+      "action": "mission_start",
+      "mission": "Solve Jimmy's Puzzle",
+      "text": ""
+    },
+    "35": {
+      "action": "mission_complete",
+      "mission": "Solve Jimmy's Puzzle",
+      "text": ""
+    },
+    "36": {
+      "action": "mission_start",
+      "mission": "Complete Albert's Puzzle",
+      "text": ""
+    },
+    "37": {
+      "action": "mission_complete",
+      "mission": "Complete Albert's Puzzle",
+      "text": ""
+    },
+    "38": {
+      "action": "mission_start",
+      "mission": "Get Cassie Pumpkin Helmets",
+      "text": ""
+    },
+    "39": {
+      "action": "mission_complete",
+      "mission": "Get Cassie Pumpkin Helmets",
+      "text": ""
+    },
+    "40": {
+      "action": "mission_start",
+      "mission": "Complete Billbert's Puzzle",
+      "text": ""
+    },
+    "41": {
+      "action": "mission_complete",
+      "mission": "Complete Billbert's Puzzle",
+      "text": ""
+    },
+    "42": {
+      "action": "pet_shop",
+      "mission": "",
+      "text": ""
+    },
+    "43": {
+      "action": "pet_shop",
+      "mission": "",
+      "text": ""
+    },
+    "44": {
+      "action": "pet_shop",
+      "mission": "",
+      "text": ""
+    },
+    "45": {
+      "action": "pet_shop",
+      "mission": "",
+      "text": ""
+    },
+    "46": {
+      "action": "mission_start",
+      "mission": "Collect 4 Pets",
+      "text": ""
+    },
+    "47": {
+      "action": "mission_complete",
+      "mission": "Collect 4 Pets",
+      "text": ""
+    },
+    "48": {
+      "action": "mission_start",
+      "mission": "Ride a Pet",
+      "text": ""
+    },
+    "49": {
+      "action": "mission_complete",
+      "mission": "Ride a Pet",
+      "text": ""
+    },
+    "50": {
+      "action": "lottery",
+      "mission": "",
+      "text": ""
+    },
+    "51": {
+      "action": "mission_start",
+      "mission": "Catch Every Fish",
+      "text": ""
+    },
+    "52": {
+      "action": "mission_complete",
+      "mission": "Catch Every Fish",
+      "text": ""
+    },
+    "53": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "54": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "55": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "56": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "57": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "58": {
+      "action": "mission_start",
+      "mission": "Solve Philbert's Puzzle",
+      "text": ""
+    },
+    "59": {
+      "action": "mission_complete",
+      "mission": "Solve Philbert's Puzzle",
+      "text": ""
+    },
+    "60": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "61": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "62": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "63": {
+      "action": "mission_start",
+      "mission": "Reach High Energy Level",
+      "text": ""
+    },
+    "64": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "65": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "66": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "67": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "68": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    },
+    "69": {
+      "action": "craft",
+      "mission": "",
+      "text": ""
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjg2q3gko1s7t"
+path="res://.godot/imported/crab.mp3-be9c72985d0d22c6a62063046fd5e25a.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/crab.mp3"
+dest_files=["res://.godot/imported/crab.mp3-be9c72985d0d22c6a62063046fd5e25a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

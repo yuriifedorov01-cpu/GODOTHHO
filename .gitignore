@@ -1,0 +1,9 @@
+# Godot 4 cache & local temp
+.godot/
+.tmp/
+*.log
+
+# Large local toolchains (>100MB GitHub limit)
+tools/godot4/
+tools/jre/
+tools/ffdec/

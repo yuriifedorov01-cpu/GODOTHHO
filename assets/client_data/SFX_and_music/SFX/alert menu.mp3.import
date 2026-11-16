@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8mjftp0js31d"
+path="res://.godot/imported/alert menu.mp3-017b7eb91b48c60b7d6183a17852f733.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/alert menu.mp3"
+dest_files=["res://.godot/imported/alert menu.mp3-017b7eb91b48c60b7d6183a17852f733.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

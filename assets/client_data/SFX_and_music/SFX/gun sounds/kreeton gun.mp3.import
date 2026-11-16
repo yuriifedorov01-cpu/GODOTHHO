@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc7degmbq0ipm"
+path="res://.godot/imported/kreeton gun.mp3-ced16e19000433225b5b2aa8369417c0.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/kreeton gun.mp3"
+dest_files=["res://.godot/imported/kreeton gun.mp3-ced16e19000433225b5b2aa8369417c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

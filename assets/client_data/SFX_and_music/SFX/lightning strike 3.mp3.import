@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dskw0pe6rpobt"
+path="res://.godot/imported/lightning strike 3.mp3-394f5eff6597b06b66f9068b20cac68c.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/lightning strike 3.mp3"
+dest_files=["res://.godot/imported/lightning strike 3.mp3-394f5eff6597b06b66f9068b20cac68c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

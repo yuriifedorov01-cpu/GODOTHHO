@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvaq7t3gqdegj"
+path="res://.godot/imported/wing flap.mp3-805d8d194996c9da67bbe8d699cc9c2e.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/wing flap.mp3"
+dest_files=["res://.godot/imported/wing flap.mp3-805d8d194996c9da67bbe8d699cc9c2e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

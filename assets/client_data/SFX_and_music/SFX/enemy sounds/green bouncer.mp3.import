@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bcrjult3kvwqo"
+path="res://.godot/imported/green bouncer.mp3-689f980c0d3c8f6065b8e8d1d40bedbf.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/green bouncer.mp3"
+dest_files=["res://.godot/imported/green bouncer.mp3-689f980c0d3c8f6065b8e8d1d40bedbf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

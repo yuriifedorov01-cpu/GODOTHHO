@@ -1,0 +1,540 @@
+[gd_scene load_steps=2 format=3 uid="uid://hh_char_create_001"]
+
+[ext_resource type="Script" path="res://scripts/menus/CreateCharacterMenu.gd" id="1_charcreate"]
+
+[node name="CreateCharacterMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_charcreate")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.28, 0.56, 0.82, 1)
+
+[node name="MenuRoot" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PalmTreesLayer" type="Control" parent="MenuRoot"]
+layout_mode = 0
+mouse_filter = 2
+
+[node name="Tree1" type="TextureRect" parent="MenuRoot/PalmTreesLayer"]
+layout_mode = 0
+offset_left = -389.0
+offset_top = 170.0
+offset_right = -249.0
+offset_bottom = 290.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="Tree2" type="TextureRect" parent="MenuRoot/PalmTreesLayer"]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 177.0
+offset_right = 399.0
+offset_bottom = 297.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="Tree3" type="TextureRect" parent="MenuRoot/PalmTreesLayer"]
+layout_mode = 0
+offset_left = -435.0
+offset_top = 63.0
+offset_right = -295.0
+offset_bottom = 183.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="Tree4" type="TextureRect" parent="MenuRoot/PalmTreesLayer"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 79.0
+offset_right = 319.0
+offset_bottom = 199.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="Tree5" type="TextureRect" parent="MenuRoot/PalmTreesLayer"]
+layout_mode = 0
+offset_left = -479.0
+offset_top = 27.0
+offset_right = -339.0
+offset_bottom = 147.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="Tree6" type="TextureRect" parent="MenuRoot/PalmTreesLayer"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 27.0
+offset_right = 372.0
+offset_bottom = 147.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="Platform" type="TextureRect" parent="MenuRoot"]
+z_index = 1
+layout_mode = 0
+offset_left = -230.0
+offset_top = -63.0
+offset_right = -153.0
+offset_bottom = 185.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="LeftPersonPreview" type="Node2D" parent="MenuRoot"]
+z_index = 1
+modulate = Color(1, 1, 1, 0.8)
+position = Vector2(-337, -92)
+scale = Vector2(2, 2)
+
+[node name="RightPersonPreview" type="Node2D" parent="MenuRoot"]
+z_index = 1
+modulate = Color(1, 1, 1, 0.8)
+position = Vector2(-60, -92)
+scale = Vector2(-2, 2)
+
+[node name="CenterPersonPreview" type="Node2D" parent="MenuRoot"]
+z_index = 1
+position = Vector2(-195, -85)
+
+[node name="NonChangeFrame" type="TextureRect" parent="MenuRoot"]
+z_index = 2
+layout_mode = 0
+offset_left = -387.0
+offset_top = -320.0
+offset_right = 385.0
+offset_bottom = 230.0
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="ClassTitleLabel" type="Label" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = -280.0
+offset_top = 13.0
+offset_right = -99.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "The Warrior"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ClassItemIcon" type="TextureRect" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = -278.0
+offset_top = 26.0
+offset_right = -234.0
+offset_bottom = 70.0
+pivot_offset = Vector2(22, 22)
+rotation = 0.785398
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="ClassDescLabel" type="Label" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = -382.0
+offset_top = 55.0
+offset_right = -4.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "Warriors are focused towards power and defense."
+autowrap_mode = 3
+
+[node name="EmailNoticeLabel" type="Label" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = -133.0
+offset_top = -240.0
+offset_right = 421.0
+offset_bottom = -220.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 12
+text = "*email is optional and used only for password recovery"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="PasswordColonLabel" type="Label" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = 12.0
+offset_top = -124.0
+offset_right = 126.0
+offset_bottom = -92.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 26
+text = "password:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="EmailColonLabel" type="Label" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = 46.0
+offset_top = -78.0
+offset_right = 126.0
+offset_bottom = -46.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 26
+text = "*email:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="NameInputBg" type="TextureRect" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = 138.0
+offset_top = -170.0
+offset_right = 393.0
+offset_bottom = -130.0
+stretch_mode = 5
+
+[node name="LineEdit" type="LineEdit" parent="MenuRoot/NameInputBg"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 254.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.45, 0.45, 0.45, 0.8)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+max_length = 25
+flat = true
+
+[node name="PassInputBg" type="TextureRect" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = 138.0
+offset_top = -125.0
+offset_right = 393.0
+offset_bottom = -85.0
+stretch_mode = 5
+
+[node name="LineEdit" type="LineEdit" parent="MenuRoot/PassInputBg"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 254.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.45, 0.45, 0.45, 0.8)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+max_length = 25
+secret = true
+flat = true
+
+[node name="EmailInputBg" type="TextureRect" parent="MenuRoot"]
+z_index = 3
+layout_mode = 0
+offset_left = 138.0
+offset_top = -80.0
+offset_right = 393.0
+offset_bottom = -40.0
+stretch_mode = 5
+
+[node name="LineEdit" type="LineEdit" parent="MenuRoot/EmailInputBg"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 254.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.45, 0.45, 0.45, 0.8)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+max_length = 40
+flat = true
+
+[node name="ClassRow" type="Control" parent="MenuRoot"]
+z_index = 4
+layout_mode = 0
+
+[node name="LeftBtn" type="TextureButton" parent="MenuRoot/ClassRow"]
+layout_mode = 0
+offset_left = 137.0
+offset_top = -216.0
+offset_right = 159.0
+offset_bottom = -176.0
+pivot_offset = Vector2(8, 14)
+
+[node name="ValueLabel" type="Label" parent="MenuRoot/ClassRow"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = -214.0
+offset_right = 372.0
+offset_bottom = -182.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "warrior"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightBtn" type="TextureButton" parent="MenuRoot/ClassRow"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = -216.0
+offset_right = 398.0
+offset_bottom = -176.0
+pivot_offset = Vector2(8, 14)
+
+[node name="GenderRow" type="Control" parent="MenuRoot"]
+z_index = 4
+layout_mode = 0
+
+[node name="LeftBtn" type="TextureButton" parent="MenuRoot/GenderRow"]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 5.0
+offset_right = 159.0
+offset_bottom = 45.0
+pivot_offset = Vector2(8, 14)
+
+[node name="ValueLabel" type="Label" parent="MenuRoot/GenderRow"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 7.0
+offset_right = 372.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "boy"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightBtn" type="TextureButton" parent="MenuRoot/GenderRow"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 5.0
+offset_right = 398.0
+offset_bottom = 45.0
+pivot_offset = Vector2(8, 14)
+
+[node name="HairRow" type="Control" parent="MenuRoot"]
+z_index = 4
+layout_mode = 0
+
+[node name="LeftBtn" type="TextureButton" parent="MenuRoot/HairRow"]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 45.0
+offset_right = 159.0
+offset_bottom = 85.0
+pivot_offset = Vector2(8, 14)
+
+[node name="ValueLabel" type="Label" parent="MenuRoot/HairRow"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 47.0
+offset_right = 372.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "brown"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightBtn" type="TextureButton" parent="MenuRoot/HairRow"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 45.0
+offset_right = 398.0
+offset_bottom = 85.0
+pivot_offset = Vector2(8, 14)
+
+[node name="EyesRow" type="Control" parent="MenuRoot"]
+z_index = 4
+layout_mode = 0
+
+[node name="LeftBtn" type="TextureButton" parent="MenuRoot/EyesRow"]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 84.0
+offset_right = 159.0
+offset_bottom = 124.0
+pivot_offset = Vector2(8, 14)
+
+[node name="ValueLabel" type="Label" parent="MenuRoot/EyesRow"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 87.0
+offset_right = 372.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "round"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightBtn" type="TextureButton" parent="MenuRoot/EyesRow"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 84.0
+offset_right = 398.0
+offset_bottom = 124.0
+pivot_offset = Vector2(8, 14)
+
+[node name="SkinRow" type="Control" parent="MenuRoot"]
+z_index = 4
+layout_mode = 0
+
+[node name="LeftBtn" type="TextureButton" parent="MenuRoot/SkinRow"]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 125.0
+offset_right = 159.0
+offset_bottom = 165.0
+pivot_offset = Vector2(8, 14)
+
+[node name="ValueLabel" type="Label" parent="MenuRoot/SkinRow"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 127.0
+offset_right = 372.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "pale"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightBtn" type="TextureButton" parent="MenuRoot/SkinRow"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 125.0
+offset_right = 398.0
+offset_bottom = 165.0
+pivot_offset = Vector2(8, 14)
+
+[node name="BeardBox" type="Control" parent="MenuRoot"]
+z_index = 4
+layout_mode = 0
+
+[node name="LeftBtn" type="TextureButton" parent="MenuRoot/BeardBox"]
+layout_mode = 0
+offset_left = 137.0
+offset_top = 166.0
+offset_right = 159.0
+offset_bottom = 206.0
+pivot_offset = Vector2(8, 14)
+
+[node name="ValueLabel" type="Label" parent="MenuRoot/BeardBox"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 167.0
+offset_right = 372.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "none"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightBtn" type="TextureButton" parent="MenuRoot/BeardBox"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 166.0
+offset_right = 398.0
+offset_bottom = 206.0
+pivot_offset = Vector2(8, 14)
+
+[node name="BackBtn" type="TextureButton" parent="MenuRoot"]
+z_index = 5
+layout_mode = 0
+offset_left = -463.0
+offset_top = -339.0
+offset_right = -354.0
+offset_bottom = -301.0
+pivot_offset = Vector2(63, 18)
+
+[node name="FinishBtn" type="TextureButton" parent="MenuRoot"]
+z_index = 5
+layout_mode = 0
+offset_left = 187.0
+offset_top = 229.0
+offset_right = 342.0
+offset_bottom = 278.0
+pivot_offset = Vector2(41, 22)
+
+[node name="TermsBtn" type="TextureButton" parent="MenuRoot"]
+z_index = 5
+layout_mode = 0
+offset_left = 189.0
+offset_top = 284.0
+offset_right = 350.0
+offset_bottom = 307.0
+pivot_offset = Vector2(58, 11)
+
+[node name="SandboxBanner" type="Label" parent="MenuRoot"]
+z_index = 5
+visible = false
+layout_mode = 0
+offset_left = -387.0
+offset_top = -348.0
+offset_right = 385.0
+offset_bottom = -324.0
+theme_override_colors/font_color = Color(1, 0.92, 0.45, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 14
+text = "OFFLINE SANDBOX MODE — Customize your hero or Quick Start!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuickStartBtn" type="Button" parent="MenuRoot"]
+z_index = 5
+visible = false
+layout_mode = 0
+offset_left = -20.0
+offset_top = 236.0
+offset_right = 172.0
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(1, 0.95, 0.65, 1)
+text = "Quick Start (Default Hero)"
+
+[node name="LegacyPreviewHead" type="TextureRect" parent="MenuRoot"]
+visible = false
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+
+[node name="StatusLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -280.0
+offset_top = -36.0
+offset_right = 280.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 14
+horizontal_alignment = 1

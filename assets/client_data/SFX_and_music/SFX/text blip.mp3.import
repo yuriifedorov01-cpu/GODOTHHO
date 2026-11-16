@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ffjlav7s3sag"
+path="res://.godot/imported/text blip.mp3-38d0798a8bf7f74cd8802fb2410ce7b9.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/text blip.mp3"
+dest_files=["res://.godot/imported/text blip.mp3-38d0798a8bf7f74cd8802fb2410ce7b9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

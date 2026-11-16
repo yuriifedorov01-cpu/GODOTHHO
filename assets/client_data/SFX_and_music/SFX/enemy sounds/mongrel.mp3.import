@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://deloff6fwlqps"
+path="res://.godot/imported/mongrel.mp3-25cc4c0d55d6b8b331a442857d3f97f4.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/mongrel.mp3"
+dest_files=["res://.godot/imported/mongrel.mp3-25cc4c0d55d6b8b331a442857d3f97f4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

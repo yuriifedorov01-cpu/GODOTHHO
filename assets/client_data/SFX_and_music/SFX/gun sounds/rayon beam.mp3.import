@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://iocxke6vsnjl"
+path="res://.godot/imported/rayon beam.mp3-905dff92df78b5f8d8b1b2725ccafbfc.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/rayon beam.mp3"
+dest_files=["res://.godot/imported/rayon beam.mp3-905dff92df78b5f8d8b1b2725ccafbfc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

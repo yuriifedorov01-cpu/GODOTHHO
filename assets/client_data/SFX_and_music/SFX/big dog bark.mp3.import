@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bral0wsp6t2nf"
+path="res://.godot/imported/big dog bark.mp3-2b46126eb4bfe290850b80c2b33b3d41.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/big dog bark.mp3"
+dest_files=["res://.godot/imported/big dog bark.mp3-2b46126eb4bfe290850b80c2b33b3d41.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

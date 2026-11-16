@@ -1,0 +1,1522 @@
+[
+  {
+    "file": "GameMain.as",
+    "line": 799,
+    "msg": "pJoin",
+    "fn_name": "playerJoined",
+    "fn_args": "param1:Message, param2:Number",
+    "extra_sig_args": [
+      "param2:Number"
+    ],
+    "get_calls": [],
+    "code": "      private function playerJoined(param1:Message, param2:Number) : void\n      {\n         this.serverVersion = param2;\n         if(Number(this.starlingStage.controls.version_txt.text) != this.serverVersion)\n         {\n            this.createConnectMenu(2);\n            this.theConnection.disconnect();\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 800,
+    "msg": "PIn",
+    "fn_name": "personInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int"
+    ],
+    "get_calls": [],
+    "code": "      private function personInfoGot(param1:Message, param2:String, param3:int, param4:int) : void\n      {\n         var _loc5_:Person = null;\n         var _loc6_:int = 0;\n         var _loc7_:int = 0;\n         var _loc8_:int = 0;\n         var _loc9_:int = 0;\n         for each(_loc5_ in this.p_array)\n         {\n            if(_loc5_.name == param2)\n            {\n               _loc6_ = Math.abs(_loc5_.gravityObject.hit_rect.x - _loc5_.x);\n               _loc7_ = Math.abs(_loc5_.gravityObject.hit_rect.y - _loc5_.y);\n               _loc8_ = _loc5_.x - _loc6_;\n               _loc9_ = _loc5_.y - _loc7_;\n               if(_loc5_.gravityObject.onGround && CalcDist.getDistNumbers(_loc8_,_loc9_,param3,param4) > 40 || _loc5_.gravityObject.onGround == false && CalcDist.getDistNumbers(_loc8_,_loc9_,param3,param4) > 60)\n               {\n                  if(CalcDist.getDistNumbers(_loc5_.x,_loc5_.y,param3,param4) > 220)\n                  {\n                     _loc5_.x = param3;\n                     _loc5_.y = param4;\n                  }\n                  else\n                  {\n                     _loc5_.x += (param3 - _loc5_.x) * 0.35;\n                     _loc5_.y += (param4 - _loc5_.y) * 0.35;\n                  }\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 801,
+    "msg": "newP",
+    "fn_name": "singlePersonInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:int, param14:int, param15:int, param16:int, param17:int, param18:int, param19:int, param20:int, param21:int, param22:int, param23:int, param24:Boolean, param25:String, param26:int, param27:Boolean, param28:Boolean, param29:int, param30:Boolean, param31:int, param32:int, param33:uint, param34:int, param35:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:int",
+      "param10:int",
+      "param11:int",
+      "param12:int",
+      "param13:int",
+      "param14:int",
+      "param15:int",
+      "param16:int",
+      "param17:int",
+      "param18:int",
+      "param19:int",
+      "param20:int",
+      "param21:int",
+      "param22:int",
+      "param23:int",
+      "param24:Boolean",
+      "param25:String",
+      "param26:int",
+      "param27:Boolean",
+      "param28:Boolean",
+      "param29:int",
+      "param30:Boolean",
+      "param31:int",
+      "param32:int",
+      "param33:uint",
+      "param34:int",
+      "param35:String"
+    ],
+    "get_calls": [],
+    "code": "      private function singlePersonInfoGot(param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:int, param14:int, param15:int, param16:int, param17:int, param18:int, param19:int, param20:int, param21:int, param22:int, param23:int, param24:Boolean, param25:String, param26:int, param27:Boolean, param28:Boolean, param29:int, param30:Boolean, param31:int, param32:int, param33:uint, param34:int, param35:String) : void\n      {\n         var _loc36_:String = param10 > 4 && param10 != 9 ? \"female\" : \"male\";\n         param10 = param10 > 4 ? int(param10 - 4) : param10;\n         var _loc37_:Person = this.createPerson(param2,param3,param4,param5,param6,param7,param8,param9,param10,param11,param12,param13,param14,param15,param16,param17,param18,0,param19,param20,param21,param22,param23,param32,param31);\n         _loc37_.moveDir = param26;\n         _loc37_.bodyAnimator.accessoryFrame = param34;\n         _loc37_.bodyAnimator.hasHalo = param24;\n         _loc37_.shieldMasteryLvl = param29;\n         _loc37_.bodyAnimator.gender = _loc36_;\n         _loc37_.fishingLvl = param33;\n         _loc37_.guild = param25;\n         _loc37_.role = param35;\n         if(param27)\n         {\n            _loc37_.keyHandler.keyStates.pressKey(Keyboard.LEFT);\n         }\n         else\n         {\n            _loc37_.keyHandler.keyStates.releaseKey(Keyboard.LEFT);\n         }\n         if(param28)\n         {\n            _loc37_.keyHandler.keyStates.pressKey(Keyboard.RIGHT);\n         }\n         else\n         {\n            _loc37_.keyHandler.keyStates.releaseKey(Keyboard.RIGHT);\n         }\n         if(param30)\n         {\n            _loc37_.flyCluster = new FlyCluster(_loc37_,5);\n            _loc37_.addChild(_loc37_.flyCluster);\n         }\n         _loc37_.checkCreateGMIcon();\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 802,
+    "msg": "newPM",
+    "fn_name": "personMiscInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:int, param14:int, param15:Boolean, param16:int, param17:Boolean, param18:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:int",
+      "param10:int",
+      "param11:int",
+      "param12:int",
+      "param13:int",
+      "param14:int",
+      "param15:Boolean",
+      "param16:int",
+      "param17:Boolean",
+      "param18:int"
+    ],
+    "get_calls": [],
+    "code": "      private function personMiscInfoGot(param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:int, param14:int, param15:Boolean, param16:int, param17:Boolean, param18:int) : void\n      {\n         var _loc19_:Person = null;\n         for each(_loc19_ in this.p_array)\n         {\n            if(_loc19_.name == param2)\n            {\n               _loc19_.jumpSkillLvl = param3;\n               _loc19_.bulletDistanceLvl = param4;\n               _loc19_.magicShotsLvl = param5;\n               _loc19_.magicDistanceLvl = param6;\n               _loc19_.upwardShootLvl = param7;\n               _loc19_.piercingArrowLvl = param8;\n               _loc19_.thunderAttackLvl = param9;\n               _loc19_.grenadeLvl = param10;\n               _loc19_.tripleShotLvl = param11;\n               _loc19_.lightBeamLvl = param12;\n               _loc19_.shotgunLvl = param13;\n               _loc19_.arrowRainLvl = param14;\n               _loc19_.hasBaitExtend = param15;\n               _loc19_.barrageLvl = param16;\n               _loc19_.gravityObject.maxJumps = param17 ? 2 : 1;\n               _loc19_.dashLvl = param18;\n               _loc19_.jumpPower = 20 + _loc19_.jumpSkillLvl * 0.3;\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 803,
+    "msg": "friendOnline",
+    "fn_name": "friendOnlineGot",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function friendOnlineGot(param1:Message, param2:String) : void\n      {\n         this.createLogOnMenu(String(param2),\" (friend) has logged on\");\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 804,
+    "msg": "guildMemberOnline",
+    "fn_name": "guildMemberOnlineGot",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function guildMemberOnlineGot(param1:Message, param2:String) : void\n      {\n         this.createLogOnMenu(String(param2),\" (guild member) has logged on\");\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 805,
+    "msg": "petIn",
+    "fn_name": "singlePetInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:String, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:int, param14:String, param15:int, param16:int, param17:int, param18:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:String",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:int",
+      "param10:int",
+      "param11:int",
+      "param12:int",
+      "param13:int",
+      "param14:String",
+      "param15:int",
+      "param16:int",
+      "param17:int",
+      "param18:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function singlePetInfoGot(param1:Message, param2:String, param3:String, param4:String, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:int, param14:String, param15:int, param16:int, param17:int, param18:Boolean) : void\n      {\n         var _loc19_:Pet = null;\n         if(CommonCalls.returnObject(this.p_array,param3) != null)\n         {\n            _loc19_ = this.createPet(true,Person(CommonCalls.returnObject(this.p_array,param3)),param2,param4,param10,param11,param9,param12,param13,0,param14,param7);\n            _loc19_.x = param5;\n            _loc19_.y = param6;\n            _loc19_.lvl = param8;\n            _loc19_.gravityObject.counter = param15 + _loc19_.owner.framesLagged();\n            _loc19_.shoes_uint = param17;\n            if(param18)\n            {\n               _loc19_.owner.togglePetControl();\n            }\n            if(_loc19_.mode == \"m\")\n            {\n               _loc19_.setActiveMount();\n            }\n            this.len = PetOrb.petOrb_array.length;\n            this.i = 0;\n            while(this.i < this.len)\n            {\n               if(PetOrb.petOrb_array[this.i].petName == param2)\n               {\n                  PetOrb.petOrb_array[this.i].removeFromParent(true);\n                  PetOrb.petOrb_array.removeAt(this.i);\n                  break;\n               }\n               ++this.i;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 806,
+    "msg": "orb",
+    "fn_name": "newOrbGot",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:int, param5:int, param6:String, param7:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:int",
+      "param5:int",
+      "param6:String",
+      "param7:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function newOrbGot(param1:Message, param2:String, param3:String, param4:int, param5:int, param6:String, param7:Boolean) : void\n      {\n         this.createPetOrb(param4,param3,param2,param5,param6,param7);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 807,
+    "msg": "UserL",
+    "fn_name": "personDisconnect",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function personDisconnect(param1:Message, param2:String) : void\n      {\n         var _loc3_:Pet = null;\n         this.len2 = this.p_array.length;\n         this.j = 0;\n         while(this.j < this.len2)\n         {\n            if(this.p_array[this.j].name == param2 && this.player.name != this.p_array[this.j].name)\n            {\n               if(StarlingGameMenu.menu_array.indexOf(this.tradeMenu) > -1 && this.tradeMenu.traderName == this.p_array[this.j].name)\n               {\n                  this.createAlert(this.p_array[this.j].name + \" has exited the trade\");\n                  this.len5 = GameMenu.menu_array.length;\n                  this.w = this.len5 - 1;\n                  while(this.w >= 0)\n                  {\n                     GameMenu.menu_array[this.w].parent.removeChild(GameMenu.menu_array[this.w]);\n                     GameMenu.menu_array.removeAt(this.w);\n                     --this.w;\n                  }\n                  this.len5 = StarlingGameMenu.menu_array.length;\n                  this.w = this.len5 - 1;\n                  while(this.w >= 0)\n                  {\n                     if(!(StarlingGameMenu.menu_array[this.w] is PMMenu))\n                     {\n                        StarlingGameMenu.menu_array[this.w].removeFromParent(true);\n                        StarlingGameMenu.menu_array.removeAt(this.w);\n                     }\n                     --this.w;\n                  }\n               }\n               for each(_loc3_ in this.p_array[this.j].activePets)\n               {\n                  Pet.petRemove(this.pet_array,_loc3_,true);\n               }\n               if(this.p_array[this.j].powerUpVisuals.unleashing)\n               {\n                  this.p_array[this.j].powerUpVisuals.stopUnleashing();\n               }\n               if(this.p_array[this.j].inGuildRage)\n               {\n                  this.p_array[this.j].inGuildRage = false;\n                  if(this.p_array[this.j].rageGlow_image != null)\n                  {\n                     this.p_array[this.j].rageGlow_image.removeFromParent(true);\n                  }\n               }\n               this.p_array[this.j].removeFromParent(true);\n               this.p_array.removeAt(this.j);\n               break;\n            }\n            ++this.j;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 808,
+    "msg": "newE",
+    "fn_name": "newEnemyCreatedGot",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:int, param5:int, param6:int, param7:int, param8:int, param9:String, param10:String = \"\"",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:String",
+      "param10:String = \"\""
+    ],
+    "get_calls": [],
+    "code": "      private function newEnemyCreatedGot(param1:Message, param2:String, param3:String, param4:int, param5:int, param6:int, param7:int, param8:int, param9:String, param10:String = \"\") : void\n      {\n         var _m:Message = param1;\n         var _enemyType:String = param2;\n         var _enemyName:String = param3;\n         var _enemyX:int = param4;\n         var _enemyY:int = param5;\n         var _enemyMoveCounter:int = param6;\n         var _enemyMoveDir:int = param7;\n         var _enemyHealth:int = param8;\n         var _targetPlayerName:String = param9;\n         var _playerControl:String = param10;\n         var enemy:Enemy = this.createEnemy(_enemyName,_enemyType,_enemyX,_enemyY,_enemyMoveCounter,_enemyMoveDir,_enemyHealth);\n         enemy.x -= enemy.gravityObject.hitOffsetX;\n         enemy.y -= enemy.gravityObject.hitOffsetY - enemy.hitTester.hit_rect.height / 2;\n         if(_targetPlayerName != \"\")\n         {\n            enemy.enemyAI.target = Person(CommonCalls.returnObject(this.p_array,_targetPlayerName));\n         }\n         if(_playerControl != \"\")\n         {\n            setTimeout(function():void\n            {\n               enemyControlled(null,_enemyName,_playerControl);\n            },3000);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 809,
+    "msg": "Ei",
+    "fn_name": "enemyInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:String = \"\"",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:String = \"\""
+    ],
+    "get_calls": [],
+    "code": "      private function enemyInfoGot(param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:String = \"\") : void\n      {\n         var _loc10_:Enemy = null;\n         this.len2 = this.e_array.length;\n         for each(_loc10_ in this.e_array)\n         {\n            if(_loc10_.name == param2)\n            {\n               if(Math.abs(CalcDist.getDistX(param3 - _loc10_.gravityObject.hitOffsetX,_loc10_.x)) > 80)\n               {\n                  _loc10_.x = param3 - _loc10_.gravityObject.hitOffsetX;\n               }\n               if(Math.abs(CalcDist.getDistY(param4 - _loc10_.gravityObject.hitOffsetY - _loc10_.hitTester.hit_rect.height / 11,_loc10_.y)) > 80)\n               {\n                  _loc10_.y = param4 - _loc10_.gravityObject.hitOffsetY - _loc10_.hitTester.hit_rect.height / 11;\n               }\n               _loc10_.health = param5 > 0 ? param5 : (_loc10_.health > 0 ? 1 : 0);\n               if(_loc10_.controlling_person == null)\n               {\n                  _loc10_.moveDir = param6;\n               }\n               _loc10_.enemyAI.moveCounter = param7;\n               _loc10_.dirChangeTime = param8;\n               if(param9 != \"\")\n               {\n                  _loc10_.enemyAI.target = Person(CommonCalls.returnObject(this.p_array,param9));\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 810,
+    "msg": "petI",
+    "fn_name": "petInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int"
+    ],
+    "get_calls": [],
+    "code": "      private function petInfoGot(param1:Message, param2:String, param3:int, param4:int) : void\n      {\n         var _loc5_:Person = null;\n         var _loc6_:Pet = null;\n         _loc5_ = null;\n         _loc6_ = null;\n         loop0:\n         for each(var _loc9_ in this.p_array)\n         {\n            _loc5_ = _loc9_;\n            _loc9_;\n            for each(var _loc11_ in _loc5_.pet_array)\n            {\n               _loc6_ = _loc11_;\n               _loc11_;\n               if(_loc6_.name == param2 && _loc6_.mode != \"m\" && (_loc6_.owner.isControllingPet == false || _loc6_.owner.name != this.player.name))\n               {\n                  if(CalcDist.getDistNumbers(_loc6_.x,_loc6_.y,param3,param4) > 110)\n                  {\n                     _loc6_.x = param3 - _loc6_.width / 2 + 10;\n                     _loc6_.y = param4 - _loc6_.height / 2 + 10;\n                     _loc6_.gravityObject.hit_rect.x = _loc6_.x + _loc6_.gravityObject.hitOffsetX;\n                     _loc6_.gravityObject.hit_rect.y = _loc6_.y + _loc6_.gravityObject.hitOffsetY;\n                  }\n                  break loop0;\n               }\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 811,
+    "msg": "item",
+    "fn_name": "newItemCreatedGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:String, param6:int, param7:String = \"\", param8:Number = 0, param9:Number = -14",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:String",
+      "param6:int",
+      "param7:String = \"\"",
+      "param8:Number = 0",
+      "param9:Number = -14"
+    ],
+    "get_calls": [],
+    "code": "      private function newItemCreatedGot(param1:Message, param2:String, param3:int, param4:int, param5:String, param6:int, param7:String = \"\", param8:Number = 0, param9:Number = -14) : void\n      {\n         this.createItem(param2,param3,param4,param5,param6,param7,param8,param9);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 812,
+    "msg": "geIIn",
+    "fn_name": "itemInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int"
+    ],
+    "get_calls": [],
+    "code": "      private function itemInfoGot(param1:Message, param2:String, param3:int, param4:int) : void\n      {\n         this.len2 = this.item_array.length;\n         this.j = 0;\n         while(this.j < this.len2)\n         {\n            if(this.item_array[this.j].name == param2)\n            {\n               this.item_array[this.j].x = param3;\n               this.item_array[this.j].y = param4;\n            }\n            ++this.j;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 813,
+    "msg": "geIRe",
+    "fn_name": "itemRemovedGot",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function itemRemovedGot(param1:Message, param2:String, param3:String) : void\n      {\n         var _loc4_:String = null;\n         var _loc5_:uint = 0;\n         this.len2 = this.item_array.length;\n         this.j = 0;\n         while(this.j < this.len2)\n         {\n            if(this.item_array[this.j].name == param2)\n            {\n               if(this.player.name == param3)\n               {\n                  if(this.item_array[this.j].type != \"coin\")\n                  {\n                     _loc4_ = \"\";\n                     this.personItem_array.push(_loc4_ + this.item_array[this.j].type);\n                     SoundManager.playSound(SoundLibrary.pickup_sound,this.player.x,this.player.y,true,this.starlingStage.c_mc);\n                  }\n                  else\n                  {\n                     _loc5_ = this.hasGuildMoney3x == false || this.item_array[this.j].worth == 300 ? 0 : uint(this.item_array[this.j].worth * 2);\n                     this.starlingStage.controls.money_txt.scaleX = this.starlingStage.controls.money_txt.scaleY = 1;\n                     TweenMax.from(this.starlingStage.controls.money_txt,0.2,{\n                        \"scaleX\":1.2,\n                        \"scaleY\":1.2,\n                        \"ease\":Linear.easeNone\n                     });\n                     RiseValue.riseTo(this.starlingStage.controls.money_txt,\"Money: $\",this.player.money,this.player.money + this.item_array[this.j].worth + _loc5_);\n                     this.player.money += this.item_array[this.j].worth + _loc5_;\n                     SoundManager.playSound(SoundLibrary.coinGet_sound,this.player.x,this.player.y,true,this.starlingStage.c_mc);\n                  }\n               }\n               if(param3 == \"\")\n               {\n                  this.item_array[this.j].removeFromParent(true);\n                  this.item_array.removeAt(this.j);\n               }\n               else\n               {\n                  this.len3 = this.p_array.length;\n                  this.d = 0;\n                  while(this.d < this.len3)\n                  {\n                     if(this.p_array[this.d].name == param3)\n                     {\n                        TweenMax.to(this.item_array[this.j],0.6,{\n                           \"x\":this.p_array[this.d].x,\n                           \"y\":this.p_array[this.d].y,\n                           \"ease\":Back.easeOut,\n                           \"onComplete\":this.item_array[this.j].removeFromParent,\n                           \"onCompleteParams\":[true]\n                        });\n                        this.item_array.removeAt(this.j);\n                        break;\n                     }\n                     ++this.d;\n                  }\n               }\n               break;\n            }\n            ++this.j;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 814,
+    "msg": "geReAllIIn",
+    "fn_name": "singleItemInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:String, param6:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:String",
+      "param6:int"
+    ],
+    "get_calls": [],
+    "code": "      private function singleItemInfoGot(param1:Message, param2:String, param3:int, param4:int, param5:String, param6:int) : void\n      {\n         this.a = 0;\n         this.len2 = this.item_array.length;\n         this.j = 0;\n         while(this.j < this.len2)\n         {\n            if(this.item_array[this.j].name == param2)\n            {\n               ++this.a;\n            }\n            ++this.j;\n         }\n         if(this.a == 0)\n         {\n            this.createItem(param2,param3,param4,param5,param6);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 815,
+    "msg": "chat",
+    "fn_name": "newChatMessageGot",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function newChatMessageGot(param1:Message, param2:String, param3:String) : void\n      {\n         var _loc4_:Person = null;\n         var _loc5_:uint = isMobile == false ? 6 : 4;\n         if(this.starlingStage.controls.chat_txt.numLines >= _loc5_)\n         {\n            this.starlingStage.controls.chat_txt.text = this.starlingStage.controls.chat_txt.text.slice(this.starlingStage.controls.chat_txt.text.indexOf(\"\\n\") + 1,this.starlingStage.controls.chat_txt.text.length);\n         }\n         this.starlingStage.controls.chat_txt.text += (this.starlingStage.controls.chat_txt.text.length == 0 ? \"\" : \"\\n\") + param3 + \": \" + param2;\n         if(this.player.name == param3)\n         {\n            this.starlingStage.controls.message_txt.text = \"\";\n         }\n         for each(_loc4_ in this.p_array)\n         {\n            if(_loc4_.name == param3)\n            {\n               this.createTalkBubble(_loc4_,param2);\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 816,
+    "msg": "getNewEquip",
+    "fn_name": "newEquipGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:int"
+    ],
+    "get_calls": [],
+    "code": "      private function newEquipGot(param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int) : void\n      {\n         var _loc10_:Person = null;\n         this.len2 = this.p_array.length;\n         for each(_loc10_ in this.p_array)\n         {\n            if(_loc10_.name == param2)\n            {\n               _loc10_.bodyAnimator.shirtFrame = param4;\n               _loc10_.bodyAnimator.accessoryFrame = param9;\n               _loc10_.bodyAnimator.helmetFrame = param3;\n               if(ItemStat(Stats.hStats[_loc10_.bodyAnimator.helmetString]).allowHair)\n               {\n                  _loc10_.bodyAnimator.hair = _loc10_.bodyAnimator.originalHair;\n               }\n               _loc10_.bodyAnimator.weapon2Frame = param8;\n               _loc10_.bodyAnimator.pantsFrame = param5;\n               _loc10_.bodyAnimator.weaponFrame = param6;\n               _loc10_.bodyAnimator.shoeFrame = param7;\n               _loc10_.bodyAnimator.gotoAndPlay(_loc10_.ridingPet == null ? \"standing\" : \"pet standing\");\n               if(_loc10_.isPlayer)\n               {\n                  this.itemMenu.updateMe(this.maxItems,this.personItem_array,this.player,false);\n               }\n               if(_loc10_.isPlayer && StarlingGameMenu.menu_array.indexOf(this.tradeMenu) > -1)\n               {\n                  StarlingGameMenu.focusMenu(this.tradeMenu);\n                  StarlingGameMenu.removeFocusMenu();\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 817,
+    "msg": "dmgE",
+    "fn_name": "enemyDamagedGot",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:Boolean, param5:int, param6:int, param7:int, param8:int, param9:Boolean, param10:Boolean = false",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:Boolean",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:Boolean",
+      "param10:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      private function enemyDamagedGot(param1:Message, param2:String, param3:String, param4:Boolean, param5:int, param6:int, param7:int, param8:int, param9:Boolean, param10:Boolean = false) : void\n      {\n         var _loc21_:int = 0;\n         var _loc11_:Enemy = null;\n         var _loc12_:Boolean = false;\n         var _loc13_:Boolean = false;\n         var _loc14_:Boolean = false;\n         var _loc15_:Boolean = false;\n         var _loc16_:Point = null;\n         var _loc17_:FrameLabel = null;\n         var _loc18_:int = 0;\n         var _loc19_:Particle = null;\n         var _loc20_:Person = Person(CommonCalls.returnObject(this.p_array,param3));\n         if(_loc20_ is Person)\n         {\n            _loc12_ = param4 == false ? Boolean(ItemStat(Stats.wStats[_loc20_.bodyAnimator.weaponString]).isMagic) : Boolean(ItemStat(Stats.wStats[_loc20_.bodyAnimator.weapon2String]).isMagic);\n            _loc13_ = param4 == false ? ItemStat(Stats.wStats[_loc20_.bodyAnimator.weaponString]).fireDamage > 0 : ItemStat(Stats.wStats[_loc20_.bodyAnimator.weapon2String]).fireDamage > 0;\n            _loc14_ = param4 == false ? ItemStat(Stats.wStats[_loc20_.bodyAnimator.weaponString]).shockDamage > 0 : ItemStat(Stats.wStats[_loc20_.bodyAnimator.weapon2String]).shockDamage > 0;\n            _loc15_ = param4 == false ? ItemStat(Stats.wStats[_loc20_.bodyAnimator.weaponString]).iceDamage > 0 : ItemStat(Stats.wStats[_loc20_.bodyAnimator.weapon2String]).iceDamage > 0;\n         }\n         for each(_loc11_ in this.e_array)\n         {\n            if(_loc11_.name == param2)\n            {\n               _loc16_ = new Point(_loc11_.hitTester.hit_rect.x,_loc11_.hitTester.hit_rect.y);\n               _loc11_.wasCritHit = param9;\n               _loc21_ = _loc11_.health;\n               _loc11_.health = param7;\n               if(_loc21_ == param7)\n               {\n                  this.createDamageText(0,_loc11_.x,_loc11_.y - _loc11_.height * (_loc11_.height < 330 ? 1 : 0.6),false,false);\n               }\n               if(param7 < _loc21_)\n               {\n                  if(_loc20_ != null && _loc20_.isPlayer && param7 <= 0)\n                  {\n                     this.player.energyController.enemy += 0.02;\n                  }\n                  for each(_loc17_ in _loc11_.currentLabels)\n                  {\n                     if(_loc17_.name == \"hit\")\n                     {\n                        _loc11_.gotoAndPlayLabel(\"hit\");\n                        break;\n                     }\n                  }\n                  _loc11_.scaleY = 1;\n                  _loc11_.scaleX = _loc11_.moveDir;\n                  if(_loc11_.gravityObject.counter > 30)\n                  {\n                     TweenMax.from(_loc11_,0.5,{\n                        \"scaleY\":1.3,\n                        \"ease\":Bounce.easeOut,\n                        \"overwrite\":true\n                     });\n                     TweenMax.from(_loc11_,0.5,{\n                        \"scaleX\":0.7 * _loc11_.moveDir,\n                        \"ease\":Bounce.easeOut\n                     });\n                  }\n                  if(_loc20_ != null && _loc20_.powerUpVisuals.unleashing && param10 == false)\n                  {\n                     SlashEffect.create(_loc20_,_loc11_);\n                     if(_loc20_.isPlayer)\n                     {\n                        if(ItemStat(Stats.wStats[_loc20_.bodyAnimator.weaponString]).isRange == false && _loc12_ == false)\n                        {\n                           if(_loc20_.energyController.fullTotalScale > 0.6)\n                           {\n                              SlashEffect.createBlack(_loc20_);\n                           }\n                           this.hitStopCounter = -3;\n                        }\n                        else if(ItemStat(Stats.wStats[_loc20_.bodyAnimator.weaponString]).sRate == 0)\n                        {\n                           if(_loc20_.energyController.fullTotalScale > 0.6)\n                           {\n                              SlashEffect.createBlack(_loc20_,0.1).alpha = 0.4;\n                           }\n                        }\n                     }\n                  }\n               }\n               _loc11_.moveDir = param8;\n               _loc11_.enemyAI.moveCounter = 0;\n               _loc11_.gravityObject.velX += param5;\n               _loc11_.gravityObject.velY += param6;\n               _loc11_.health = param7;\n               if(_loc12_ == false && param10 == false)\n               {\n                  SoundManager.playSound(SoundLibrary.hit_sound,_loc11_.x,_loc11_.y,true,this.starlingStage.c_mc);\n               }\n               if(Boolean(CommonCalls.onScreen(_loc11_.x,_loc11_.y,true,true)) && AreaCreator.background1.parent != null)\n               {\n                  if(_loc14_ && param7 > 0 && _loc11_.type != \"Carnelia\" && _loc11_.type != \"Kreetus\")\n                  {\n                     FlashShock.flashShockObject(_loc11_);\n                     SoundManager.playSound(SoundLibrary.electric_sound,_loc11_.x,_loc11_.y,true,this.starlingStage.c_mc);\n                  }\n                  if(_loc13_ && param7 > 0 && _loc11_.type != \"Carnelia\" && _loc11_.type != \"Kreetus\")\n                  {\n                     SoundManager.playSound(SoundLibrary.fireball_sound,_loc11_.x,_loc11_.y,true,this.starlingStage.c_mc);\n                     _loc11_.hitTester.onFire = true;\n                  }\n                  if(_loc15_ && param7 > 0 && _loc11_.type != \"Carnelia\" && _loc11_.type != \"Kreetus\")\n                  {\n                     SoundManager.playSound(SoundLibrary.ice_sound,_loc11_.x,_loc11_.y,true,this.starlingStage.c_mc);\n                     _loc11_.hitTester.frozen = true;\n                  }\n                  else if(_loc15_ && param7 <= 0 && Boolean(CommonCalls.onScreen(_loc11_.x,_loc11_.y,false,true)))\n                  {\n                     _loc18_ = Math.sqrt(Math.sqrt(_loc11_.width * _loc11_.height)) / 2;\n                     this.i = 0;\n                     while(this.i < _loc18_)\n                     {\n                        _loc19_ = new Particle(\"ice chunk\");\n                        _loc19_.x = _loc11_.hitTester.hit_rect.left + Math.random() * _loc11_.hitTester.hit_rect.width;\n                        _loc19_.y = _loc11_.hitTester.hit_rect.top + Math.random() * _loc11_.hitTester.hit_rect.height - 30;\n                        _loc19_.gravityObject.velX = Math.random() * 12 * RanOne.ranOne();\n                        _loc19_.gravityObject.velY = -(Math.random() * 10);\n                        SortDepths.addAt(_loc19_,SortDepths.REGION_2);\n                        ++this.i;\n                     }\n                     SoundManager.playSound(SoundLibrary.glassBreak_sound,_loc11_.x,_loc11_.y,true,this.starlingStage.c_mc);\n                  }\n               }\n               if(Boolean(CommonCalls.onScreen(_loc11_.x,_loc11_.y,true,true)) && param10 == false)\n               {\n                  if(_loc11_.type != \"Carnelia\" && _loc11_.type != \"Kreetus\")\n                  {\n                     if(stage.quality != StageQuality.LOW.toUpperCase())\n                     {\n                        if(_loc12_)\n                        {\n                           this.createMagicEffect(_loc11_.hitTester.hit_rect);\n                        }\n                        this.createHitAnimation(_loc11_.x + Math.random() * 10 * RanOne.ranOne(),_loc11_.y + Math.random() * 10 * RanOne.ranOne(),param8);\n                     }\n                  }\n                  if(_loc11_ is Carnelia && Math.random() > 0.7)\n                  {\n                     SoundManager.playSound(Assets.main_assetManager.getSound(\"Carnelia\"),_loc11_.x,_loc11_.y,true,this.starlingStage.c_mc);\n                  }\n                  else if(_loc11_ is Kreetus && _loc11_.currentLabel == \"hit\" && Math.random() > 0.7)\n                  {\n                     SoundManager.playSound(SoundLibrary.roar3_sound,_loc11_.x,_loc11_.y,true,this.starlingStage.c_mc);\n                  }\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 818,
+    "msg": "eSync",
+    "fn_name": "enemySyncGot",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function enemySyncGot(param1:Message, param2:String) : void\n      {\n         var _loc3_:Enemy = null;\n         var _loc4_:Array = param2.length == 0 ? new Array() : param2.split(String.fromCharCode(10));\n         var _loc5_:* = int(this.e_array.length - 1);\n         while(_loc5_ >= 0)\n         {\n            _loc3_ = this.e_array[_loc5_];\n            if(_loc4_.indexOf(_loc3_.name) == -1)\n            {\n               _loc3_.hitTester.frozen = false;\n               this.main_juggler.remove(_loc3_);\n               _loc3_.removeFromParent(true);\n               this.e_array.removeAt(_loc5_);\n            }\n            _loc5_--;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 819,
+    "msg": "XP",
+    "fn_name": "updatePersonXP",
+    "fn_args": "param1:Message, param2:String, param3:uint, param4:Boolean = false",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:uint",
+      "param4:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      private function updatePersonXP(param1:Message, param2:String, param3:uint, param4:Boolean = false) : void\n      {\n         var _m:Message = param1;\n         var _pName:String = param2;\n         var _xpEarned:uint = param3;\n         var _levelUp:Boolean = param4;\n         var _person:Person = null;\n         var _enemy:Enemy = null;\n         for each(_person in this.p_array)\n         {\n            if(_person.name == _pName)\n            {\n               if(_levelUp)\n               {\n                  _person.levelMeUp();\n               }\n               if(_person.isPlayer)\n               {\n                  for each(_enemy in this.e_array)\n                  {\n                     if(_enemy.name == this.lastEnemyNameHit && _xpEarned > 1)\n                     {\n                        if(this.enemyList_array.indexOf(_enemy.type) == -1)\n                        {\n                           this.enemyList_array.push(_enemy.type);\n                           this.createNewHeroEntry(_enemy.type + \" info\");\n                           this.starlingStage.controls.blinkHeropediaButton = true;\n                           this.theClient.bigDB.load(\"pMiscTable\",this.player.name,function(param1:DatabaseObject):void\n                           {\n                              if(loadedPlayerMiscSuccess)\n                              {\n                                 param1.enemyList = enemyList_array.toString();\n                                 param1.save();\n                              }\n                           });\n                        }\n                        break;\n                     }\n                  }\n                  this.createXPText(_xpEarned,_person.x + 70 * _person.scaleX,_person.y - 50);\n               }\n               _person.currentLevelXP += _xpEarned;\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 820,
+    "msg": "updPetXP",
+    "fn_name": "updatePetXP",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:Boolean = false, param5:int = 0, param6:int = 0, param7:int = 0, param8:int = 0, param9:int = 0, param10:int = 0",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:Boolean = false",
+      "param5:int = 0",
+      "param6:int = 0",
+      "param7:int = 0",
+      "param8:int = 0",
+      "param9:int = 0",
+      "param10:int = 0"
+    ],
+    "get_calls": [],
+    "code": "      private function updatePetXP(param1:Message, param2:String, param3:int, param4:Boolean = false, param5:int = 0, param6:int = 0, param7:int = 0, param8:int = 0, param9:int = 0, param10:int = 0) : void\n      {\n         var tempPet:Pet = null;\n         var _m:Message = param1;\n         var _petName:String = param2;\n         var _xp:int = param3;\n         var _levelUp:Boolean = param4;\n         var _newLvl:int = param5;\n         var _newPower:int = param6;\n         var _newDex:int = param7;\n         var _newDefense:int = param8;\n         var _newHealth:int = param9;\n         var _newTotalHealth:int = param10;\n         tempPet = null;\n         var _person:Person = null;\n         var _pet:Pet = null;\n         var filterChain:FilterChain = null;\n         for each(_person in this.p_array)\n         {\n            for each(_pet in _person.pet_array)\n            {\n               if(_pet.name == _petName)\n               {\n                  tempPet = _pet;\n                  break;\n               }\n            }\n         }\n         if(tempPet == null)\n         {\n            return;\n         }\n         if(this.player.ridingPet == null)\n         {\n            if(_xp - tempPet.xp > 0)\n            {\n               this.createXPText(_xp - tempPet.xp,tempPet.x,tempPet.y - 10);\n            }\n         }\n         else if(_xp - tempPet.xp > 0)\n         {\n            this.createXPText(_xp - tempPet.xp,tempPet.owner.x + 20 * tempPet.owner.scaleX,tempPet.owner.y);\n         }\n         tempPet.xp = _xp;\n         if(_newLvl > 0)\n         {\n            if(_levelUp && tempPet.owner.isPlayer)\n            {\n               this.createAlertMenu(tempPet.name + \" has hit level \" + String(_newLvl) + \"!\",\"Health: +\" + String(_newTotalHealth - tempPet.totalHealth) + \"\\n\" + \"Power: +\" + String(_newPower - tempPet.power) + \"\\n\" + \"Defense: +\" + String(_newDefense - tempPet.defense) + \"\\n\" + \"Dexterity: +\" + String(_newDex - tempPet.dex),false,tempPet,false);\n            }\n            if(tempPet.mode != \"m\")\n            {\n               if(_levelUp && Boolean(CommonCalls.onScreen(tempPet.x,tempPet.y,false,true)))\n               {\n                  ShineEffect.shineObjectNoParent(tempPet,17);\n                  filterChain = new FilterChain(new GlowFilter(16777215,3,8));\n                  tempPet.filter = filterChain;\n                  setTimeout(function():void\n                  {\n                     tempPet.filter = null;\n                  },1500);\n                  SoundManager.playSound(SoundLibrary.petEvolve_sound,tempPet.x,tempPet.y,true,this.starlingStage.c_mc);\n               }\n               if(_levelUp)\n               {\n                  SoundManager.playSound(SoundLibrary.levelUp_sound,tempPet.x,tempPet.y,true,this.starlingStage.c_mc);\n               }\n               tempPet.lvl = _newLvl;\n               tempPet.power = _newPower;\n               tempPet.dex = _newDex;\n               tempPet.defense = _newDefense;\n               tempPet.health = _newHealth;\n               tempPet.totalHealth = _newTotalHealth;\n            }\n            else if(tempPet.owner.ridingPet != null)\n            {\n               if(_levelUp)\n               {\n                  SoundManager.playSound(SoundLibrary.levelUp_sound,tempPet.owner.x,tempPet.owner.y,true,this.starlingStage.c_mc);\n               }\n               tempPet.lvl = _newLvl;\n               tempPet.power = _newPower;\n               tempPet.dex = _newDex;\n               tempPet.defense = _newDefense;\n               tempPet.health = _newHealth;\n               tempPet.totalHealth = _newTotalHealth;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 821,
+    "msg": "iBoughtCheck",
+    "fn_name": "itemBought",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function itemBought(param1:Message, param2:String, param3:int, param4:Boolean) : void\n      {\n         this.player.money = param3;\n         if(param4)\n         {\n            SoundManager.playSound(SoundLibrary.itemBought_sound);\n            this.personItem_array.push(param2);\n            if(this.itemMenu != null)\n            {\n               this.itemMenu.scaleX = this.itemMenu.scaleY = 1;\n               TweenMax.from(this.itemMenu,0.2,{\n                  \"scaleX\":1.1,\n                  \"scaleY\":1.1,\n                  \"ease\":Bounce.easeOut\n               });\n            }\n         }\n         else\n         {\n            this.createAlert(\"not enough money\");\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 822,
+    "msg": "iSold",
+    "fn_name": "itemSold",
+    "fn_args": "param1:Message, param2:int",
+    "extra_sig_args": [
+      "param2:int"
+    ],
+    "get_calls": [],
+    "code": "      private function itemSold(param1:Message, param2:int) : void\n      {\n         this.player.money = param2;\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 823,
+    "msg": "pointUse",
+    "fn_name": "abilityPointUsed",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:*, param11:int, param12:int, param13:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:int",
+      "param10:*",
+      "param11:int",
+      "param12:int",
+      "param13:int"
+    ],
+    "get_calls": [],
+    "code": "      private function abilityPointUsed(param1:Message, param2:String, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:*, param11:int, param12:int, param13:int) : void\n      {\n         var _loc14_:Person = null;\n         for each(_loc14_ in this.p_array)\n         {\n            if(_loc14_.name == param2)\n            {\n               _loc14_.totalHealth = param3;\n               _loc14_.power = param5;\n               _loc14_.dex = param6;\n               _loc14_.defense = param7;\n               _loc14_.abilityPoints = param8;\n               _loc14_.range = param9;\n               _loc14_.moveSpeed = 7 + _loc14_.dex / 176;\n               _loc14_.totalMP = param10;\n               _loc14_.MP = param11;\n               _loc14_.magic = param12;\n               _loc14_.artillery = param13;\n               if(this.player.name == param2 && StarlingGameMenu.menu_array.indexOf(this.cMenu) > -1)\n               {\n                  this.cMenu.updateMe();\n               }\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 824,
+    "msg": "dmgP",
+    "fn_name": "playerDamaged",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:String, param5:int, param6:Boolean = false, param7:Boolean = false, param8:int = 0, param9:int = 0, param10:int = 0, param11:Boolean = false, param12:Boolean = false",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:String",
+      "param5:int",
+      "param6:Boolean = false",
+      "param7:Boolean = false",
+      "param8:int = 0",
+      "param9:int = 0",
+      "param10:int = 0",
+      "param11:Boolean = false",
+      "param12:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      private function playerDamaged(param1:Message, param2:String, param3:int, param4:String, param5:int, param6:Boolean = false, param7:Boolean = false, param8:int = 0, param9:int = 0, param10:int = 0, param11:Boolean = false, param12:Boolean = false) : void\n      {\n         var _loc13_:Person = null;\n         var _loc14_:* = undefined;\n         var _loc15_:Person = Person(CommonCalls.returnObject(this.p_array,param2));\n         if(_loc15_ != null)\n         {\n            this.createDamageText(-param5,_loc15_.x,_loc15_.y - 70,true,param6,param11);\n            _loc15_.health = param3;\n            if(_loc15_.health <= 0 && param4 == this.player.name)\n            {\n               this.player.energyController.pvp += 0.04;\n            }\n            if(param11 == false && param5 > 0)\n            {\n               if(CommonCalls.onScreen(_loc15_.x,_loc15_.y,false,true))\n               {\n                  _loc15_.bodyAnimator.tintMe();\n               }\n               if(param12 == false)\n               {\n                  SoundManager.playSound(Math.random() > 0.5 ? SoundLibrary.takeHit1_sound : SoundLibrary.takeHit2_sound,_loc15_.x,_loc15_.y,true,this.starlingStage.c_mc);\n                  _loc15_.bodyAnimator.gotoAndPlay(_loc15_.ridingPet == null ? \"take hit\" : \"pet take hit\");\n                  for each(_loc13_ in this.p_array)\n                  {\n                     if(_loc13_.name == param4)\n                     {\n                        if(Boolean(Stats.wStats[_loc13_.bodyAnimator.weaponString].isRange) || Boolean(Stats.wStats[_loc13_.bodyAnimator.weaponString].isMagic))\n                        {\n                           _loc15_.bodyAnimator.gotoAndPlayInt(_loc15_.bodyAnimator.currentFrame + 4);\n                        }\n                        break;\n                     }\n                  }\n               }\n               if(_loc15_.isPlayer)\n               {\n                  if(_loc15_.bodyAnimator.gender == \"male\")\n                  {\n                     _loc14_ = Math.random() > 0.5 ? SoundLibrary.maleGrunt1_sound : SoundLibrary.maleGrunt2_sound;\n                     SoundManager.playSound(_loc14_,_loc15_.x,_loc15_.y,true,this.starlingStage.c_mc);\n                  }\n                  else\n                  {\n                     SoundManager.playSound(Math.random() > 0.5 ? SoundLibrary.femaleGrunt1_sound : SoundLibrary.femaleGrunt2_sound,_loc15_.x,_loc15_.y,true,this.starlingStage.c_mc);\n                  }\n               }\n            }\n            if(param9 > 0)\n            {\n               FlashShock.flashShockObject(_loc15_);\n               SoundManager.playSound(SoundLibrary.electric_sound,_loc15_.x,_loc15_.y,true,this.starlingStage.c_mc);\n            }\n            if(param8 > 0)\n            {\n               SoundManager.playSound(SoundLibrary.fireball_sound,_loc15_.x,_loc15_.y,true,this.starlingStage.c_mc);\n               _loc15_.hitTester.onFire = true;\n            }\n            if(CommonCalls.returnObject(this.e_array,param4) != null)\n            {\n               _loc15_.gravityObject.velX += Enemy(CommonCalls.returnObject(this.e_array,param4)).scaleX * 4;\n            }\n            else if(CommonCalls.returnObject(this.p_array,param4) != null)\n            {\n               _loc15_.gravityObject.velX += Person(CommonCalls.returnObject(this.p_array,param4)).scaleX * 4;\n            }\n            else if(CommonCalls.returnObject(this.pet_array,param4) != null)\n            {\n               _loc15_.gravityObject.velX += Pet(CommonCalls.returnObject(this.pet_array,param4)).scaleX * 4;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 825,
+    "msg": "envDmgP",
+    "fn_name": "playerEnvDamaged",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int"
+    ],
+    "get_calls": [],
+    "code": "      private function playerEnvDamaged(param1:Message, param2:String, param3:int, param4:int) : void\n      {\n         var _loc5_:Person = null;\n         for each(_loc5_ in this.p_array)\n         {\n            if(_loc5_.name == param2)\n            {\n               this.createDamageText(-param4,_loc5_.x,_loc5_.y,true);\n               _loc5_.health = param3;\n               if(CommonCalls.onScreen(_loc5_.x,_loc5_.y,false,true))\n               {\n                  _loc5_.bodyAnimator.tintMe();\n               }\n               _loc5_.gravityObject.velX += _loc5_.scaleX * -1 * 3;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 826,
+    "msg": "kD",
+    "fn_name": "personKeyDown",
+    "fn_args": "param1:Message, param2:String, param3:uint, param4:int = 2147483647, param5:int = 2147483647",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:uint",
+      "param4:int = 2147483647",
+      "param5:int = 2147483647"
+    ],
+    "get_calls": [],
+    "code": "      private function personKeyDown(param1:Message, param2:String, param3:uint, param4:int = 2147483647, param5:int = 2147483647) : void\n      {\n         var _loc6_:Person = null;\n         for each(_loc6_ in this.p_array)\n         {\n            if(_loc6_.name == param2)\n            {\n               if(_loc6_.keyHandler.keyStates.getKeyState(param3) != null && _loc6_.keyHandler.keyStates.getKeyState(param3).isDown)\n               {\n                  _loc6_.keyHandler.keyRelease(param3);\n               }\n               switch(param3)\n               {\n                  case Keyboard.SPACE:\n                     _loc6_.projAttackType = \"basic\";\n                     _loc6_.keyHandler.keyPress(Keyboard.SPACE);\n                     break;\n                  default:\n                     _loc6_.keyHandler.keyPress(param3);\n               }\n               if(Boolean(MoveStat.isAttackingFrame(_loc6_)) && _loc6_.ridingPet != null)\n               {\n                  _loc6_.bodyAnimator.pet.gotoAndPlayStanding();\n               }\n               if(param4 != int.MAX_VALUE && param5 != int.MAX_VALUE)\n               {\n                  this.personInfoGot(null,param2,param4,param5);\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 827,
+    "msg": "kU",
+    "fn_name": "personKeyUp",
+    "fn_args": "param1:Message, param2:String, param3:uint, param4:int = 2147483647, param5:int = 2147483647",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:uint",
+      "param4:int = 2147483647",
+      "param5:int = 2147483647"
+    ],
+    "get_calls": [],
+    "code": "      private function personKeyUp(param1:Message, param2:String, param3:uint, param4:int = 2147483647, param5:int = 2147483647) : void\n      {\n         var _loc6_:Person = null;\n         for each(_loc6_ in this.p_array)\n         {\n            if(_loc6_.name == param2 && _loc6_.name != this.player.name)\n            {\n               _loc6_.keyHandler.keyRelease(param3);\n               if(param4 != int.MAX_VALUE && param5 != int.MAX_VALUE)\n               {\n                  this.personInfoGot(null,param2,param4,param5);\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 828,
+    "msg": "geKicked",
+    "fn_name": "getKicked",
+    "fn_args": "param1:Message, param2:Boolean, param3:String = \"You have been logged in from somewhere else\"",
+    "extra_sig_args": [
+      "param2:Boolean",
+      "param3:String = \"You have been logged in from somewhere else\""
+    ],
+    "get_calls": [],
+    "code": "      private function getKicked(param1:Message, param2:Boolean, param3:String = \"You have been logged in from somewhere else\") : *\n      {\n         this.disconnectReason = param3;\n         this.theConnection.disconnect();\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 829,
+    "msg": "PHea",
+    "fn_name": "personHealed",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:Boolean = true",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:Boolean = true"
+    ],
+    "get_calls": [],
+    "code": "      private function personHealed(param1:Message, param2:String, param3:int, param4:int, param5:Boolean = true) : void\n      {\n         var _loc6_:Person = null;\n         for each(_loc6_ in this.p_array)\n         {\n            if(_loc6_.name == param2)\n            {\n               _loc6_.health = param3;\n               _loc6_.MP = param4;\n               if(param5 && Boolean(CommonCalls.onScreen(_loc6_.x,_loc6_.y,false,true)))\n               {\n                  SetHue.tintObject(_loc6_,16777215);\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 830,
+    "msg": "geTReq",
+    "fn_name": "tradeRequestReceived",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function tradeRequestReceived(param1:Message, param2:String) : void\n      {\n         if(OptionMenu.ignoreTrades)\n         {\n            this.theConnection.send(\"declineT\",param2,false);\n            if(Math.random() > 0.85)\n            {\n               this.createAlert(\"reminder: you have trades disabled in options menu\",true);\n            }\n            return;\n         }\n         if(StarlingGameMenu.menu_array.indexOf(this.tradeMenu) > -1 == false)\n         {\n            this.len = this.p_array.length;\n            this.i = 0;\n            while(this.i < this.len)\n            {\n               if(this.p_array[this.i].name == param2)\n               {\n                  this.a = 0;\n                  this.len2 = numChildren;\n                  this.j = 0;\n                  while(this.j < this.len2)\n                  {\n                     if(getChildAt(this.j) is TradeRequest && TradeRequest(getChildAt(this.j)).traderName == param2)\n                     {\n                        ++this.a;\n                     }\n                     ++this.j;\n                  }\n                  if(this.a == 0)\n                  {\n                     this.createTradeRequest(this.p_array[this.i]);\n                  }\n                  break;\n               }\n               ++this.i;\n            }\n         }\n         else\n         {\n            this.theConnection.send(\"declineT\",param2,true);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 831,
+    "msg": "tDecl",
+    "fn_name": "tradeDeclined",
+    "fn_args": "param1:Message, param2:String, param3:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function tradeDeclined(param1:Message, param2:String, param3:Boolean) : void\n      {\n         this.len = this.p_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.p_array[this.i].name == param2)\n            {\n               if(param3 == false)\n               {\n                  this.createAlert(param2 + \" has declined your trade request\");\n               }\n               else\n               {\n                  this.createAlert(param2 + \" cannot trade, they are already in an active trade\");\n               }\n               break;\n            }\n            ++this.i;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 832,
+    "msg": "tAcc",
+    "fn_name": "tradeAccepted",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function tradeAccepted(param1:Message, param2:String) : void\n      {\n         if(this.itemMenu != null && this.itemMenu.parent != null)\n         {\n            this.itemMenu.touchable = false;\n         }\n         StarlingGameMenu.removeAllMenus(false,Vector.<StarlingGameMenu>([this.pmMenu]));\n         this.len = this.p_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.p_array[this.i].name == param2)\n            {\n               this.createTradeMenu(this.p_array[this.i]);\n               break;\n            }\n            ++this.i;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 833,
+    "msg": "rageStart",
+    "fn_name": "rageStart",
+    "fn_args": "param1:Message, param2:String, param3:Boolean = false",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      private function rageStart(param1:Message, param2:String, param3:Boolean = false) : void\n      {\n         var _loc4_:Image = null;\n         _loc4_ = null;\n         this.len = this.p_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.p_array[this.i].name == param2)\n            {\n               SoundManager.playSound(SoundLibrary.rage_sound,this.p_array[this.i].x,this.p_array[this.i].y,true,this.starlingStage.c_mc);\n               if(this.p_array[this.i].inGuildRage == false)\n               {\n                  _loc4_ = new Image(Assets.powerUp_textureAtlas.getTexture(\"rage glow\"));\n                  _loc4_.x = this.p_array[this.i].x;\n                  _loc4_.y = this.p_array[this.i].y;\n                  _loc4_.pivotX = _loc4_.width / 2;\n                  _loc4_.pivotY = _loc4_.height / 2;\n                  _loc4_.touchable = false;\n                  _loc4_.textureSmoothing = TextureSmoothing.NONE;\n                  SortDepths.addAt(_loc4_,SortDepths.REGION_1);\n                  this.p_array[this.i].rageGlow_image = _loc4_;\n               }\n               if(param3)\n               {\n                  this.p_array[this.i].MP = this.p_array[this.i].MP - this.p_array[this.i].levelMP(Person.GUILD_RAGE_MP);\n               }\n               this.p_array[this.i].inGuildRage = true;\n               break;\n            }\n            ++this.i;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 834,
+    "msg": "rageEnd",
+    "fn_name": "rageEnd",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function rageEnd(param1:Message, param2:String) : void\n      {\n         this.len = this.p_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.p_array[this.i].name == param2)\n            {\n               this.p_array[this.i].inGuildRage = false;\n               if(this.p_array[this.i].rageGlow_image != null)\n               {\n                  this.p_array[this.i].rageGlow_image.removeFromParent(true);\n               }\n               break;\n            }\n            ++this.i;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 835,
+    "msg": "ping",
+    "fn_name": "pingGot",
+    "fn_args": "param1:Message",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "      private function pingGot(param1:Message) : void\n      {\n         this.player.ping = getTimer() - this.pingStartTime;\n         this.theConnection.send(\"pingDone\",this.player.ping);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 836,
+    "msg": "petActi",
+    "fn_name": "petActivated",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function petActivated(param1:Message, param2:String, param3:String) : void\n      {\n         var _loc4_:Pet = null;\n         var _loc5_:int = 0;\n         _loc4_ = null;\n         _loc5_ = 0;\n         _loc4_ = Pet(CommonCalls.returnObject(this.player.pet_array,param3));\n         if(_loc4_ != null)\n         {\n            _loc4_.isActive = true;\n            if(_loc4_.mode != \"m\")\n            {\n               _loc5_ = int(SortDepths.getLowestChildIndex(Vector.<starling.display.DisplayObject>(GiveHealthBar.healthBG_array)));\n               if(_loc5_ != int.MAX_VALUE)\n               {\n                  this.starlingStage.c_mc.addChildAt(_loc4_,_loc5_);\n               }\n               else\n               {\n                  this.starlingStage.c_mc.addChild(_loc4_);\n               }\n               _loc4_.x = this.player.x;\n               _loc4_.y = this.player.y;\n               this.pet_array.push(_loc4_);\n            }\n            else\n            {\n               _loc4_.setActiveMount();\n            }\n            _loc4_.alpha = 1;\n            _loc4_.isAttacking = false;\n            _loc4_.filter = null;\n            if(StarlingGameMenu.menu_array.indexOf(this.petMenu) > -1)\n            {\n               this.petMenu.withdraw_btn.visible = true;\n               this.petMenu.activate_btn.visible = false;\n               this.petMenu.touchable = true;\n               this.petMenu.updateMe();\n            }\n            this.len = PetOrb.petOrb_array.length;\n            this.i = 0;\n            while(this.i < this.len)\n            {\n               if(PetOrb.petOrb_array[this.i].petName == param3)\n               {\n                  PetOrb.petOrb_array[this.i].removeFromParent(true);\n                  PetOrb.petOrb_array.removeAt(this.i);\n                  break;\n               }\n               ++this.i;\n            }\n            SoundManager.playSound(SoundLibrary.itemBought_sound);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 837,
+    "msg": "withdPet",
+    "fn_name": "petWithdraw",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function petWithdraw(param1:Message, param2:String, param3:String) : void\n      {\n         var _loc4_:Person = null;\n         var _loc5_:Pet = null;\n         _loc4_ = null;\n         _loc5_ = null;\n         for each(var _loc8_ in this.p_array)\n         {\n            _loc4_ = _loc8_;\n            _loc8_;\n            if(_loc4_.name == param2)\n            {\n               for each(var _loc10_ in _loc4_.pet_array)\n               {\n                  _loc5_ = _loc10_;\n                  _loc10_;\n                  if(_loc5_.name == param3)\n                  {\n                     if(_loc5_.mode == \"m\")\n                     {\n                        _loc4_.bodyAnimator.removeMountedPet();\n                     }\n                     if(_loc5_.owner.isControllingPet)\n                     {\n                        _loc5_.owner.togglePetControl();\n                     }\n                     if(_loc4_.isPlayer == false)\n                     {\n                        _loc4_.removePetFromMe(_loc5_.name);\n                     }\n                     else\n                     {\n                        _loc5_.isActive = false;\n                     }\n                     Pet.petRemove(this.pet_array,_loc5_,true);\n                     _loc4_.bodyAnimator.gotoAndPlay(\"standing\");\n                     this.createPetOrb(_loc5_.getOrbBonus(),_loc5_.name,_loc5_.owner.name,_loc5_.lvl,_loc5_.type,_loc5_.owner.hasOrbFocus);\n                     break;\n                  }\n               }\n               break;\n            }\n         }\n         if(_loc4_.name == this.player.name && StarlingGameMenu.menu_array.indexOf(this.petMenu) > -1)\n         {\n            this.petMenu.withdraw_btn.visible = false;\n            this.petMenu.activate_btn.visible = true;\n            this.petMenu.updateMe();\n            SoundManager.playSound(SoundLibrary.itemSold_sound);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 838,
+    "msg": "petMChange",
+    "fn_name": "petModeChanged",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:String"
+    ],
+    "get_calls": [],
+    "code": "      private function petModeChanged(param1:Message, param2:String, param3:String, param4:String) : void\n      {\n         var _loc5_:Person = null;\n         var _loc6_:Pet = null;\n         var _loc7_:int = 0;\n         _loc5_ = null;\n         _loc6_ = null;\n         _loc7_ = 0;\n         for each(var _loc10_ in this.p_array)\n         {\n            _loc5_ = _loc10_;\n            _loc10_;\n            if(_loc5_.name == param2)\n            {\n               for each(var _loc12_ in _loc5_.pet_array)\n               {\n                  _loc6_ = _loc12_;\n                  _loc12_;\n                  if(_loc6_.name == param3)\n                  {\n                     if(param4 == \"m\" && _loc6_.isActive)\n                     {\n                        Pet.petRemove(this.pet_array,_loc6_,true);\n                        _loc6_.setActiveMount();\n                     }\n                     else if(_loc6_.mode == \"m\" && _loc6_.isActive)\n                     {\n                        _loc5_.bodyAnimator.gotoAndPlay(\"standing\");\n                        _loc5_.bodyAnimator.removeMountedPet();\n                        this.pet_array.push(_loc6_);\n                        _loc7_ = int(SortDepths.getLowestChildIndex(Vector.<starling.display.DisplayObject>(GiveHealthBar.healthBG_array)));\n                        if(_loc7_ != int.MAX_VALUE)\n                        {\n                           this.starlingStage.c_mc.addChildAt(_loc6_,_loc7_);\n                        }\n                        else\n                        {\n                           this.starlingStage.c_mc.addChild(_loc6_);\n                        }\n                     }\n                     _loc6_.mode = param4;\n                     _loc6_.moveMode = Stats.petModes[_loc6_.mode].moveMode;\n                     break;\n                  }\n               }\n               break;\n            }\n         }\n         if(param2 == this.player.name)\n         {\n            SoundManager.playSound(SoundLibrary.itemBought_sound);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 839,
+    "msg": "petIEquip",
+    "fn_name": "petItemEquipped",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:int, param5:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:int",
+      "param5:int"
+    ],
+    "get_calls": [],
+    "code": "      private function petItemEquipped(param1:Message, param2:String, param3:String, param4:int, param5:int) : void\n      {\n         this.len = this.p_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.p_array[this.i].name == param2 && CommonCalls.returnObject(this.p_array[this.i].pet_array,param3) != null)\n            {\n               if(this.p_array[this.i].name == this.player.name && (param4 != 2 || param5 != 24))\n               {\n                  if(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_uint != 2 && Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_uint != param4)\n                  {\n                     this.personItem_array.push(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_string);\n                  }\n                  else if(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_uint != 24 && Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_uint != param5)\n                  {\n                     this.personItem_array.push(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_string);\n                  }\n                  if(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_uint != param4)\n                  {\n                     Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_uint = param4;\n                     this.arrayStringRemove(this.personItem_array,Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_string);\n                  }\n                  else if(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_uint != param5)\n                  {\n                     Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_uint = param5;\n                     this.arrayStringRemove(this.personItem_array,Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_string);\n                  }\n               }\n               else if(this.p_array[this.i].name == this.player.name && (param4 == 2 || param5 == 24))\n               {\n                  if(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_uint != param4 && param4 == 2)\n                  {\n                     this.personItem_array.push(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_string);\n                  }\n                  else if(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_uint != param5 && param5 == 24)\n                  {\n                     this.personItem_array.push(Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_string);\n                  }\n               }\n               Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).helmet_uint = param4;\n               Pet(CommonCalls.returnObject(this.p_array[this.i].pet_array,param3)).shoes_uint = param5;\n               break;\n            }\n            ++this.i;\n         }\n         if(this.player.name == param2 && StarlingGameMenu.menu_array.indexOf(this.petItemMenu) > -1)\n         {\n            this.petItemMenu.petClone.helmet_uint = param4;\n            this.petItemMenu.petClone.shoes_uint = param5;\n            this.petItemMenu.updateMe(this.maxItems,this.personItem_array,this.player);\n            SetHue.tintObject(this.petItemMenu,16777215);\n            this.petItemMenu.equip_btn.visible = false;\n            this.petItemMenu.unEquip_btn.visible = false;\n            if(StarlingGameMenu.menu_array.indexOf(this.petMenu) > -1)\n            {\n               this.petMenu.updateMe();\n               SetHue.tintObject(this.petMenu,16777215);\n               if(this.petMenu.selectedPetName == param3)\n               {\n                  this.petMenu.petClone.helmet_uint = param4;\n               }\n               if(this.petMenu.selectedPetName == param3)\n               {\n                  this.petMenu.petClone.shoes_uint = param5;\n               }\n               SoundManager.playSound(param4 != 2 ? SoundLibrary.itemBought_sound : SoundLibrary.itemSold_sound);\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 840,
+    "msg": "petHeal",
+    "fn_name": "petHealedGot",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:int"
+    ],
+    "get_calls": [],
+    "code": "      private function petHealedGot(param1:Message, param2:String, param3:String, param4:int) : void\n      {\n         var _loc5_:Pet = null;\n         var _loc6_:PetOrb = null;\n         _loc5_ = null;\n         _loc6_ = null;\n         this.len = this.p_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.p_array[this.i].name == param2)\n            {\n               for each(var _loc9_ in this.p_array[this.i].pet_array)\n               {\n                  _loc5_ = _loc9_;\n                  _loc9_;\n                  if(_loc5_.name == param3)\n                  {\n                     this.a = 0;\n                     for each(var _loc11_ in PetOrb.petOrb_array)\n                     {\n                        _loc6_ = _loc11_;\n                        _loc11_;\n                        if(_loc6_.petName == param3)\n                        {\n                           ++this.a;\n                        }\n                     }\n                     if(this.a == 0 && _loc5_.isActive == false)\n                     {\n                        this.createPetOrb(_loc5_.getOrbBonus(),_loc5_.name,_loc5_.owner.name,_loc5_.lvl,_loc5_.type,_loc5_.owner.hasOrbFocus);\n                     }\n                     _loc5_.health = param4;\n                     _loc5_.health = _loc5_.health > _loc5_.totalHealth ? _loc5_.totalHealth : _loc5_.health;\n                     if(_loc5_.isActive && _loc5_.parent != null && _loc5_.mode != \"m\" && Boolean(CommonCalls.onScreen(_loc5_.x,_loc5_.y,false,true)))\n                     {\n                        SetHue.tintObject(_loc5_,16777215);\n                     }\n                     break;\n                  }\n               }\n               break;\n            }\n            ++this.i;\n         }\n         if(param2 == this.player.name && GameMenu.menu_array.indexOf(this.petMenu) > -1)\n         {\n            this.petMenu.updateMe();\n            this.petMenu.selectPet(null,param3);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 841,
+    "msg": "dmgPet",
+    "fn_name": "petDamageGot",
+    "fn_args": "param1:Message, param2:String, param3:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int"
+    ],
+    "get_calls": [],
+    "code": "      private function petDamageGot(param1:Message, param2:String, param3:int) : void\n      {\n         var _loc4_:Person = null;\n         var _loc5_:Pet = null;\n         loop0:\n         for each(_loc4_ in this.p_array)\n         {\n            for each(_loc5_ in _loc4_.pet_array)\n            {\n               if(_loc5_.name == param2)\n               {\n                  if(_loc5_.isActive && _loc5_.parent != null)\n                  {\n                     this.createDamageText(_loc5_.health - param3,_loc5_.x,_loc5_.y,true);\n                     SetHue.tintObject(_loc5_);\n                  }\n                  else if(_loc5_.isActive && _loc5_.mode == \"m\")\n                  {\n                     this.createDamageText(_loc5_.health - param3,this.player.x,this.player.y,true);\n                  }\n                  if(param3 <= 0 && _loc5_.health > 0)\n                  {\n                     if(_loc4_.isControllingPet)\n                     {\n                        _loc4_.togglePetControl();\n                     }\n                     if(_loc4_.name == this.player.name)\n                     {\n                        this.starlingStage.controls.removePetControlBars(param2);\n                        this.createAlertMenu(_loc5_.name + \"\\'s health is 0\",\"Your pet has been knocked out.\",false,_loc5_,false);\n                     }\n                     if(_loc5_.mode != \"m\")\n                     {\n                        Pet.petRemove(this.pet_array,_loc5_,false);\n                        _loc5_.alpha = 0.8;\n                        _loc5_.isAttacking = false;\n                        TweenMax.to(_loc5_,2.5,{\n                           \"y\":_loc5_.y - 800,\n                           \"overwrite\":true,\n                           \"ease\":Linear.easeNone,\n                           \"onComplete\":_loc5_.removeFromParent,\n                           \"onCompleteParams\":[!_loc5_.owner.isPlayer]\n                        });\n                     }\n                     else\n                     {\n                        _loc4_.bodyAnimator.removeMountedPet();\n                     }\n                     _loc5_.isActive = false;\n                  }\n                  _loc5_.health = param3;\n                  break loop0;\n               }\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 842,
+    "msg": "checkEvo",
+    "fn_name": "checkPetEvolution",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function checkPetEvolution(param1:Message, param2:String, param3:String) : void\n      {\n         var _loc4_:Pet = null;\n         _loc4_ = null;\n         for each(var _loc7_ in this.player.pet_array)\n         {\n            _loc4_ = _loc7_;\n            _loc7_;\n            if(_loc4_.name == param2)\n            {\n               this.createAlertMenu(param2 + \" can evolve\",\"Your \" + _loc4_.type + \" would like to evolve into a \" + param3 + \".\",true,_loc4_,true);\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 843,
+    "msg": "petEvolved",
+    "fn_name": "petEvolved",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:Boolean = false",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      private function petEvolved(param1:Message, param2:String, param3:String, param4:Boolean = false) : void\n      {\n         var _loc5_:Pet = null;\n         var _loc6_:Pet = null;\n         _loc5_ = null;\n         _loc6_ = null;\n         for each(var _loc9_ in this.pet_array)\n         {\n            _loc5_ = _loc9_;\n            _loc9_;\n            if(_loc5_.name == param2)\n            {\n               _loc5_.evolveMe(param3);\n               if(_loc5_.owner.name == this.player.name)\n               {\n                  if(param4)\n                  {\n                     this.arrayStringRemove(this.personItem_array,\"evolution crystal\");\n                  }\n                  if(StarlingGameMenu.menu_array.indexOf(this.petMenu) > -1)\n                  {\n                     StarlingGameMenu.focusMenu(this.petMenu);\n                     StarlingGameMenu.removeFocusMenu();\n                  }\n                  if(StarlingGameMenu.menu_array.indexOf(this.petItemMenu) > -1)\n                  {\n                     StarlingGameMenu.focusMenu(this.petItemMenu);\n                     StarlingGameMenu.removeFocusMenu();\n                  }\n                  return;\n               }\n               break;\n            }\n         }\n         for each(_loc9_ in this.player.pet_array)\n         {\n            _loc6_ = _loc9_;\n            _loc9_;\n            if(_loc6_.name == param2)\n            {\n               _loc6_.type = param3;\n               SoundManager.playSound(SoundLibrary.petEvolve_sound);\n               if(param4)\n               {\n                  this.arrayStringRemove(this.personItem_array,\"evolution crystal\");\n               }\n               if(StarlingGameMenu.menu_array.indexOf(this.petMenu) > -1)\n               {\n                  StarlingGameMenu.focusMenu(this.petMenu);\n                  StarlingGameMenu.removeFocusMenu();\n               }\n               if(StarlingGameMenu.menu_array.indexOf(this.petItemMenu) > -1)\n               {\n                  StarlingGameMenu.focusMenu(this.petItemMenu);\n                  StarlingGameMenu.removeFocusMenu();\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 844,
+    "msg": "alert",
+    "fn_name": "getAlert",
+    "fn_args": "param1:Message, param2:String, param3:Boolean = false, param4:Boolean = false",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:Boolean = false",
+      "param4:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      private function getAlert(param1:Message, param2:String, param3:Boolean = false, param4:Boolean = false) : void\n      {\n         this.createAlert(param2,param3,param4);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 845,
+    "msg": "PLove",
+    "fn_name": "getPetLove",
+    "fn_args": "param1:Message, param2:String, param3:*",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:*"
+    ],
+    "get_calls": [],
+    "code": "      private function getPetLove(param1:Message, param2:String, param3:*) : void\n      {\n         if(CommonCalls.returnObject(this.player.pet_array,param2) != null)\n         {\n            CommonCalls.returnObject(this.player.pet_array,param2).love = param3;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 846,
+    "msg": "gePetConTog",
+    "fn_name": "getPetModeToggled",
+    "fn_args": "param1:Message, param2:String, param3:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function getPetModeToggled(param1:Message, param2:String, param3:Boolean) : void\n      {\n         var _loc4_:Person = null;\n         _loc4_ = null;\n         for each(var _loc7_ in this.p_array)\n         {\n            _loc4_ = _loc7_;\n            _loc7_;\n            if(_loc4_.name == param2)\n            {\n               if(param3 != _loc4_.isControllingPet)\n               {\n                  _loc4_.togglePetControl();\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 847,
+    "msg": "singlePing",
+    "fn_name": "gotSinglePing",
+    "fn_args": "param1:Message, param2:String, param3:int",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int"
+    ],
+    "get_calls": [],
+    "code": "      private function gotSinglePing(param1:Message, param2:String, param3:int) : void\n      {\n         if(this.debugMenu != null && this.debugMenu.parent != null)\n         {\n            this.addDebugText(param2 + \": \" + String(param3) + \"ms\");\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 848,
+    "msg": "geIpCheck",
+    "fn_name": "ipBanCheckGot",
+    "fn_args": "param1:Message",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "      private function ipBanCheckGot(param1:Message) : void\n      {\n         if(this.mMenu != null && this.mMenu.parent != null)\n         {\n            this.mMenu.gotoAndStop(\"banned\");\n            this.mMenu.loadingCircle_mc.visible = false;\n         }\n         else\n         {\n            this.createMMenu(\"banned\");\n         }\n         this.createAlert(\"you have been banned\");\n         this.theConnection.disconnect();\n         stage.removeEventListener(flash.events.Event.ENTER_FRAME,this.onEnter);\n         stage.frameRate = 0;\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 849,
+    "msg": "proxyDetected",
+    "fn_name": "proxyDetected",
+    "fn_args": "param1:Message",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "      private function proxyDetected(param1:Message) : void\n      {\n         if(this.mMenu != null && this.mMenu.parent != null)\n         {\n            this.mMenu.gotoAndStop(\"proxy\");\n            this.mMenu.loadingCircle_mc.visible = false;\n         }\n         else\n         {\n            this.createMMenu(\"proxy\");\n         }\n         this.createAlert(\"Proxies disabled\");\n         this.theConnection.disconnect();\n         stage.removeEventListener(flash.events.Event.ENTER_FRAME,this.onEnter);\n         stage.frameRate = 0;\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 850,
+    "msg": "geShout",
+    "fn_name": "shoutGot",
+    "fn_args": "param1:Message, param2:uint, param3:String, param4:String",
+    "extra_sig_args": [
+      "param2:uint",
+      "param3:String",
+      "param4:String"
+    ],
+    "get_calls": [],
+    "code": "      private function shoutGot(param1:Message, param2:uint, param3:String, param4:String) : void\n      {\n         var _loc5_:Boolean = false;\n         var _loc6_:String = null;\n         _loc5_ = false;\n         _loc6_ = null;\n         _loc5_ = false;\n         for each(var _loc9_ in this.receivedShouts_array)\n         {\n            _loc6_ = _loc9_;\n            _loc9_;\n            if(_loc6_ == param4 + \": \" + param3)\n            {\n               _loc5_ = true;\n               break;\n            }\n         }\n         if(_loc5_ == false)\n         {\n            this.starlingStage.controls.createShout(param3,param4,param2);\n            this.receivedShouts_array.push(param4 + \": \" + param3);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 851,
+    "msg": "SBall",
+    "fn_name": "spawnBallInfoGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:String"
+    ],
+    "get_calls": [],
+    "code": "      private function spawnBallInfoGot(param1:Message, param2:String, param3:int, param4:int, param5:String) : void\n      {\n         this.createItem(param5,param3,param4,param2,0,\"-none-\");\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 852,
+    "msg": "fish",
+    "fn_name": "fishCreatedGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:String, param6:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:String",
+      "param6:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function fishCreatedGot(param1:Message, param2:String, param3:int, param4:int, param5:String, param6:Boolean) : void\n      {\n         var _loc7_:Point = null;\n         _loc7_ = null;\n         _loc7_ = new Point(param3,param4);\n         this.starlingStage.c_mc.globalToLocal(_loc7_,_loc7_);\n         _loc7_.x = _loc7_.x + this.c_mc.x;\n         _loc7_.y = _loc7_.y + this.c_mc.y;\n         this.createFish(_loc7_.x,_loc7_.y,param2);\n         Fish.newFish_array[Fish.newFish_array.length - 1].name = param5;\n         Fish.newFish_array[Fish.newFish_array.length - 1].shiny = param6;\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 853,
+    "msg": "count",
+    "fn_name": "serverCounterGot",
+    "fn_args": "param1:Message, param2:int",
+    "extra_sig_args": [
+      "param2:int"
+    ],
+    "get_calls": [],
+    "code": "      private function serverCounterGot(param1:Message, param2:int) : void\n      {\n         this.serverCounter = param2 + this.player.ping / 2 / 33.33;\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 854,
+    "msg": "fishRe",
+    "fn_name": "fishRemovedGot",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function fishRemovedGot(param1:Message, param2:String, param3:String) : void\n      {\n         var catcher:Person = null;\n         var tempFishString:String = null;\n         var showNewEntry:Boolean = false;\n         var _fishInfo:Object = null;\n         var _m:Message = param1;\n         var _catcherName:String = param2;\n         var _fishName:String = param3;\n         catcher = null;\n         tempFishString = null;\n         showNewEntry = false;\n         catcher = Person(CommonCalls.returnObject(this.p_array,_catcherName));\n         this.len = Fish.newFish_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(Fish.newFish_array[this.i].name == _fishName)\n            {\n               _fishInfo = Stats.fishStats[Fish.newFish_array[this.i].type];\n               if(catcher != null && _fishInfo != undefined)\n               {\n                  catcher.fishXP = catcher.fishXP + Math.ceil(_fishInfo.cost / 50);\n                  this.saveProficiency();\n               }\n               if(catcher != null && catcher.isPlayer)\n               {\n                  this.player.energyController.fish = this.player.energyController.fish + 0.005;\n                  tempFishString = (Fish.newFish_array[this.i].shiny == false ? \"\" : \"shiny \") + Fish.newFish_array[this.i].type;\n                  this.personItem_array.push(tempFishString);\n                  this.createXPText(_fishInfo != undefined ? int(Math.ceil(_fishInfo.cost / 50)) : 0,this.player.x,this.player.y,\" fish \");\n                  if(this.fishList_array.indexOf(tempFishString) == -1)\n                  {\n                     showNewEntry = false;\n                     if(Fish.newFish_array[this.i].shiny == false)\n                     {\n                        if(this.fishList_array.indexOf(\"shiny \" + Fish.newFish_array[this.i].type) == -1)\n                        {\n                           this.fishList_array.push(tempFishString);\n                           showNewEntry = true;\n                        }\n                     }\n                     else\n                     {\n                        this.j = 0;\n                        while(this.j < this.fishList_array.length)\n                        {\n                           if(this.fishList_array[this.j] == Fish.newFish_array[this.i].type)\n                           {\n                              this.fishList_array[this.j] = tempFishString;\n                              showNewEntry = true;\n                              break;\n                           }\n                           ++this.j;\n                        }\n                     }\n                     if(showNewEntry)\n                     {\n                        this.createNewHeroEntry(tempFishString + \" info\");\n                        this.starlingStage.controls.blinkHeropediaButton = true;\n                        this.theClient.bigDB.load(\"pMiscTable\",this.player.name,function(param1:DatabaseObject):void\n                        {\n                           if(loadedPlayerMiscSuccess)\n                           {\n                              param1.fishList = fishList_array.toString();\n                              param1.save();\n                           }\n                        });\n                     }\n                  }\n               }\n               Fish.newFish_array[this.i].removeFromParent(true);\n               Fish.newFish_array.removeAt(this.i);\n               break;\n            }\n            ++this.i;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 855,
+    "msg": "tree",
+    "fn_name": "treeGot",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:int, param5:int, param6:int, param7:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function treeGot(param1:Message, param2:String, param3:String, param4:int, param5:int, param6:int, param7:Boolean) : void\n      {\n         this.createTree(param3,param2,param4,param5,param7,param6);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 856,
+    "msg": "tDmg",
+    "fn_name": "treeDamagedGot",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:String, param5:Boolean",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:String",
+      "param5:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function treeDamagedGot(param1:Message, param2:String, param3:int, param4:String, param5:Boolean) : void\n      {\n         var _loc6_:Tree = null;\n         _loc6_ = null;\n         for each(var _loc9_ in Tree.tree_array)\n         {\n            _loc6_ = _loc9_;\n            _loc9_;\n            if(_loc6_.name == param2)\n            {\n               _loc6_.damageMe(this.player,param5,param3,param4);\n               break;\n            }\n         }\n         if(param4 == this.player.name)\n         {\n            this.player.energyController.chop = this.player.energyController.chop + 0.005;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 857,
+    "msg": "petSumFwd",
+    "fn_name": "petsSummonedForward",
+    "fn_args": "param1:Message",
+    "extra_sig_args": [],
+    "get_calls": [
+      {
+        "method": "length",
+        "arg": "",
+        "line_context": "_loc2_ = uint(param1.length);"
+      },
+      {
+        "method": "getString",
+        "arg": "0",
+        "line_context": "_loc3_ = Person(CommonCalls.returnObject(this.p_array,param1.getString(0)));"
+      },
+      {
+        "method": "getString",
+        "arg": "this.i + 2",
+        "line_context": "_loc4_ = new Pet(this,param1.getString(this.i + 2),param1.getString(this.i));"
+      },
+      {
+        "method": "getString",
+        "arg": "this.i",
+        "line_context": "_loc4_ = new Pet(this,param1.getString(this.i + 2),param1.getString(this.i));"
+      },
+      {
+        "method": "getInt",
+        "arg": "this.i + 1",
+        "line_context": "_loc4_.helmet_uint = param1.getInt(this.i + 1);"
+      },
+      {
+        "method": "getInt",
+        "arg": "this.i + 3",
+        "line_context": "_loc4_.shoes_uint = param1.getInt(this.i + 3);"
+      }
+    ],
+    "code": "      private function petsSummonedForward(param1:Message) : void\n      {\n         var _loc2_:uint = 0;\n         var _loc3_:Person = null;\n         var _loc4_:Pet = null;\n         var _loc5_:int = 0;\n         _loc2_ = 0;\n         _loc3_ = null;\n         _loc4_ = null;\n         _loc5_ = 0;\n         _loc2_ = uint(param1.length);\n         _loc3_ = Person(CommonCalls.returnObject(this.p_array,param1.getString(0)));\n         if(_loc3_ != null)\n         {\n            this.i = 2;\n            while(this.i < _loc2_)\n            {\n               _loc4_ = new Pet(this,param1.getString(this.i + 2),param1.getString(this.i));\n               _loc4_.x = _loc3_.x;\n               _loc4_.y = _loc3_.y + 20;\n               _loc4_.helmet_uint = param1.getInt(this.i + 1);\n               _loc4_.shoes_uint = param1.getInt(this.i + 3);\n               _loc4_.scaleX = _loc3_.scaleX;\n               _loc4_.gotoAndPlayWalking();\n               _loc4_.owner = _loc3_;\n               _loc4_.addEventListener(flash.events.Event.ENTER_FRAME,_loc4_.onSummonPetEnter);\n               _loc5_ = int(SortDepths.getLowestChildIndex(Vector.<starling.display.DisplayObject>(GiveHealthBar.healthBG_array)));\n               if(_loc5_ != int.MAX_VALUE)\n               {\n                  this.starlingStage.c_mc.addChildAt(_loc4_,_loc5_);\n               }\n               else\n               {\n                  this.starlingStage.c_mc.addChild(_loc4_);\n               }\n               TweenMax.to(_loc4_,0.5,{\n                  \"x\":_loc4_.x + 250 * _loc4_.scaleX,\n                  \"delay\":(this.i - 2) / 20,\n                  \"onComplete\":_loc4_.removeFromParent,\n                  \"onCompleteParams\":[true]\n               });\n               setTimeout(_loc4_.doLeapAttack,(this.i - 2) * 50);\n               this.i += 4;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 858,
+    "msg": "eContr",
+    "fn_name": "enemyControlled",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function enemyControlled(param1:Message, param2:String, param3:String) : void\n      {\n         var _loc4_:Enemy = null;\n         var _loc5_:Person = null;\n         if(param3 == this.player.name)\n         {\n            return;\n         }\n         _loc4_ = null;\n         _loc5_ = null;\n         for each(var _loc8_ in this.e_array)\n         {\n            _loc4_ = _loc8_;\n            _loc8_;\n            if(_loc4_.name == param2)\n            {\n               for each(var _loc10_ in this.p_array)\n               {\n                  _loc5_ = _loc10_;\n                  _loc10_;\n                  if(_loc5_.name == param3)\n                  {\n                     _loc4_.controlMe(_loc5_);\n                     break;\n                  }\n               }\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 859,
+    "msg": "eNoCont",
+    "fn_name": "enemyNoControl",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function enemyNoControl(param1:Message, param2:String) : void\n      {\n         var _loc3_:Enemy = null;\n         _loc3_ = null;\n         for each(var _loc6_ in this.e_array)\n         {\n            _loc3_ = _loc6_;\n            _loc6_;\n            if(_loc3_.name == param2)\n            {\n               _loc3_.noControlMe();\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 860,
+    "msg": "tile",
+    "fn_name": "singleTileGot",
+    "fn_args": "param1:Message, param2:int, param3:int, param4:int",
+    "extra_sig_args": [
+      "param2:int",
+      "param3:int",
+      "param4:int"
+    ],
+    "get_calls": [],
+    "code": "      private function singleTileGot(param1:Message, param2:int, param3:int, param4:int) : void\n      {\n         if(TileHandler.tileMain_array.length > 0)\n         {\n            TileHandler.createTile(param4,param2,param3,TileHandler.tileMain_array,TileHandler.levelHit_bitmapData,this.c_mc.currentFrame);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 861,
+    "msg": "portal",
+    "fn_name": "portalGot",
+    "fn_args": "param1:Message, param2:int, param3:int, param4:uint",
+    "extra_sig_args": [
+      "param2:int",
+      "param3:int",
+      "param4:uint"
+    ],
+    "get_calls": [],
+    "code": "      private function portalGot(param1:Message, param2:int, param3:int, param4:uint) : void\n      {\n         var _loc5_:Pet = null;\n         var _loc6_:Image = this.createPortal(param4,param2 + 83,param3 + 185);\n         if(param4 == this.lastPortal || this.lastPortal == 0)\n         {\n            if(this.c_mc.currentFrame != 112 && this.c_mc.currentFrame != 113 && this.c_mc.currentFrame != 114)\n            {\n               this.player.x = param2 + 83;\n               this.player.y = param3 + 185;\n               this.playerToPortalPositionSet = true;\n            }\n            else\n            {\n               this.player.x = 825 + Math.random() * 2000;\n               this.player.y = 0 + Math.random() * 800;\n               this.playerToPortalPositionSet = true;\n            }\n         }\n         else if(this.playerToPortalPositionSet == false)\n         {\n            this.player.x = param2 + 83;\n            this.player.y = param3 + 185;\n         }\n         for each(_loc5_ in this.player.activePets)\n         {\n            if(_loc5_.mode != \"m\")\n            {\n               _loc5_.x = this.player.x;\n               _loc5_.y = this.player.y;\n               if(_loc5_.parent == null)\n               {\n                  this.pet_array.push(_loc5_);\n                  SortDepths.addAt(_loc5_,SortDepths.REGION_4);\n               }\n            }\n         }\n         if(this.c_mc.currentFrame == 1 && param4 == 2)\n         {\n            _loc6_.visible = false;\n         }\n         this.player.gravityObject.applyGravity(this,1);\n         this.theConnection.send(\"P\",int(this.player.gravityObject.hit_rect.x),int(this.player.gravityObject.hit_rect.y));\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 862,
+    "msg": "unleash",
+    "fn_name": "powerUnleashed",
+    "fn_args": "param1:Message, param2:String, param3:Number, param4:Number",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:Number",
+      "param4:Number"
+    ],
+    "get_calls": [],
+    "code": "      private function powerUnleashed(param1:Message, param2:String, param3:Number, param4:Number) : void\n      {\n         var _loc5_:Person = null;\n         _loc5_ = null;\n         for each(var _loc8_ in this.p_array)\n         {\n            _loc5_ = _loc8_;\n            _loc8_;\n            if(_loc5_.name == param2)\n            {\n               _loc5_.energyController.fakeFullTotal = param3;\n               _loc5_.energyController.chargeMax = 1;\n               _loc5_.energyController.charge = param4;\n               _loc5_.powerUpVisuals.unleash();\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 863,
+    "msg": "eChar",
+    "fn_name": "energyChargeGot",
+    "fn_args": "param1:Message, param2:String, param3:Number, param4:Number",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:Number",
+      "param4:Number"
+    ],
+    "get_calls": [],
+    "code": "      private function energyChargeGot(param1:Message, param2:String, param3:Number, param4:Number) : void\n      {\n         var _loc5_:Person = null;\n         _loc5_ = null;\n         for each(var _loc8_ in this.p_array)\n         {\n            _loc5_ = _loc8_;\n            _loc8_;\n            if(_loc5_.name == param2)\n            {\n               _loc5_.energyController.fakeFullTotal = param4;\n               break;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 864,
+    "msg": "fraudCheckGot",
+    "fn_name": "fraudCheckGot",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function fraudCheckGot(param1:Message, param2:String) : void\n      {\n         var _loc3_:Object = null;\n         _loc3_ = null;\n         _loc3_ = JSON.parse(param2);\n         if(_loc3_.response.params.status == \"Refunded\")\n         {\n            this.player.personHackCheck.banKillPlayer(true,\"Autobanned for Steam refund\");\n         }\n         else if(_loc3_.response.params.country == \"PH\")\n         {\n            this.player.personHackCheck.banKillPlayer(true,\"Autobanned for Steam PH purchase\");\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 867,
+    "msg": "noCharMade",
+    "fn_name": "noCharMade",
+    "fn_args": "param1:Message",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "      private function noCharMade(param1:Message) : void\n      {\n         this.theConnection.removeMessageHandler(\"noCharMade\",this.noCharMade);\n         this.mMenu.visible = false;\n         this.createCreateMenu();\n         this.charCreateMenu.emailNotice_txt.visible = false;\n         this.charCreateMenu.passwordColon_txt.visible = this.charCreateMenu.password_txt.visible = this.charCreateMenu.emailColon_txt.visible = this.charCreateMenu.email_txt.visible = false;\n         this.charCreateMenu.passBorder.removeFromParent(true);\n         this.charCreateMenu.emailBorder.removeFromParent(true);\n         this.charCreateMenu.password_txt.text = \"facebook\";\n         this.createTransition();\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 871,
+    "msg": "newVendorSet",
+    "fn_name": "newVendorSet",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:String, param6:Number",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:String",
+      "param6:Number"
+    ],
+    "get_calls": [],
+    "code": "      private function newVendorSet(param1:Message, param2:String, param3:int, param4:int, param5:String, param6:Number) : void\n      {\n         var _loc7_:VendingMachine = null;\n         _loc7_ = null;\n         if(param5 == this.theClient.connectUserId || param5 == this.player.name)\n         {\n            this.createAlert(\"successfully created vendor\",true);\n            this.vectorStringRemove(this.personItem_array,\"item vendor\");\n            this.itemMenu.updateMe(this.maxItems,this.personItem_array,this.player);\n         }\n         _loc7_ = this.createVendor(param2,param5,param3,param4,new Vector.<String>(),new Vector.<uint>(),0,0);\n         _loc7_.rotation = deg2rad(param6);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 872,
+    "msg": "newVItemAdded",
+    "fn_name": "newVItemAdded",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:uint",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:uint"
+    ],
+    "get_calls": [],
+    "code": "      private function newVItemAdded(param1:Message, param2:String, param3:String, param4:uint) : void\n      {\n         this.len = this.starlingStage.c_mc.numChildren;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.starlingStage.c_mc.getChildAt(this.i) is VendingMachine && VendingMachine(this.starlingStage.c_mc.getChildAt(this.i)).name == param3)\n            {\n               VendingMachine(this.starlingStage.c_mc.getChildAt(this.i)).items.push(param2);\n               VendingMachine(this.starlingStage.c_mc.getChildAt(this.i)).costs.push(param4);\n               break;\n            }\n            ++this.i;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 873,
+    "msg": "boughtVTickets",
+    "fn_name": "boughtVendorTickets",
+    "fn_args": "param1:Message, param2:String, param3:uint, param4:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:uint",
+      "param4:String"
+    ],
+    "get_calls": [],
+    "code": "      private function boughtVendorTickets(param1:Message, param2:String, param3:uint, param4:String) : void\n      {\n         if(this.starlingStage.c_mc.getChildByName(param4) != null)\n         {\n            VendingMachine(this.starlingStage.c_mc.getChildByName(param4)).tickets = VendingMachine(this.starlingStage.c_mc.getChildByName(param4)).tickets - param3;\n            Person(CommonCalls.returnObject(this.p_array,param2)).money = Person(CommonCalls.returnObject(this.p_array,param2)).money - param3 * VendingMachine(this.starlingStage.c_mc.getChildByName(param4)).ticketPrice;\n            if(param2 == this.player.name)\n            {\n               this.createAlert(String(param3) + \" tickets successfully purchased from vendor\",true);\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 877,
+    "msg": "newBCannon",
+    "fn_name": "newBeholderCannonGot",
+    "fn_args": "param1:Message, param2:int, param3:int",
+    "extra_sig_args": [
+      "param2:int",
+      "param3:int"
+    ],
+    "get_calls": [],
+    "code": "      private function newBeholderCannonGot(param1:Message, param2:int, param3:int) : void\n      {\n         var _loc4_:ShootingObject = null;\n         _loc4_ = null;\n         if(this.c_mc.currentFrame == 116)\n         {\n            _loc4_ = new BeholderCannon();\n            _loc4_.x = param2;\n            _loc4_.y = param3;\n            this.shootingObject_array.push(_loc4_);\n            this.c_mc.addChildAt(_loc4_,0);\n            TweenMax.from(_loc4_,0.8,{\n               \"x\":param2 + 110,\n               \"ease\":Linear.easeNone\n            });\n            TweenMax.from(_loc4_,0.06,{\n               \"alpha\":0,\n               \"delay\":0.6,\n               \"ease\":Linear.easeNone\n            });\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 878,
+    "msg": "beCannonReGot",
+    "fn_name": "beholderCannonRemoved",
+    "fn_args": "param1:Message, param2:int",
+    "extra_sig_args": [
+      "param2:int"
+    ],
+    "get_calls": [],
+    "code": "      private function beholderCannonRemoved(param1:Message, param2:int) : void\n      {\n         this.len = this.shootingObject_array.length;\n         this.i = 0;\n         while(this.i < this.len)\n         {\n            if(this.shootingObject_array[this.i].currentLabel == \"beholder cannon\" && int(this.shootingObject_array[this.i].y) == param2)\n            {\n               TweenMax.to(this.shootingObject_array[this.i],0.7,{\n                  \"x\":this.shootingObject_array[this.i].x + 120,\n                  \"ease\":Linear.easeNone,\n                  \"onComplete\":CommonCalls.removeObject,\n                  \"onCompleteParams\":[this.shootingObject_array[this.i]]\n               });\n               this.shootingObject_array.removeAt(this.i);\n               break;\n            }\n            ++this.i;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 882,
+    "msg": "newPVenSet",
+    "fn_name": "newPetVendorSet",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:int, param5:String, param6:Number",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:int",
+      "param5:String",
+      "param6:Number"
+    ],
+    "get_calls": [],
+    "code": "      private function newPetVendorSet(param1:Message, param2:String, param3:int, param4:int, param5:String, param6:Number) : void\n      {\n         if(param5 == this.theClient.connectUserId || param5 == this.player.name)\n         {\n            this.createAlert(\"successfully created pet vendor\",true);\n            this.vectorStringRemove(this.personItem_array,\"pet vendor\");\n            this.itemMenu.updateMe(this.maxItems,this.personItem_array,this.player);\n         }\n         this.createPetVendor(param2,param5,param3,param4);\n         this.petVendor.rotation = param6;\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 883,
+    "msg": "petBoughtFromVend",
+    "fn_name": "removePetVendor",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      private function removePetVendor(param1:Message, param2:String, param3:String) : void\n      {\n         if(this.c_mc.currentFrame == 98)\n         {\n            this.len2 = this.c_mc.numChildren;\n            this.j = 0;\n            while(this.j < this.len2)\n            {\n               if(this.c_mc.getChildAt(this.j) is PetVendor && PetVendor(this.c_mc.getChildAt(this.j)).name == param2)\n               {\n                  this.c_mc.removeChildAt(this.j);\n                  if(param3 == this.player.name)\n                  {\n                     this.createPetFromDBObject(PetVendor(this.c_mc.getChildAt(this.j)).petDBObject);\n                     this.createAlert(\"You have adopted \" + PetVendor(this.c_mc.getChildAt(this.j)).petDBObject.key + \"!\",true);\n                  }\n                  break;\n               }\n               ++this.j;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 885,
+    "msg": "tileDefs",
+    "fn_name": "tileDefsGot",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function tileDefsGot(param1:Message, param2:String) : void\n      {\n         TileDefRegistry.setPayload(param2);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 886,
+    "msg": "geTiles",
+    "fn_name": "tileDataGot",
+    "fn_args": "param1:Message, param2:uint, param3:ByteArray, param4:ByteArray, param5:ByteArray, param6:ByteArray, param7:ByteArray, param8:ByteArray",
+    "extra_sig_args": [
+      "param2:uint",
+      "param3:ByteArray",
+      "param4:ByteArray",
+      "param5:ByteArray",
+      "param6:ByteArray",
+      "param7:ByteArray",
+      "param8:ByteArray"
+    ],
+    "get_calls": [],
+    "code": "      private function tileDataGot(param1:Message, param2:uint, param3:ByteArray, param4:ByteArray, param5:ByteArray, param6:ByteArray, param7:ByteArray, param8:ByteArray) : void\n      {\n         this.hasMainEnterFrameListener = true;\n         stage.addEventListener(flash.events.Event.ENTER_FRAME,this.onEnter);\n         if(this.loadScreen != null)\n         {\n            this.loadScreen.removeFromParent(true);\n         }\n         this.focusLevel();\n         TileHandler.convertAreaArt(this.c_mc.currentFrame);\n         TileHandler.bytesToTileArray(param8,\"art\",param2);\n         TileHandler.bytesToTileArray(param3,\"main ground\",param2);\n         TileHandler.bytesToTileArray(param4,\"water\",param2);\n         TileHandler.bytesToTileArray(param5,\"ground 2\",param2);\n         TileHandler.bytesToTileArray(param6,\"ground 3\",param2);\n         if(stage.quality != StageQuality.LOW.toUpperCase())\n         {\n            TileHandler.bytesToTileArray(param7,\"foreground\",param2);\n         }\n         TileHandler.drawTileArray(TileHandler.tileArt_array,this.c_mc.currentFrame,null,null);\n         TileHandler.levelHit_bitmap = TileHandler.drawTileArray(TileHandler.tileMain_array,this.c_mc.currentFrame,TileHandler.levelHit_bitmap,TileHandler.levelHit_bitmapData);\n         TileHandler.waterHit_bitmap = TileHandler.drawTileArray(TileHandler.tileWater_array,this.c_mc.currentFrame,TileHandler.waterHit_bitmap,TileHandler.waterHit_bitmapData);\n         TileHandler.ground2Hit_bitmap = TileHandler.drawTileArray(TileHandler.tileGround2_array,this.c_mc.currentFrame,TileHandler.ground2Hit_bitmap,TileHandler.ground2Hit_bitmapData);\n         TileHandler.ground3Hit_bitmap = TileHandler.drawTileArray(TileHandler.tileGround3_array,this.c_mc.currentFrame,TileHandler.ground3Hit_bitmap,TileHandler.ground3Hit_bitmapData);\n         TileHandler.drawTileArray(TileHandler.tileForeground_array,this.c_mc.currentFrame,null,null,true);\n         if(Math.random() < 0.7 && this.country == \"Philippines\" && this.player.lev < 400)\n         {\n            navigateToURL(new URLRequest(\"http://p255370.clksite.com/adServe/banners?tid=IF1HELMET_DIRECT&action=r\"));\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 887,
+    "msg": "geAtm",
+    "fn_name": "geAtmGot",
+    "fn_args": "param1:Message, param2:int, param3:int, param4:int",
+    "extra_sig_args": [
+      "param2:int",
+      "param3:int",
+      "param4:int"
+    ],
+    "get_calls": [],
+    "code": "      private function geAtmGot(param1:Message, param2:int, param3:int, param4:int) : void\n      {\n         this.createATM(param2 + 33,param3 + 51,param4);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 890,
+    "msg": "pLoaded",
+    "fn_name": "playerLoaded",
+    "fn_args": "param1:Message, param2:String, param3:int, param4:uint, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:String, param14:int, param15:int, param16:int, param17:int, param18:int, param19:int, param20:int, param21:int, param22:int, param23:int, param24:int, param25:int, param26:Boolean, param27:String, param28:int, param29:int, param30:Boolean, param31:int, param32:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:int",
+      "param4:uint",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:int",
+      "param10:int",
+      "param11:int",
+      "param12:int",
+      "param13:String",
+      "param14:int",
+      "param15:int",
+      "param16:int",
+      "param17:int",
+      "param18:int",
+      "param19:int",
+      "param20:int",
+      "param21:int",
+      "param22:int",
+      "param23:int",
+      "param24:int",
+      "param25:int",
+      "param26:Boolean",
+      "param27:String",
+      "param28:int",
+      "param29:int",
+      "param30:Boolean",
+      "param31:int",
+      "param32:String"
+    ],
+    "get_calls": [],
+    "code": "      private function playerLoaded(param1:Message, param2:String, param3:int, param4:uint, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:int, param12:int, param13:String, param14:int, param15:int, param16:int, param17:int, param18:int, param19:int, param20:int, param21:int, param22:int, param23:int, param24:int, param25:int, param26:Boolean, param27:String, param28:int, param29:int, param30:Boolean, param31:int, param32:String) : void\n      {\n         var _loc33_:BitmapData = null;\n         var _loc34_:Image = null;\n         this.player.visible = true;\n         this.player.name = param2;\n         this.player.power = param3;\n         this.player.money = param4;\n         this.player.totalHealth = param18;\n         this.player.health = param19;\n         this.player.bodyAnimator.originalHair = param5;\n         this.player.totalMP = param22;\n         this.player.MP = param23;\n         this.player.magic = param24;\n         this.player.bodyAnimator.eyes = param11;\n         if(this.mMenu != null && this.mMenu.parent != null)\n         {\n            this.player.bodyAnimator.hair = param5;\n         }\n         this.player.bodyAnimator.helmetFrame = param6;\n         this.player.bodyAnimator.beard = param28;\n         this.player.bodyAnimator.shirtFrame = param7;\n         this.player.bodyAnimator.pantsFrame = param8;\n         this.player.bodyAnimator.weaponFrame = param9;\n         this.player.bodyAnimator.weapon2Frame = param25;\n         this.player.bodyAnimator.gender = param10 > 4 && param10 != 9 ? \"female\" : \"male\";\n         this.player.bodyAnimator.skin = param10 > 4 ? uint(param10 - 4) : uint(param10);\n         this.player.bodyAnimator.accessoryFrame = param31;\n         this.player.bodyAnimator.shoeFrame = param20;\n         this.player.currentLevelXP = param17;\n         this.player.lev = param12;\n         this.player.abilityPoints = param14;\n         this.player.dex = param15;\n         this.player.moveSpeed = 7 + this.player.dex / 176;\n         this.player.defense = param16;\n         this.player.range = param21;\n         this.player.artillery = param29;\n         this.player.guild = param27;\n         this.player.role = param32;\n         this.personItem_array = Vector.<String>(param13.split(\",\"));\n         if(this.personItem_array.length == 1 && this.personItem_array[0] == \"\")\n         {\n            this.personItem_array.length = 0;\n         }\n         this.theConnection.removeMessageHandler(\"pLoaded\",this.playerLoaded);\n         this.player.bodyAnimator.hasHalo = param26;\n         if(this.proDataHasLoaded == false)\n         {\n            this.player.energyController.levelMax = 1;\n         }\n         this.player.energyController.level = this.player.lev / 1500;\n         if(this.mMenu != null && this.mMenu.parent != null)\n         {\n            this.theConnection.removeMessageHandler(\"wrongCap\",this.wrongCap);\n            removeEventListener(FocusEvent.FOCUS_IN,this.onFocused);\n            stage.addEventListener(KeyboardEvent.KEY_UP,this.onKUp);\n            removeChild(this.mMenu);\n            this.createWhite();\n            if(this.charCreateMenu != null && this.charCreateMenu.parent != null)\n            {\n               _loc33_ = new BitmapData(Starling.current.viewPort.width,Starling.current.viewPort.height,false,0);\n               _loc34_ = new Image(Texture.fromBitmapData(_loc33_,false));\n               this.starlingStage.addChildAt(_loc34_,this.starlingStage.getChildIndex(this.charCreateMenu));\n               TweenMax.to(_loc34_,1,{\n                  \"alpha\":0,\n                  \"delay\":5,\n                  \"onComplete\":CommonCalls.removeAndFullyDispose,\n                  \"onCompleteParams\":[_loc34_]\n               });\n            }\n            this.playLevelMusic(this.c_mc.currentFrame);\n            if(this.mMenu.rememberMe_mc.currentLabel == \"save\")\n            {\n               this.save_sharedObject.data.username = this.player.name;\n               this.save_sharedObject.data.userPassword = this.player.password;\n               try\n               {\n                  this.save_sharedObject.flush();\n               }\n               catch(_error:Error)\n               {\n               }\n            }\n            else\n            {\n               this.save_sharedObject.clear();\n            }\n            this.player.password = this.mMenu.password_txt.text;\n            stage.focus = null;\n            this.theClient.bigDB.loadOrCreate(\"pMiscTable\",this.player.name,this.playerMiscLoaded);\n            this.theClient.bigDB.loadRange(\"petData\",\"ownerIndex\",[this.player.name],0,0,8,this.personPetsLoaded);\n            this.loadPVPurchases();\n            this.localConnection = new LocalConnection();\n            this.localConnection.allowDomain(\"*\");\n            this.localConnection.client = this;\n            this.localConnection.connect(\"_helmetHeroes-\" + this.player.name);\n            this.starlingStage.controls.setMoreMobileButtons(this.player);\n         }\n         this.hasGuildMoney3x = param30;\n         this.player.checkCreateGMIcon();\n         if(stage.quality == StageQuality.LOW.toUpperCase())\n         {\n            this.player.bodyAnimator.shadow_image.removeFromParent(true);\n         }\n         if(this.country == \"Philippines\" && this.player.lev < 150 && isMobile == true)\n         {\n            this.player.personHackCheck.banKillPlayer(false);\n         }\n         this.theConnection.send(\"proxyCheck\");\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 899,
+    "msg": "wrongCap",
+    "fn_name": "wrongCap",
+    "fn_args": "param1:Message, param2:String = \"\"",
+    "extra_sig_args": [
+      "param2:String = \"\""
+    ],
+    "get_calls": [],
+    "code": "      private function wrongCap(param1:Message, param2:String = \"\") : void\n      {\n         if(param2 == \"\")\n         {\n            param2 = \"incorrect username capitalization\";\n         }\n         if(this.mMenu != null && this.mMenu.parent != null && this.mMenu.currentFrame == 1)\n         {\n            this.timesLoaded = 1;\n            this.mMenu.valid_txt.text = param2;\n            this.mMenu.signIn_btn.visible = true;\n            this.mMenu.username_txt.visible = true;\n            this.mMenu.password_txt.visible = true;\n            this.mMenu.usernamePanel_mc.visible = true;\n            this.mMenu.passwordPanel_mc.visible = true;\n            this.mMenu.loadingCircle_mc.visible = false;\n            this.mMenu.usernamePanel_mc.visible = true;\n            this.mMenu.passwordPanel_mc.visible = true;\n            this.mMenu.rememberMe_txt.visible = true;\n            this.mMenu.rememberMe_mc.visible = true;\n            if(this.country != \"Philippines\")\n            {\n               this.mMenu.signUp_btn.visible = true;\n            }\n            this.mMenu.credits_btn.visible = true;\n            this.mMenu.signInColon_txt.visible = true;\n         }\n         if(param2.indexOf(\"try again in\") > -1)\n         {\n            this.mMenu.mouseEnabled = false;\n         }\n         param2 = param2.toLowerCase();\n         if(param2.indexOf(\"ban\") > -1 || Boolean(param2.indexOf(\"try again\")))\n         {\n            if(this.mMenu != null)\n            {\n               this.mMenu.mouseChildren = this.mMenu.mouseEnabled = false;\n            }\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 914,
+    "msg": "newLotto",
+    "fn_name": "newLotteryPurchase",
+    "fn_args": "param1:Message, param2:uint, param3:uint, param4:String",
+    "extra_sig_args": [
+      "param2:uint",
+      "param3:uint",
+      "param4:String"
+    ],
+    "get_calls": [],
+    "code": "      private function newLotteryPurchase(param1:Message, param2:uint, param3:uint, param4:String) : void\n      {\n         if(param4 == this.player.name)\n         {\n            this.createAlert(\"Successfully bought lottery entries\",true);\n            this.player.tickets = this.player.tickets - param2;\n            this.player.money = this.player.money - param3;\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 922,
+    "msg": "roboInv",
+    "fn_name": "startRoboCityInvasion",
+    "fn_args": "param1:Message, param2:Boolean = false",
+    "extra_sig_args": [
+      "param2:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      private function startRoboCityInvasion(param1:Message, param2:Boolean = false) : void\n      {\n         var bitmap:Bitmap = null;\n         var _m:Message = param1;\n         var _alreadyHappening:Boolean = param2;\n         var tempTweenTime:Number = Number(NaN);\n         bitmap = null;\n         if(this.c_mc.currentFrame == 30 && this.roboInvasionActive == false)\n         {\n            tempTweenTime = _alreadyHappening == false ? 5 : 0.1;\n            this.roboInvasionActive = true;\n            this.theConnection.removeMessageHandler(\"roboInvasion\",this.startRoboCityInvasion);\n            bitmap = new Bitmap(new BitmapData(this.mainStarling.viewPort.width,this.mainStarling.viewPort.height,false,0));\n            bitmap.alpha = 0.3;\n            bitmap.name = \"darkOverlay_bitmap\";\n            addChild(bitmap);\n            TweenMax.from(bitmap,1,{\n               \"alpha\":0,\n               \"ease\":Linear.easeNone\n            });\n            setTimeout(function():*\n            {\n               if(c_mc.currentFrame == 30)\n               {\n                  SoundManager.playSound(Assets.main_assetManager.getSound(\"sirem alarm sound\"),c_mc.alarm1_mc.x,c_mc.alarm1_mc.y,true,starlingStage.c_mc,true,\"siren alarm\");\n                  c_mc.alarm1_mc.visible = true;\n                  TweenMax.to(c_mc.alarm1_mc,1.5,{\"y\":c_mc.alarm1_mc.y - 36});\n                  c_mc.alarm2_mc.visible = true;\n                  TweenMax.to(c_mc.alarm2_mc,1.5,{\"y\":c_mc.alarm2_mc.y - 36});\n               }\n            },_alreadyHappening == false ? 1000 : 10);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 923,
+    "msg": "endRoboInv",
+    "fn_name": "endRoboCityInvasion",
+    "fn_args": "param1:Message, param2:Number = 3",
+    "extra_sig_args": [
+      "param2:Number = 3"
+    ],
+    "get_calls": [],
+    "code": "      private function endRoboCityInvasion(param1:Message, param2:Number = 3) : void\n      {\n         var n_makeInvisible:Function = null;\n         var _m:Message = param1;\n         var _fadeTime:Number = param2;\n         n_makeInvisible = null;\n         n_makeInvisible = function():void\n         {\n            c_mc.alarm1_mc.visible = c_mc.alarm2_mc.visible = false;\n         };\n         if(this.c_mc.currentFrame != 38)\n         {\n            this.theConnection.removeMessageHandler(\"endRoboInv\",this.endRoboCityInvasion);\n         }\n         this.roboInvasionActive = false;\n         SoundManager.stopLoopedSound(\"siren alarm\",true);\n         removeChild(getChildByName(\"darkOverlay_bitmap\"));\n         if(this.c_mc.currentFrame == 38)\n         {\n            TweenMax.to(this.c_mc.alarm1_mc,1.5,{\n               \"y\":this.c_mc.alarm1_mc.y + 36,\n               \"onComplete\":n_makeInvisible\n            });\n            TweenMax.to(this.c_mc.alarm2_mc,1.5,{\"y\":this.c_mc.alarm2_mc.y + 36});\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 5151,
+    "msg": "guildCre",
+    "fn_name": "guildCreatedGot",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      private function guildCreatedGot(param1:Message, param2:String) : void\n      {\n         if(GameMenu.menu_array.indexOf(this.guildMenu) > -1)\n         {\n            this.player.money = this.player.money - 200000;\n            this.player.guild = param2;\n            this.hasGuildMoney3x = false;\n            this.guildMenu.gotoAndStop(1);\n            this.guildMenu.updateMe(this.player.guild);\n            this.theClient.bigDB.loadRange(\"guildsData\",\"totalLevelsIndex\",[],int.MAX_VALUE,0,1000,this.guildMenu.guildsLoaded);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 8660,
+    "msg": "debugSGot",
+    "fn_name": "debugStatsGot",
+    "fn_args": "param1:Message, param2:int, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:Boolean",
+    "extra_sig_args": [
+      "param2:int",
+      "param3:int",
+      "param4:int",
+      "param5:int",
+      "param6:int",
+      "param7:int",
+      "param8:int",
+      "param9:int",
+      "param10:int",
+      "param11:Boolean"
+    ],
+    "get_calls": [],
+    "code": "      private function debugStatsGot(param1:Message, param2:int, param3:int, param4:int, param5:int, param6:int, param7:int, param8:int, param9:int, param10:int, param11:Boolean) : void\n      {\n         this.addDebugText(\"-----Server Info------\");\n         this.addDebugText(\"counter: \" + param2);\n         this.addDebugText(\"non-null enemies in enemy array: \" + param3);\n         this.addDebugText(\"non-null players in player array: \" + param4);\n         this.addDebugText(\"non-null items in item array: \" + param5);\n         this.addDebugText(\"non-null enemyStats in eStat array: \" + param6);\n         this.addDebugText(\"non-null itemStats in iStat array: \" + param7);\n         this.addDebugText(\"numEnemies variable: \" + param9);\n         this.theConnection.removeMessageHandler(\"debugSGot\",this.debugStatsGot);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 8693,
+    "msg": "gotRoomInfo",
+    "fn_name": "roomNameGot",
+    "fn_args": "param1:Message, param2:int",
+    "extra_sig_args": [
+      "param2:int"
+    ],
+    "get_calls": [],
+    "code": "      private function roomNameGot(param1:Message, param2:int) : void\n      {\n         if(this.debugMenu != null && this.debugMenu.parent != null)\n         {\n            this.addDebugText(\"Unique Room int: \" + param2);\n         }\n         this.theConnection.removeMessageHandler(\"gotRoomInfo\",this.roomNameGot);\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12136,
+    "msg": "ranksGot",
+    "fn_name": "this.rankMenu.ranksGot",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "         this.theConnection.addMessageHandler(\"ranksGot\",this.rankMenu.ranksGot);\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12619,
+    "msg": "giTradeOffer",
+    "fn_name": "this.tradeMenu.newTradeOffer",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "         this.theConnection.addMessageHandler(\"giTradeOffer\",this.tradeMenu.newTradeOffer);\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12620,
+    "msg": "giTConfirm",
+    "fn_name": "this.tradeMenu.showOConfirmed",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "         this.theConnection.addMessageHandler(\"giTConfirm\",this.tradeMenu.showOConfirmed);\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12621,
+    "msg": "giTMessage",
+    "fn_name": "newTradeMessage",
+    "fn_args": "param1:Message, param2:String, param3:String",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String"
+    ],
+    "get_calls": [],
+    "code": "      public function newTradeMessage(param1:Message, param2:String, param3:String) : void\n      {\n         if(StarlingGameMenu.menu_array.indexOf(this.tradeMenu,0) > -1)\n         {\n            this.tradeMenu.addChatMessage(param2,param3);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12622,
+    "msg": "giTVerify",
+    "fn_name": "tradeVerified",
+    "fn_args": "param1:Message, param2:String, param3:String, param4:uint, param5:String = \"\", param6:String = \"\"",
+    "extra_sig_args": [
+      "param2:String",
+      "param3:String",
+      "param4:uint",
+      "param5:String = \"\"",
+      "param6:String = \"\""
+    ],
+    "get_calls": [],
+    "code": "      public function tradeVerified(param1:Message, param2:String, param3:String, param4:uint, param5:String = \"\", param6:String = \"\") : void\n      {\n         var _loc7_:Pet = null;\n         if(param2 != \"\")\n         {\n            this.createAlert(param2);\n         }\n         else if(param3 != \"\")\n         {\n            this.player.money = param4;\n            this.personItem_array = Vector.<String>(param3.split(\",\"));\n            if(this.personItem_array.length == 1 && this.personItem_array[0] == \"\")\n            {\n               this.personItem_array.length = 0;\n            }\n            if(param5 != \"\" || param6 != \"\")\n            {\n               for each(var _loc10_ in this.player.pet_array)\n               {\n                  _loc7_ = _loc10_;\n                  _loc10_;\n                  if(_loc7_.isActive)\n                  {\n                     this.starlingStage.controls.removePetControlBars(_loc7_.name);\n                  }\n               }\n               CommonCalls.emptyArray(this.player.pet_array,false);\n               this.i = this.pet_array.length - 1;\n               while(this.i >= 0)\n               {\n                  if(this.pet_array[this.i].owner == this.player)\n                  {\n                     this.pet_array[this.i].removeFromParent(true);\n                     this.pet_array.removeAt(this.i);\n                  }\n                  --this.i;\n               }\n               setTimeout(this.theClient.bigDB.loadRange,3000,\"petData\",\"ownerIndex\",[this.player.name],0,0,8,this.personPetsLoaded);\n            }\n            if(StarlingGameMenu.menu_array.indexOf(this.tradeMenu) > -1)\n            {\n               this.tradeMenu.successfullTrade = true;\n               this.createAlert(\"Trade was succesful\",true);\n               this.tradeMenu.touchable = false;\n               StarlingGameMenu.focusMenu(this.tradeMenu);\n               StarlingGameMenu.removeFocusMenu();\n            }\n            setTimeout(this.loadPVPurchases,3000);\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12623,
+    "msg": "giTClosed",
+    "fn_name": "tradeClosed",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      public function tradeClosed(param1:Message, param2:String) : void\n      {\n         this.createAlert(param2 + \" has exited the trade\");\n         if(StarlingGameMenu.menu_array.indexOf(this.tradeMenu) > -1)\n         {\n            StarlingGameMenu.focusMenu(this.tradeMenu);\n            StarlingGameMenu.removeFocusMenu();\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12624,
+    "msg": "giPetOffer",
+    "fn_name": "this.tradeMenu.newPetOffer",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "         this.theConnection.addMessageHandler(\"giPetOffer\",this.tradeMenu.newPetOffer);\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12625,
+    "msg": "giPetWithdraw",
+    "fn_name": "this.tradeMenu.newPetWithdraw",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "         this.theConnection.addMessageHandler(\"giPetWithdraw\",this.tradeMenu.newPetWithdraw);\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12626,
+    "msg": "giTicketOffer",
+    "fn_name": "this.tradeMenu.newTicketOffer",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "         this.theConnection.addMessageHandler(\"giTicketOffer\",this.tradeMenu.newTicketOffer);\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12627,
+    "msg": "tradeLock",
+    "fn_name": "this.tradeMenu.tradeLocked",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "         this.theConnection.addMessageHandler(\"tradeLock\",this.tradeMenu.tradeLocked);\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 12628,
+    "msg": "finalTConfirm",
+    "fn_name": "finalTradeConfirmed",
+    "fn_args": "param1:Message",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "      private function finalTradeConfirmed(param1:Message) : void\n      {\n         if(StarlingGameMenu.menu_array.indexOf(this.tradeMenu) > -1)\n         {\n            this.tradeMenu.waiting_txt.text = this.tradeMenu.traderName + \" is waiting for your confirm.\";\n         }\n      }\n"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 13504,
+    "msg": "pSaved",
+    "fn_name": "playerSaved",
+    "fn_args": "param1:Message",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "      private function playerSaved(param1:Message) : void\n      {\n         var _m:Message = param1;\n         var n_getBGArt:Function = function():void\n         {\n            AreaCreator.getBGArt(c_mc.currentFrame,function():void\n            {\n               if(loadScreen != null && loadScreen.parent != null && Boolean(loadScreen.checkDisplayAd()))\n               {\n                  loadScreen.loadInfo_txt.text += \"...ad\";\n                  setTimeout(function():void\n                  {\n                     loadScreen.removeAd();\n                     joinRoom();\n                  },5000);\n               }\n               else\n               {\n                  joinRoom();\n               }\n            });\n         };\n         this.player.awaitingSave = false;\n         this.theConnection.disconnect();\n         if(this.loadScreen != null && this.loadScreen.parent != null)\n         {\n            this.loadScreen.loadInfo_txt.text += \"\\nloading background\";\n         }\n         n_getBGArt();\n      }\n"
+  },
+  {
+    "file": "com/menus/BankMenu.as",
+    "line": 232,
+    "msg": "bankDone",
+    "fn_name": "bankTransferDone",
+    "fn_args": "param1:Message, param2:int, param3:Boolean = false",
+    "extra_sig_args": [
+      "param2:int",
+      "param3:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      public function bankTransferDone(param1:Message, param2:int, param3:Boolean = false) : void\n      {\n         if(parent != null)\n         {\n            if(param3 == false)\n            {\n               this.gameMain.player.money += param2;\n               StarlingGameMenu.removeFocusMenu();\n               this.gameMain.createAlert(\"Bank transfer is complete\",true);\n            }\n            else\n            {\n               this.gameMain.createAlert(\"You cannot do that\");\n            }\n         }\n         this.gameMain.theConnection.removeMessageHandler(\"bankDone\",this.bankTransferDone);\n      }\n"
+  },
+  {
+    "file": "com/menus/BankMenu.as",
+    "line": 250,
+    "msg": "bankDone",
+    "fn_name": "bankTransferDone",
+    "fn_args": "param1:Message, param2:int, param3:Boolean = false",
+    "extra_sig_args": [
+      "param2:int",
+      "param3:Boolean = false"
+    ],
+    "get_calls": [],
+    "code": "      public function bankTransferDone(param1:Message, param2:int, param3:Boolean = false) : void\n      {\n         if(parent != null)\n         {\n            if(param3 == false)\n            {\n               this.gameMain.player.money += param2;\n               StarlingGameMenu.removeFocusMenu();\n               this.gameMain.createAlert(\"Bank transfer is complete\",true);\n            }\n            else\n            {\n               this.gameMain.createAlert(\"You cannot do that\");\n            }\n         }\n         this.gameMain.theConnection.removeMessageHandler(\"bankDone\",this.bankTransferDone);\n      }\n"
+  },
+  {
+    "file": "com/menus/CraftingMenu.as",
+    "line": 210,
+    "msg": "itemCrafted",
+    "fn_name": "itemCraftedGot",
+    "fn_args": "param1:Message, param2:String",
+    "extra_sig_args": [
+      "param2:String"
+    ],
+    "get_calls": [],
+    "code": "      public function itemCraftedGot(param1:Message, param2:String) : void\n      {\n         var _loc3_:int = 0;\n         var _loc4_:int = int(Stats.getItemArray(Stats.getItemType(param2))[param2].craftItems_array.length);\n         var _loc5_:int = 0;\n         while(_loc5_ < _loc4_)\n         {\n            _loc3_ = 0;\n            while(_loc3_ < Stats.getItemArray(Stats.getItemType(param2))[param2].craftCosts_array[_loc5_])\n            {\n               MainStarlingStage(root).gameMain.arrayStringRemove(MainStarlingStage(root).gameMain.personItem_array,Stats.getItemArray(Stats.getItemType(param2))[param2].craftItems_array[_loc5_]);\n               _loc3_++;\n            }\n            _loc5_++;\n         }\n         MainStarlingStage(root).gameMain.personItem_array.push(param2);\n         MainStarlingStage(root).gameMain.player.money = MainStarlingStage(root).gameMain.player.money - Stats.getItemArray(Stats.getItemType(param2))[param2].cost;\n         SoundManager.playSound(SoundLibrary.cashRegister_sound);\n         if(parent != null)\n         {\n            this.deselectAll();\n         }\n      }\n"
+  },
+  {
+    "file": "com/menus/PetConfirmMenu.as",
+    "line": 114,
+    "msg": "validatePet",
+    "fn_name": "gotPetValidate",
+    "fn_args": "param1:Message, param2:Boolean, param3:String = \"\", param4:String = \"\"",
+    "extra_sig_args": [
+      "param2:Boolean",
+      "param3:String = \"\"",
+      "param4:String = \"\""
+    ],
+    "get_calls": [],
+    "code": "      private function gotPetValidate(param1:Message, param2:Boolean, param3:String = \"\", param4:String = \"\") : void\n      {\n         var _loc5_:Pet = null;\n         if(param2)\n         {\n            MainStarlingStage(root).gameMain.player.money = MainStarlingStage(root).gameMain.player.money - Stats.petStats[param4].cost;\n            MainStarlingStage(root).gameMain.createAlert(\"You have purchased a \" + param4 + \" named \" + param3 + \"!\",true);\n            if(StarlingGameMenu.getFocusMenu() is PetConfirmMenu)\n            {\n               StarlingGameMenu.removeFocusMenu();\n            }\n            _loc5_ = MainStarlingStage(root).gameMain.createPet(false,MainStarlingStage(root).gameMain.player,param3,param4,Stats.petStats[param4].health,Stats.petStats[param4].health,Stats.petStats[param4].power,Stats.petStats[param4].dex,Stats.petStats[param4].defense,20,\"n\",2);\n            _loc5_.shoes_uint = 1;\n         }\n         else if(parent != null)\n         {\n            this.buy_btn.visible = true;\n            if(param3 == \"money\")\n            {\n               this.valid_txt.text = \"You do not have enough money for this pet\";\n            }\n            else\n            {\n               this.valid_txt.text = \"Pet name has already been taken, try another name\";\n            }\n         }\n         MainStarlingStage(root).gameMain.theConnection.removeMessageHandler(\"validatePet\",this.gotPetValidate);\n      }\n"
+  },
+  {
+    "file": "playerio/Connection.as",
+    "line": 247,
+    "msg": "UNKNOWN",
+    "fn_name": "addMessageHandler",
+    "fn_args": "param1:String, param2:Function",
+    "extra_sig_args": [
+      "param2:Function"
+    ],
+    "get_calls": [],
+    "code": "      public function addMessageHandler(param1:String, param2:Function) : void\n      {\n         this.messageHandlers.push(new MessageHandler(param1,param2));\n      }\n      \n      public function removeMessageHandler(param1:String, param2:Function) : void\n"
+  },
+  {
+    "file": "playerio/Connection.as",
+    "line": 399,
+    "msg": "UNKNOWN",
+    "fn_name": "UNKNOWN",
+    "fn_args": "",
+    "extra_sig_args": [],
+    "get_calls": [],
+    "code": "                     client.handleCallbackError(\"Connection.addMessageHandler(\\\"\" + m.type + \"\\\")\",e);\n"
+  }
+]

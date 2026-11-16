@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3a2ghye1daoq"
+path="res://.godot/imported/kreeton.mp3-0f1e2982cab78f819064e44f3884a3df.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/kreeton.mp3"
+dest_files=["res://.godot/imported/kreeton.mp3-0f1e2982cab78f819064e44f3884a3df.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

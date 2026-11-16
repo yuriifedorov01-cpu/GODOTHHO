@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvb7hsnm6xdl2"
+path="res://.godot/imported/skull bone gun.mp3-0483f110eff80fda247fbf09c10e7203.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/gun sounds/skull bone gun.mp3"
+dest_files=["res://.godot/imported/skull bone gun.mp3-0483f110eff80fda247fbf09c10e7203.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

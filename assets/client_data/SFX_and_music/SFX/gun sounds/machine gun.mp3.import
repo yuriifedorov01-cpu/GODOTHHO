@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d3albvu3qvyq"
+path="res://.godot/imported/machine gun.mp3-a615eac6b67ca517d13f75444a7a541a.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/machine gun.mp3"
+dest_files=["res://.godot/imported/machine gun.mp3-a615eac6b67ca517d13f75444a7a541a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7fiuqnmxdkpn"
+path="res://.godot/imported/repguana.mp3-5126f57c7d4dc6a5935da536c2181fa7.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/repguana.mp3"
+dest_files=["res://.godot/imported/repguana.mp3-5126f57c7d4dc6a5935da536c2181fa7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

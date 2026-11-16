@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dn2niu4ee2v23"
+path="res://.godot/imported/sniper rifle.mp3-f3c4d62ebfb952e2451cac167f8b3e50.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/sniper rifle.mp3"
+dest_files=["res://.godot/imported/sniper rifle.mp3-f3c4d62ebfb952e2451cac167f8b3e50.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

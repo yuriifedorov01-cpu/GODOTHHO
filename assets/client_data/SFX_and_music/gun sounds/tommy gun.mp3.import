@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2pcnt66dny1c"
+path="res://.godot/imported/tommy gun.mp3-d6b03ed2efcb0f9857be53993b49f4de.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/gun sounds/tommy gun.mp3"
+dest_files=["res://.godot/imported/tommy gun.mp3-d6b03ed2efcb0f9857be53993b49f4de.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

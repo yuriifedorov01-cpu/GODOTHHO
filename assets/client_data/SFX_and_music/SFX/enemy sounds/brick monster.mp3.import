@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbke5evihewt5"
+path="res://.godot/imported/brick monster.mp3-d90d49c502c058e6154b13837b363111.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/brick monster.mp3"
+dest_files=["res://.godot/imported/brick monster.mp3-d90d49c502c058e6154b13837b363111.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

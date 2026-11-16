@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cebfnsci1dbsv"
+path="res://.godot/imported/radiator gun.mp3-527593fbb5a32bee83665b451baea410.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/radiator gun.mp3"
+dest_files=["res://.godot/imported/radiator gun.mp3-527593fbb5a32bee83665b451baea410.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

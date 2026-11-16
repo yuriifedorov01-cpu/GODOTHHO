@@ -1,0 +1,1159 @@
+{
+  "Arrow": {
+    "cid": 1803,
+    "frame_count": 24,
+    "clips": {}
+  },
+  "FlyAnimation": {
+    "cid": 1808,
+    "frame_count": 180,
+    "clips": {}
+  },
+  "DarknessBall": {
+    "cid": 1810,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "com.game_objects.StandSwitch": {
+    "cid": 1816,
+    "frame_count": 8,
+    "clips": {}
+  },
+  "com.game_objects.RobotAlarmBuilding": {
+    "cid": 1818,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "Pendulum": {
+    "cid": 1821,
+    "frame_count": 66,
+    "clips": {
+      "pendulum": [
+        0,
+        65
+      ]
+    }
+  },
+  "MushroomSpike": {
+    "cid": 1823,
+    "frame_count": 1,
+    "clips": {
+      "mushroom spike": [
+        0,
+        0
+      ]
+    }
+  },
+  "com.game_objects.BushShooter": {
+    "cid": 1827,
+    "frame_count": 3,
+    "clips": {
+      "bush shooter": [
+        0,
+        2
+      ]
+    }
+  },
+  "EnvironmentProjectile": {
+    "cid": 1830,
+    "frame_count": 2,
+    "clips": {
+      "bush shooter": [
+        0,
+        0
+      ],
+      "beholder cannon": [
+        1,
+        1
+      ]
+    }
+  },
+  "com.game_objects.Cloud": {
+    "cid": 1832,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "com.game_objects.BeholderCannon": {
+    "cid": 1837,
+    "frame_count": 4,
+    "clips": {
+      "beholder cannon": [
+        0,
+        3
+      ]
+    }
+  },
+  "YellowPuffMonsterVector": {
+    "cid": 1845,
+    "frame_count": 51,
+    "clips": {
+      "walk": [
+        0,
+        26
+      ],
+      "jump": [
+        27,
+        42
+      ],
+      "hit": [
+        43,
+        50
+      ]
+    }
+  },
+  "TitaniumVultureVector": {
+    "cid": 1851,
+    "frame_count": 19,
+    "clips": {
+      "walk": [
+        0,
+        10
+      ],
+      "hit": [
+        11,
+        18
+      ]
+    }
+  },
+  "SasquatchVector": {
+    "cid": 1859,
+    "frame_count": 37,
+    "clips": {
+      "walk": [
+        0,
+        26
+      ],
+      "jump": [
+        27,
+        28
+      ],
+      "hit": [
+        29,
+        36
+      ]
+    }
+  },
+  "RepguanaVector": {
+    "cid": 1867,
+    "frame_count": 36,
+    "clips": {
+      "walk": [
+        0,
+        28
+      ],
+      "hit": [
+        29,
+        35
+      ]
+    }
+  },
+  "RedBouncerVector": {
+    "cid": 1871,
+    "frame_count": 30,
+    "clips": {
+      "jump": [
+        0,
+        20
+      ],
+      "walk": [
+        21,
+        22
+      ],
+      "hit": [
+        23,
+        29
+      ]
+    }
+  },
+  "PurpleGooVector": {
+    "cid": 1877,
+    "frame_count": 29,
+    "clips": {
+      "jump": [
+        0,
+        18
+      ],
+      "walk": [
+        19,
+        20
+      ],
+      "hit": [
+        21,
+        28
+      ]
+    }
+  },
+  "PumpkinCreeperVector": {
+    "cid": 1883,
+    "frame_count": 44,
+    "clips": {
+      "walk": [
+        0,
+        21
+      ],
+      "jump": [
+        22,
+        35
+      ],
+      "hit": [
+        36,
+        43
+      ]
+    }
+  },
+  "ProteumVector": {
+    "cid": 1891,
+    "frame_count": 22,
+    "clips": {
+      "walk": [
+        0,
+        13
+      ],
+      "hit": [
+        14,
+        21
+      ]
+    }
+  },
+  "PlantMonsterVector": {
+    "cid": 1919,
+    "frame_count": 41,
+    "clips": {
+      "walk": [
+        0,
+        18
+      ],
+      "jump": [
+        19,
+        32
+      ],
+      "hit": [
+        33,
+        40
+      ]
+    }
+  },
+  "PenguinVector": {
+    "cid": 1927,
+    "frame_count": 44,
+    "clips": {
+      "walk": [
+        0,
+        22
+      ],
+      "jump": [
+        23,
+        35
+      ],
+      "hit": [
+        36,
+        43
+      ]
+    }
+  },
+  "OrangeCrazyVector": {
+    "cid": 1953,
+    "frame_count": 42,
+    "clips": {
+      "walk": [
+        0,
+        19
+      ],
+      "jump": [
+        20,
+        33
+      ],
+      "hit": [
+        34,
+        41
+      ]
+    }
+  },
+  "NightstalkerVector": {
+    "cid": 1960,
+    "frame_count": 34,
+    "clips": {
+      "walk": [
+        0,
+        22
+      ],
+      "jump": [
+        23,
+        25
+      ],
+      "hit": [
+        26,
+        33
+      ]
+    }
+  },
+  "MushroomSquishVector": {
+    "cid": 1966,
+    "frame_count": 38,
+    "clips": {
+      "walk": [
+        0,
+        14
+      ],
+      "jump": [
+        15,
+        29
+      ],
+      "hit": [
+        30,
+        37
+      ]
+    }
+  },
+  "MushroomBirdVector": {
+    "cid": 1975,
+    "frame_count": 22,
+    "clips": {
+      "walk": [
+        0,
+        11
+      ],
+      "hit": [
+        12,
+        21
+      ]
+    }
+  },
+  "MushroomBallVector": {
+    "cid": 1977,
+    "frame_count": 39,
+    "clips": {
+      "walk": [
+        0,
+        16
+      ],
+      "jump": [
+        17,
+        30
+      ],
+      "hit": [
+        31,
+        38
+      ]
+    }
+  },
+  "MongrelVector": {
+    "cid": 1988,
+    "frame_count": 16,
+    "clips": {
+      "walk": [
+        0,
+        9
+      ],
+      "hit": [
+        10,
+        15
+      ]
+    }
+  },
+  "BlockBotVector": {
+    "cid": 1996,
+    "frame_count": 35,
+    "clips": {
+      "walk": [
+        0,
+        24
+      ],
+      "jump": [
+        25,
+        27
+      ],
+      "hit": [
+        28,
+        34
+      ]
+    }
+  },
+  "MagmagonVector": {
+    "cid": 2010,
+    "frame_count": 27,
+    "clips": {
+      "walk": [
+        0,
+        20
+      ],
+      "hit": [
+        21,
+        26
+      ]
+    }
+  },
+  "LotusEyeVector": {
+    "cid": 2047,
+    "frame_count": 37,
+    "clips": {
+      "walk": [
+        0,
+        25
+      ],
+      "jump": [
+        26,
+        27
+      ],
+      "hit": [
+        28,
+        36
+      ]
+    }
+  },
+  "LeaflingVector": {
+    "cid": 2053,
+    "frame_count": 30,
+    "clips": {
+      "walk": [
+        0,
+        20
+      ],
+      "jump": [
+        21,
+        22
+      ],
+      "hit": [
+        23,
+        29
+      ]
+    }
+  },
+  "LeafletVector": {
+    "cid": 2057,
+    "frame_count": 43,
+    "clips": {
+      "walk": [
+        0,
+        20
+      ],
+      "jump": [
+        21,
+        34
+      ],
+      "hit": [
+        35,
+        42
+      ]
+    }
+  },
+  "MyGame_fla.kreetusteethanimation_121": {
+    "cid": 2077,
+    "frame_count": 42,
+    "clips": {}
+  },
+  "KreetusVector": {
+    "cid": 2084,
+    "frame_count": 28,
+    "clips": {
+      "walk": [
+        0,
+        17
+      ],
+      "open chest": [
+        18,
+        27
+      ]
+    }
+  },
+  "KreetonVector": {
+    "cid": 2088,
+    "frame_count": 30,
+    "clips": {
+      "walk": [
+        0,
+        21
+      ],
+      "hit": [
+        22,
+        29
+      ]
+    }
+  },
+  "KrawVector": {
+    "cid": 2095,
+    "frame_count": 19,
+    "clips": {
+      "walk": [
+        0,
+        9
+      ],
+      "hit": [
+        10,
+        18
+      ]
+    }
+  },
+  "KrakenVector": {
+    "cid": 2103,
+    "frame_count": 15,
+    "clips": {
+      "walk": [
+        0,
+        7
+      ],
+      "hit": [
+        8,
+        14
+      ]
+    }
+  },
+  "HornedMonsterVector": {
+    "cid": 2113,
+    "frame_count": 39,
+    "clips": {
+      "walk": [
+        0,
+        16
+      ],
+      "jump": [
+        17,
+        30
+      ],
+      "hit": [
+        31,
+        38
+      ]
+    }
+  },
+  "YellowHairyMonsterVector": {
+    "cid": 2122,
+    "frame_count": 30,
+    "clips": {
+      "walk": [
+        0,
+        7
+      ],
+      "jump": [
+        8,
+        21
+      ],
+      "hit": [
+        22,
+        29
+      ]
+    }
+  },
+  "GreenWalkerVector": {
+    "cid": 2130,
+    "frame_count": 38,
+    "clips": {
+      "walk": [
+        0,
+        16
+      ],
+      "jump": [
+        17,
+        29
+      ],
+      "hit": [
+        30,
+        37
+      ]
+    }
+  },
+  "GreenBouncerVector": {
+    "cid": 2134,
+    "frame_count": 29,
+    "clips": {
+      "jump": [
+        0,
+        18
+      ],
+      "walk": [
+        19,
+        20
+      ],
+      "hit": [
+        21,
+        28
+      ]
+    }
+  },
+  "GiantGooCubeVector": {
+    "cid": 2137,
+    "frame_count": 23,
+    "clips": {
+      "walk": [
+        0,
+        22
+      ]
+    }
+  },
+  "GooCubeVector": {
+    "cid": 2140,
+    "frame_count": 35,
+    "clips": {
+      "walk": [
+        0,
+        34
+      ]
+    }
+  },
+  "GlordVector": {
+    "cid": 2148,
+    "frame_count": 37,
+    "clips": {
+      "walk": [
+        0,
+        28
+      ],
+      "hit": [
+        29,
+        36
+      ]
+    }
+  },
+  "GreatFrogVector": {
+    "cid": 2156,
+    "frame_count": 38,
+    "clips": {
+      "walk": [
+        0,
+        26
+      ],
+      "jump": [
+        27,
+        28
+      ],
+      "hit": [
+        29,
+        37
+      ]
+    }
+  },
+  "FlocklingVector": {
+    "cid": 2161,
+    "frame_count": 17,
+    "clips": {
+      "walk": [
+        0,
+        9
+      ],
+      "hit": [
+        10,
+        16
+      ]
+    }
+  },
+  "FishurnVector": {
+    "cid": 2166,
+    "frame_count": 44,
+    "clips": {
+      "walk": [
+        0,
+        20
+      ],
+      "jump": [
+        21,
+        35
+      ],
+      "hit": [
+        36,
+        43
+      ]
+    }
+  },
+  "DrillBotVector": {
+    "cid": 2171,
+    "frame_count": 33,
+    "clips": {
+      "walk": [
+        0,
+        24
+      ],
+      "hit": [
+        25,
+        32
+      ]
+    }
+  },
+  "BeholderVector": {
+    "cid": 2177,
+    "frame_count": 36,
+    "clips": {
+      "walk": [
+        0,
+        27
+      ],
+      "hit": [
+        28,
+        35
+      ]
+    }
+  },
+  "CrabVector": {
+    "cid": 2185,
+    "frame_count": 39,
+    "clips": {
+      "walk": [
+        0,
+        16
+      ],
+      "jump": [
+        17,
+        30
+      ],
+      "hit": [
+        31,
+        38
+      ]
+    }
+  },
+  "ChirpletVector": {
+    "cid": 2192,
+    "frame_count": 20,
+    "clips": {
+      "walk": [
+        0,
+        10
+      ],
+      "hit": [
+        11,
+        19
+      ]
+    }
+  },
+  "CarneliaVector": {
+    "cid": 2203,
+    "frame_count": 27,
+    "clips": {
+      "walk": [
+        0,
+        18
+      ],
+      "hit": [
+        19,
+        26
+      ]
+    }
+  },
+  "BullopedeVector": {
+    "cid": 2216,
+    "frame_count": 20,
+    "clips": {
+      "walk": [
+        0,
+        11
+      ],
+      "hit": [
+        12,
+        19
+      ]
+    }
+  },
+  "BrickMonsterVector": {
+    "cid": 2223,
+    "frame_count": 25,
+    "clips": {
+      "walk": [
+        0,
+        24
+      ]
+    }
+  },
+  "BouncingMushroomVector": {
+    "cid": 2229,
+    "frame_count": 25,
+    "clips": {
+      "jump": [
+        0,
+        14
+      ],
+      "walk": [
+        15,
+        16
+      ],
+      "hit": [
+        17,
+        24
+      ]
+    }
+  },
+  "BionicBirdVector": {
+    "cid": 2237,
+    "frame_count": 18,
+    "clips": {
+      "walk": [
+        0,
+        10
+      ],
+      "hit": [
+        11,
+        17
+      ]
+    }
+  },
+  "LightningBolt": {
+    "cid": 223,
+    "frame_count": 4,
+    "clips": {}
+  },
+  "AipsterVector": {
+    "cid": 2244,
+    "frame_count": 29,
+    "clips": {
+      "walk": [
+        0,
+        18
+      ],
+      "jump": [
+        19,
+        20
+      ],
+      "hit": [
+        21,
+        28
+      ]
+    }
+  },
+  "WindmillAreaTiles": {
+    "cid": 2330,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "RobotHouseTiles": {
+    "cid": 2377,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "AcidHouseTiles": {
+    "cid": 2415,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "ForestAreaTiles": {
+    "cid": 2468,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "RoboForegroundTiles": {
+    "cid": 2481,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "CloudAreaTiles": {
+    "cid": 2530,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "SnowAreaTiles": {
+    "cid": 2632,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "SnowForegroundTiles": {
+    "cid": 2658,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "CloudHouseTiles": {
+    "cid": 2712,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "RobotAreaTiles": {
+    "cid": 2758,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BeholderForegroundTiles": {
+    "cid": 2775,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "HauntedTiles": {
+    "cid": 2823,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "AquaForegroundTiles": {
+    "cid": 2835,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "FairyForegroundTiles": {
+    "cid": 2850,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "ForestForegroundTiles": {
+    "cid": 2863,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BarnForegroundTiles": {
+    "cid": 2870,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "DungeonAreaTiles": {
+    "cid": 2893,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "GreenAreaTiles": {
+    "cid": 2970,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "OmegaFluffVector": {
+    "cid": 297,
+    "frame_count": 36,
+    "clips": {
+      "walk": [
+        0,
+        27
+      ],
+      "hit": [
+        28,
+        35
+      ]
+    }
+  },
+  "BeholderHouseForegroundTiles": {
+    "cid": 2983,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "area_fla.mushroombouncer_27": {
+    "cid": 3036,
+    "frame_count": 12,
+    "clips": {}
+  },
+  "RedMushroomTiles": {
+    "cid": 3059,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "HauntedForegroundTiles": {
+    "cid": 3067,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "JungleForegroundTiles": {
+    "cid": 3083,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "fairyareawhole_fla.bouncepad_2": {
+    "cid": 3089,
+    "frame_count": 12,
+    "clips": {}
+  },
+  "FairyAreaTiles": {
+    "cid": 3140,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "OceanAreaTiles": {
+    "cid": 3214,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BeachAreaTiles": {
+    "cid": 3249,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "AquaHouseForegroundTiles": {
+    "cid": 3257,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "DungeonForegroundTiles": {
+    "cid": 3266,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BeachForegroundTiles": {
+    "cid": 3280,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "RobotHouseForegroundTiles": {
+    "cid": 3289,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "PVPForegroundTiles": {
+    "cid": 3298,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "AcidHouseForegroundTiles": {
+    "cid": 3308,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "LavaForegroundTiles": {
+    "cid": 3323,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BeholderHouseTiles": {
+    "cid": 3369,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "YellowExplosionVector": {
+    "cid": 33,
+    "frame_count": 24,
+    "clips": {}
+  },
+  "JungleTiles": {
+    "cid": 3416,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "MushroomHouseTiles": {
+    "cid": 3480,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "RepguanaAreaTiles": {
+    "cid": 3507,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BlueMushroomAreaTiles": {
+    "cid": 3602,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "RedMushForegroundTiles": {
+    "cid": 3613,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "RepguanaForegroundTiles": {
+    "cid": 3624,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "CloudHouseForegroundTiles": {
+    "cid": 3625,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "AcidAreaTiles": {
+    "cid": 3683,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "PetForegroundTiles": {
+    "cid": 3695,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BeholderAreaTiles": {
+    "cid": 3753,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "HouseTiles": {
+    "cid": 3811,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "AquaHouseTiles": {
+    "cid": 3832,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BlueMushroomForegroundTiles": {
+    "cid": 3842,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "PetAreaTiles": {
+    "cid": 3931,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "FairyHouseForegroundTiles": {
+    "cid": 3941,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "TowerAreaTiles": {
+    "cid": 3943,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "WindmillForegroundTiles": {
+    "cid": 3957,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "BarnTiles": {
+    "cid": 3992,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "HouseForegroundTiles": {
+    "cid": 3996,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "FairyHouseTiles": {
+    "cid": 4032,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "LavaTiles": {
+    "cid": 4049,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "MushroomHouseForegroundTiles": {
+    "cid": 4058,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "AcidForegroundTiles": {
+    "cid": 4084,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "PVPTiles": {
+    "cid": 4135,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "CloudForegroundTiles": {
+    "cid": 4145,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "GreenAreaForegroundTiles": {
+    "cid": 4202,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "ExplosionVector": {
+    "cid": 519,
+    "frame_count": 17,
+    "clips": {}
+  },
+  "com.game_objects.ambient_objects.Portal": {
+    "cid": 66,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "InteractBubble": {
+    "cid": 70,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "Halo": {
+    "cid": 751,
+    "frame_count": 1,
+    "clips": {}
+  },
+  "SplashAnimation": {
+    "cid": 81,
+    "frame_count": 12,
+    "clips": {}
+  }
+}

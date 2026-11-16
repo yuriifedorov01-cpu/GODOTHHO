@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b81okjti2xufi"
+path="res://.godot/imported/purple goo.mp3-71fba103109be2abe98251cf057a4e6c.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/purple goo.mp3"
+dest_files=["res://.godot/imported/purple goo.mp3-71fba103109be2abe98251cf057a4e6c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

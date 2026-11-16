@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cna2o6nxsoy8j"
+path="res://.godot/imported/beholder.mp3-2791b35eefda3f59dde326c46cef1008.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/beholder.mp3"
+dest_files=["res://.godot/imported/beholder.mp3-2791b35eefda3f59dde326c46cef1008.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

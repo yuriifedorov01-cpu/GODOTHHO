@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8e6po8dfh5vn"
+path="res://.godot/imported/light beam.mp3-c57bd5bf58781609f7d93815fc6c731a.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/light beam.mp3"
+dest_files=["res://.godot/imported/light beam.mp3-c57bd5bf58781609f7d93815fc6c731a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,2191 @@
+{
+  "data_files": [
+    {
+      "name": "Books.html",
+      "size": 335779
+    },
+    {
+      "name": "Food.html",
+      "size": 274942
+    },
+    {
+      "name": "Microsoft.Services.Store.winmd",
+      "size": 5120
+    },
+    {
+      "name": "PayVaultItems.json",
+      "size": 4177,
+      "type": "list",
+      "len": 57,
+      "sample_val": {
+        "key": "3000gamemoney",
+        "PriceCoins": 10,
+        "c": 10
+      }
+    },
+    {
+      "name": "Payvault.html",
+      "size": 354744
+    },
+    {
+      "name": "Pet_Helmets.html",
+      "size": 330701
+    },
+    {
+      "name": "RangedWeapons.html",
+      "size": 379495
+    },
+    {
+      "name": "Shields.html",
+      "size": 367416
+    },
+    {
+      "name": "accStats.json",
+      "size": 1844,
+      "type": "list",
+      "len": 12,
+      "sample_val": {
+        "key": "nothing",
+        "def": 0,
+        "lvl": 1,
+        "c": 0,
+        "pow": 0,
+        "rng": 0,
+        "mgc": 0,
+        "art": 0,
+        "f": 1
+      }
+    },
+    {
+      "name": "basePetData.json",
+      "size": 11404,
+      "type": "list",
+      "len": 60,
+      "sample_val": {
+        "key": "Tebra",
+        "c": 200000,
+        "h": 16,
+        "pow": 4,
+        "dx": 4,
+        "def": 2,
+        "m": "fa,fpt,hlha",
+        "d": "A loyal little companion.",
+        "col": "orange"
+      }
+    },
+    {
+      "name": "enemyStats.json",
+      "size": 6572,
+      "type": "list",
+      "len": 46,
+      "sample_val": {
+        "key": "green bouncer",
+        "h": 18,
+        "d": 2,
+        "s": 3.2,
+        "w": 2,
+        "p": 6,
+        "jump": 14,
+        "xp": 6,
+        "height": 2.6
+      }
+    },
+    {
+      "name": "helmetStats.json",
+      "size": 22175,
+      "type": "list",
+      "len": 134,
+      "sample_val": {
+        "key": "none",
+        "f": 2,
+        "min": 0,
+        "max": 0,
+        "c": 0,
+        "lvl": 1,
+        "rng": false,
+        "two": false,
+        "mgc": false,
+        "fire": 0,
+        "shock": 0,
+        "ice": 0,
+        "sr": 0,
+        "def": 0,
+        "pow": 0,
+        "art": 0,
+        "hair": false
+      }
+    },
+    {
+      "name": "helmetStats.json.bak",
+      "size": 21925
+    },
+    {
+      "name": "itemData.json",
+      "size": 1146,
+      "type": "list",
+      "len": 21,
+      "sample_val": {
+        "key": "green spawn ball",
+        "c": 100
+      }
+    },
+    {
+      "name": "itemDescs.json",
+      "size": 1950,
+      "type": "list",
+      "len": 10,
+      "sample_val": {
+        "key": "green spawn ball",
+        "d": "Green spawn ball\n\nDrops a gateway on the ground that keeps spawning green bouncers, green walkers and purple goos (9 enemies per minute). It lasts about 3 hours, cannot be picked up again and stays in every matching area of all servers."
+      }
+    },
+    {
+      "name": "legStats.json",
+      "size": 14477,
+      "type": "list",
+      "len": 99,
+      "sample_val": {
+        "key": "none",
+        "f": 1,
+        "min": 0,
+        "max": 0,
+        "c": 0,
+        "lvl": 1,
+        "rng": false,
+        "two": false,
+        "mgc": false,
+        "fire": 0,
+        "shock": 0,
+        "ice": 0,
+        "sr": 0,
+        "def": 0,
+        "pow": 0,
+        "art": 0,
+        "hair": false
+      }
+    },
+    {
+      "name": "legStats.json.bak",
+      "size": 14228
+    },
+    {
+      "name": "map_1.json",
+      "size": 17375,
+      "type": "map_json",
+      "keys": [
+        "name",
+        "width",
+        "height",
+        "layers",
+        "sizes",
+        "flags",
+        "offsets",
+        "portals",
+        "spawns",
+        "atms",
+        "npcs",
+        "trees",
+        "fish",
+        "playerSpawn",
+        "background",
+        "themeMain",
+        "themeFg"
+      ],
+      "sample": {
+        "name": "map_1",
+        "width": 36,
+        "height": 13,
+        "layers": "{'mapMain': [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 25",
+        "sizes": "{'mapMain': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,",
+        "flags": "{'mapMain': {}, 'mapG2': {}, 'mapG3': {}, 'mapWater': {}, 'mapArt': {}, 'mapFG': {}}",
+        "offsets": "{'mapMain': {}, 'mapG2': {}, 'mapG3': {}, 'mapWater': {}, 'mapArt': {}, 'mapFG': {}}",
+        "portals": "[[19, 0, 2, 'map_2', 0]]",
+        "spawns": "[[16, 10, 4, 10, 'green bouncer', 3, 10], [17, 6, 14, 20, 'green bouncer', 3, 10], [17, 3, 14, 20, 'green bouncer', 3, 1",
+        "atms": "[]",
+        "npcs": "[[2, 4, 'Ronald', ''], [3, 4, 'William', ''], [30, 4, 'Ralph', '']]",
+        "trees": "[[4, 10, 'palm tree'], [7, 5, 'palm tree'], [15, 6, 'palm tree'], [29, 5, 'palm tree'], [32, 5, 'palm tree'], [31, 3, 'p",
+        "fish": "[]",
+        "playerSpawn": "[4, 4]",
+        "background": "",
+        "themeMain": "GreenAreaTiles",
+        "themeFg": "GreenAreaForegroundTiles"
+      }
+    },
+    {
+      "name": "map_10.json",
+      "size": 17946
+    },
+    {
+      "name": "map_100.json",
+      "size": 16689
+    },
+    {
+      "name": "map_101.json",
+      "size": 17582
+    },
+    {
+      "name": "map_102.json",
+      "size": 17843
+    },
+    {
+      "name": "map_103.json",
+      "size": 18033
+    },
+    {
+      "name": "map_104.json",
+      "size": 15048
+    },
+    {
+      "name": "map_105.json",
+      "size": 16527
+    },
+    {
+      "name": "map_106.json",
+      "size": 17730
+    },
+    {
+      "name": "map_107.json",
+      "size": 17903
+    },
+    {
+      "name": "map_108.json",
+      "size": 16088
+    },
+    {
+      "name": "map_109.json",
+      "size": 17988
+    },
+    {
+      "name": "map_11.json",
+      "size": 17980
+    },
+    {
+      "name": "map_110.json",
+      "size": 18088
+    },
+    {
+      "name": "map_111.json",
+      "size": 14071
+    },
+    {
+      "name": "map_112.json",
+      "size": 8797
+    },
+    {
+      "name": "map_113.json",
+      "size": 8858
+    },
+    {
+      "name": "map_114.json",
+      "size": 8815
+    },
+    {
+      "name": "map_115.json",
+      "size": 17902
+    },
+    {
+      "name": "map_116.json",
+      "size": 17819
+    },
+    {
+      "name": "map_117.json",
+      "size": 8921
+    },
+    {
+      "name": "map_118.json",
+      "size": 8932
+    },
+    {
+      "name": "map_119.json",
+      "size": 8926
+    },
+    {
+      "name": "map_12.json",
+      "size": 17846
+    },
+    {
+      "name": "map_120.json",
+      "size": 8928
+    },
+    {
+      "name": "map_121.json",
+      "size": 8945
+    },
+    {
+      "name": "map_122.json",
+      "size": 8947
+    },
+    {
+      "name": "map_123.json",
+      "size": 8946
+    },
+    {
+      "name": "map_124.json",
+      "size": 8911
+    },
+    {
+      "name": "map_125.json",
+      "size": 17771
+    },
+    {
+      "name": "map_126.json",
+      "size": 17965
+    },
+    {
+      "name": "map_127.json",
+      "size": 18033
+    },
+    {
+      "name": "map_128.json",
+      "size": 8887
+    },
+    {
+      "name": "map_129.json",
+      "size": 8911
+    },
+    {
+      "name": "map_13.json",
+      "size": 17833
+    },
+    {
+      "name": "map_130.json",
+      "size": 11720
+    },
+    {
+      "name": "map_131.json",
+      "size": 11712
+    },
+    {
+      "name": "map_132.json",
+      "size": 11707
+    },
+    {
+      "name": "map_133.json",
+      "size": 8890
+    },
+    {
+      "name": "map_134.json",
+      "size": 17881
+    },
+    {
+      "name": "map_135.json",
+      "size": 17847
+    },
+    {
+      "name": "map_136.json",
+      "size": 17864
+    },
+    {
+      "name": "map_137.json",
+      "size": 17840
+    },
+    {
+      "name": "map_138.json",
+      "size": 17805
+    },
+    {
+      "name": "map_139.json",
+      "size": 8926
+    },
+    {
+      "name": "map_14.json",
+      "size": 16579
+    },
+    {
+      "name": "map_140.json",
+      "size": 8901
+    },
+    {
+      "name": "map_141.json",
+      "size": 8904
+    },
+    {
+      "name": "map_142.json",
+      "size": 17644
+    },
+    {
+      "name": "map_143.json",
+      "size": 17823
+    },
+    {
+      "name": "map_144.json",
+      "size": 17697
+    },
+    {
+      "name": "map_145.json",
+      "size": 10621
+    },
+    {
+      "name": "map_15.json",
+      "size": 8900
+    },
+    {
+      "name": "map_16.json",
+      "size": 8905
+    },
+    {
+      "name": "map_17.json",
+      "size": 8917
+    },
+    {
+      "name": "map_18.json",
+      "size": 17760
+    },
+    {
+      "name": "map_19.json",
+      "size": 17725
+    },
+    {
+      "name": "map_2.json",
+      "size": 17454
+    },
+    {
+      "name": "map_20.json",
+      "size": 17734
+    },
+    {
+      "name": "map_21.json",
+      "size": 14799
+    },
+    {
+      "name": "map_22.json",
+      "size": 17779
+    },
+    {
+      "name": "map_23.json",
+      "size": 19129
+    },
+    {
+      "name": "map_24.json",
+      "size": 21682
+    },
+    {
+      "name": "map_25.json",
+      "size": 21761
+    },
+    {
+      "name": "map_26.json",
+      "size": 17648
+    },
+    {
+      "name": "map_27.json",
+      "size": 8407
+    },
+    {
+      "name": "map_28.json",
+      "size": 17944
+    },
+    {
+      "name": "map_29.json",
+      "size": 17995
+    },
+    {
+      "name": "map_3.json",
+      "size": 17470
+    },
+    {
+      "name": "map_30.json",
+      "size": 14930
+    },
+    {
+      "name": "map_31.json",
+      "size": 18062
+    },
+    {
+      "name": "map_32.json",
+      "size": 17848
+    },
+    {
+      "name": "map_33.json",
+      "size": 16895
+    },
+    {
+      "name": "map_34.json",
+      "size": 17858
+    },
+    {
+      "name": "map_35.json",
+      "size": 17860
+    },
+    {
+      "name": "map_36.json",
+      "size": 16135
+    },
+    {
+      "name": "map_37.json",
+      "size": 19492
+    },
+    {
+      "name": "map_38.json",
+      "size": 17909
+    },
+    {
+      "name": "map_39.json",
+      "size": 8921
+    },
+    {
+      "name": "map_4.json",
+      "size": 20958
+    },
+    {
+      "name": "map_40.json",
+      "size": 22455
+    },
+    {
+      "name": "map_41.json",
+      "size": 17632
+    },
+    {
+      "name": "map_42.json",
+      "size": 17868
+    },
+    {
+      "name": "map_43.json",
+      "size": 16045
+    },
+    {
+      "name": "map_44.json",
+      "size": 17054
+    },
+    {
+      "name": "map_45.json",
+      "size": 17940
+    },
+    {
+      "name": "map_46.json",
+      "size": 18123
+    },
+    {
+      "name": "map_47.json",
+      "size": 18107
+    },
+    {
+      "name": "map_48.json",
+      "size": 17988
+    },
+    {
+      "name": "map_49.json",
+      "size": 18060
+    },
+    {
+      "name": "map_5.json",
+      "size": 17976
+    },
+    {
+      "name": "map_50.json",
+      "size": 17994
+    },
+    {
+      "name": "map_52.json",
+      "size": 18133
+    },
+    {
+      "name": "map_53.json",
+      "size": 18284
+    },
+    {
+      "name": "map_54.json",
+      "size": 18202
+    },
+    {
+      "name": "map_55.json",
+      "size": 17044
+    },
+    {
+      "name": "map_56.json",
+      "size": 17571
+    },
+    {
+      "name": "map_57.json",
+      "size": 18214
+    },
+    {
+      "name": "map_58.json",
+      "size": 12487
+    },
+    {
+      "name": "map_59.json",
+      "size": 14873
+    },
+    {
+      "name": "map_6.json",
+      "size": 17830
+    },
+    {
+      "name": "map_60.json",
+      "size": 13432
+    },
+    {
+      "name": "map_61.json",
+      "size": 17720
+    },
+    {
+      "name": "map_62.json",
+      "size": 17765
+    },
+    {
+      "name": "map_63.json",
+      "size": 17825
+    },
+    {
+      "name": "map_64.json",
+      "size": 18162
+    },
+    {
+      "name": "map_65.json",
+      "size": 17911
+    },
+    {
+      "name": "map_66.json",
+      "size": 16961
+    },
+    {
+      "name": "map_67.json",
+      "size": 17868
+    },
+    {
+      "name": "map_68.json",
+      "size": 17990
+    },
+    {
+      "name": "map_69.json",
+      "size": 19500
+    },
+    {
+      "name": "map_7.json",
+      "size": 17905
+    },
+    {
+      "name": "map_70.json",
+      "size": 17691
+    },
+    {
+      "name": "map_71.json",
+      "size": 14880
+    },
+    {
+      "name": "map_72.json",
+      "size": 9228
+    },
+    {
+      "name": "map_73.json",
+      "size": 19368
+    },
+    {
+      "name": "map_74.json",
+      "size": 7818
+    },
+    {
+      "name": "map_75.json",
+      "size": 17905
+    },
+    {
+      "name": "map_76.json",
+      "size": 14598
+    },
+    {
+      "name": "map_77.json",
+      "size": 17874
+    },
+    {
+      "name": "map_78.json",
+      "size": 17761
+    },
+    {
+      "name": "map_79.json",
+      "size": 8898
+    },
+    {
+      "name": "map_8.json",
+      "size": 17816
+    },
+    {
+      "name": "map_80.json",
+      "size": 17747
+    },
+    {
+      "name": "map_81.json",
+      "size": 16786
+    },
+    {
+      "name": "map_82.json",
+      "size": 17896
+    },
+    {
+      "name": "map_83.json",
+      "size": 17796
+    },
+    {
+      "name": "map_84.json",
+      "size": 17631
+    },
+    {
+      "name": "map_85.json",
+      "size": 15895
+    },
+    {
+      "name": "map_86.json",
+      "size": 17308
+    },
+    {
+      "name": "map_87.json",
+      "size": 17404
+    },
+    {
+      "name": "map_88.json",
+      "size": 17473
+    },
+    {
+      "name": "map_89.json",
+      "size": 17668
+    },
+    {
+      "name": "map_9.json",
+      "size": 17852
+    },
+    {
+      "name": "map_90.json",
+      "size": 17607
+    },
+    {
+      "name": "map_91.json",
+      "size": 17548
+    },
+    {
+      "name": "map_92.json",
+      "size": 8891
+    },
+    {
+      "name": "map_93.json",
+      "size": 12905
+    },
+    {
+      "name": "map_94.json",
+      "size": 12939
+    },
+    {
+      "name": "map_95.json",
+      "size": 17988
+    },
+    {
+      "name": "map_96.json",
+      "size": 17933
+    },
+    {
+      "name": "map_97.json",
+      "size": 17929
+    },
+    {
+      "name": "map_98.json",
+      "size": 17511
+    },
+    {
+      "name": "map_99.json",
+      "size": 17820
+    },
+    {
+      "name": "npc-shops.md",
+      "size": 20413
+    },
+    {
+      "name": "npcs.generated.cs.txt",
+      "size": 13042
+    },
+    {
+      "name": "npcs.json",
+      "size": 101467,
+      "type": "dict",
+      "keys_count": 2,
+      "sample_key": "generatedBy",
+      "sample_val": "tools/gen-npcs.mjs"
+    },
+    {
+      "name": "petData.json",
+      "size": 5205,
+      "type": "list",
+      "len": 20,
+      "sample_val": {
+        "key": "Tebra",
+        "type": "Tebra",
+        "owner": "",
+        "health": 16,
+        "totalHealth": 16,
+        "power": 4,
+        "dex": 4,
+        "def": 2,
+        "love": 10,
+        "mode": "fa",
+        "helm": 2,
+        "shoe": 24,
+        "lvl": 1,
+        "xp": 0,
+        "xpSplit": 0,
+        "active": false,
+        "coins": 200000,
+        "tickets": 0
+      }
+    },
+    {
+      "name": "petHelmets.json",
+      "size": 5140,
+      "type": "list",
+      "len": 35,
+      "sample_val": {
+        "key": "pet none helmet",
+        "def": 0,
+        "c": 0,
+        "lvl": 1,
+        "l": 0,
+        "h": 0,
+        "spe": 0,
+        "f": 2
+      }
+    },
+    {
+      "name": "petVendorData.json",
+      "size": 755,
+      "type": "list",
+      "len": 6,
+      "sample_val": {
+        "key": "hhoshop1",
+        "player": "Pet Shop",
+        "x": 908,
+        "y": 3320,
+        "pet": "Teeny",
+        "coins": 500,
+        "tickets": 0,
+        "rot": 0
+      }
+    },
+    {
+      "name": "shirtStats.json",
+      "size": 14680,
+      "type": "list",
+      "len": 100,
+      "sample_val": {
+        "key": "none",
+        "f": 1,
+        "min": 0,
+        "max": 0,
+        "c": 0,
+        "lvl": 1,
+        "rng": false,
+        "two": false,
+        "mgc": false,
+        "fire": 0,
+        "shock": 0,
+        "ice": 0,
+        "sr": 0,
+        "def": 0,
+        "pow": 0,
+        "art": 0,
+        "hair": false
+      }
+    },
+    {
+      "name": "shirtStats.json.bak",
+      "size": 14431
+    },
+    {
+      "name": "shoeStats.json",
+      "size": 6719,
+      "type": "list",
+      "len": 41,
+      "sample_val": {
+        "key": "none",
+        "f": 1,
+        "min": 0,
+        "max": 0,
+        "c": 0,
+        "lvl": 1,
+        "rng": false,
+        "two": false,
+        "mgc": false,
+        "fire": 0,
+        "shock": 0,
+        "ice": 0,
+        "sr": 0,
+        "def": 0,
+        "pow": 0,
+        "art": 0,
+        "hair": false
+      }
+    },
+    {
+      "name": "shoeStats.json.bak",
+      "size": 5418
+    },
+    {
+      "name": "weaponStats.json",
+      "size": 63499,
+      "type": "list",
+      "len": 194,
+      "sample_val": {
+        "key": "none",
+        "f": 1,
+        "min": 0,
+        "max": 0,
+        "c": 0,
+        "lvl": 1,
+        "rng": false,
+        "two": false,
+        "mgc": false,
+        "fire": 0,
+        "shock": 0,
+        "ice": 0,
+        "sr": 0,
+        "def": 0,
+        "pow": 0,
+        "art": 0,
+        "hair": false
+      }
+    },
+    {
+      "name": "weaponStats.json.bak",
+      "size": 37645
+    }
+  ],
+  "dynamic_content": {
+    ".": [],
+    "backgrounds": [
+      {
+        "name": "backgrounds1.png",
+        "size": 115080
+      },
+      {
+        "name": "backgrounds1.xml",
+        "size": 630
+      },
+      {
+        "name": "backgrounds10.png",
+        "size": 99603
+      },
+      {
+        "name": "backgrounds10.xml",
+        "size": 732
+      },
+      {
+        "name": "backgrounds11.png",
+        "size": 78719
+      },
+      {
+        "name": "backgrounds11.xml",
+        "size": 631
+      },
+      {
+        "name": "backgrounds12.png",
+        "size": 70658
+      },
+      {
+        "name": "backgrounds12.xml",
+        "size": 730
+      },
+      {
+        "name": "backgrounds13.png",
+        "size": 54567
+      },
+      {
+        "name": "backgrounds13.xml",
+        "size": 730
+      },
+      {
+        "name": "backgrounds14.png",
+        "size": 50970
+      },
+      {
+        "name": "backgrounds14.xml",
+        "size": 631
+      },
+      {
+        "name": "backgrounds15.png",
+        "size": 41803
+      },
+      {
+        "name": "backgrounds15.xml",
+        "size": 629
+      },
+      {
+        "name": "backgrounds16.png",
+        "size": 53623
+      },
+      {
+        "name": "backgrounds16.xml",
+        "size": 730
+      },
+      {
+        "name": "backgrounds17.png",
+        "size": 57335
+      },
+      {
+        "name": "backgrounds17.xml",
+        "size": 735
+      },
+      {
+        "name": "backgrounds18.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds18.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds19.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds19.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds2.png",
+        "size": 69799
+      },
+      {
+        "name": "backgrounds2.xml",
+        "size": 736
+      },
+      {
+        "name": "backgrounds20.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds20.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds21.png",
+        "size": 150640
+      },
+      {
+        "name": "backgrounds21.xml",
+        "size": 674
+      },
+      {
+        "name": "backgrounds22.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds22.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds23.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds23.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds24.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds24.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds25.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds25.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds26.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds26.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds27.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds27.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds28.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds28.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds29.png",
+        "size": 129358
+      },
+      {
+        "name": "backgrounds29.xml",
+        "size": 617
+      },
+      {
+        "name": "backgrounds3.png",
+        "size": 65099
+      },
+      {
+        "name": "backgrounds3.xml",
+        "size": 728
+      },
+      {
+        "name": "backgrounds30.png",
+        "size": 411
+      },
+      {
+        "name": "backgrounds30.xml",
+        "size": 550
+      },
+      {
+        "name": "backgrounds4.png",
+        "size": 61130
+      },
+      {
+        "name": "backgrounds4.xml",
+        "size": 734
+      },
+      {
+        "name": "backgrounds5.png",
+        "size": 41562
+      },
+      {
+        "name": "backgrounds5.xml",
+        "size": 731
+      },
+      {
+        "name": "backgrounds6.png",
+        "size": 59080
+      },
+      {
+        "name": "backgrounds6.xml",
+        "size": 727
+      },
+      {
+        "name": "backgrounds7.png",
+        "size": 95199
+      },
+      {
+        "name": "backgrounds7.xml",
+        "size": 631
+      },
+      {
+        "name": "backgrounds8.png",
+        "size": 54761
+      },
+      {
+        "name": "backgrounds8.xml",
+        "size": 734
+      },
+      {
+        "name": "backgrounds9.png",
+        "size": 75408
+      },
+      {
+        "name": "backgrounds9.xml",
+        "size": 618
+      }
+    ],
+    "misc": [
+      {
+        "name": "pet_body_locations.xml",
+        "size": 163727
+      },
+      {
+        "name": "pet_body_locations.xml.bak_petcar",
+        "size": 161656
+      }
+    ],
+    "sprite_sheets": [
+      {
+        "name": "char create menu.png",
+        "size": 37744
+      },
+      {
+        "name": "char create menu.xml",
+        "size": 1352
+      },
+      {
+        "name": "character menu.png",
+        "size": 25286
+      },
+      {
+        "name": "character menu.xml",
+        "size": 1713
+      },
+      {
+        "name": "controls.png",
+        "size": 68326
+      },
+      {
+        "name": "controls.xml",
+        "size": 3219
+      },
+      {
+        "name": "energy menu.png",
+        "size": 13753
+      },
+      {
+        "name": "energy menu.xml",
+        "size": 1550
+      },
+      {
+        "name": "friends menu.png",
+        "size": 20310
+      },
+      {
+        "name": "friends menu.xml",
+        "size": 1976
+      },
+      {
+        "name": "guild member menu.png",
+        "size": 12924
+      },
+      {
+        "name": "guild member menu.xml",
+        "size": 1032
+      },
+      {
+        "name": "heropedia menu.png",
+        "size": 35570
+      },
+      {
+        "name": "heropedia menu.xml",
+        "size": 944
+      },
+      {
+        "name": "item menu.png",
+        "size": 141931
+      },
+      {
+        "name": "item menu.xml",
+        "size": 5763
+      },
+      {
+        "name": "items_pets_bodies.png",
+        "size": 2044745
+      },
+      {
+        "name": "items_pets_bodies.png.bak_petcar",
+        "size": 736932
+      },
+      {
+        "name": "items_pets_bodies.xml",
+        "size": 132453
+      },
+      {
+        "name": "items_pets_bodies.xml.bak_petcar",
+        "size": 130946
+      },
+      {
+        "name": "items_pets_bodies.xml.before-atlasitems",
+        "size": 130665
+      },
+      {
+        "name": "load screen.png",
+        "size": 26501
+      },
+      {
+        "name": "load screen.xml",
+        "size": 483
+      },
+      {
+        "name": "map menu.png",
+        "size": 35344
+      },
+      {
+        "name": "map menu.xml",
+        "size": 1235
+      },
+      {
+        "name": "pet menu.png",
+        "size": 34536
+      },
+      {
+        "name": "pet menu.xml",
+        "size": 2559
+      },
+      {
+        "name": "pet mode menu.png",
+        "size": 9537
+      },
+      {
+        "name": "pet mode menu.xml",
+        "size": 951
+      },
+      {
+        "name": "skill images.png",
+        "size": 443227
+      },
+      {
+        "name": "skill images.xml",
+        "size": 3225
+      },
+      {
+        "name": "skills menu.png",
+        "size": 18826
+      },
+      {
+        "name": "skills menu.xml",
+        "size": 902
+      },
+      {
+        "name": "talk box.png",
+        "size": 10174
+      },
+      {
+        "name": "talk box.xml",
+        "size": 595
+      },
+      {
+        "name": "talk_font.fnt",
+        "size": 15572
+      },
+      {
+        "name": "talk_font.png",
+        "size": 5841
+      }
+    ]
+  },
+  "sfx_and_music": {
+    ".": [
+      {
+        "name": "150413_Our_World_Alive-free_download.mp3",
+        "size": 1274912
+      },
+      {
+        "name": "Art_Of_The_East_full_mix.mp3",
+        "size": 1135712
+      },
+      {
+        "name": "Bringing_Faith_full_mix.mp3",
+        "size": 1231328
+      },
+      {
+        "name": "Cutie_Pie_full_mix.mp3",
+        "size": 1044320
+      },
+      {
+        "name": "Dance_Of_The_Dragons_full_mix.mp3",
+        "size": 989216
+      },
+      {
+        "name": "Forgotten_Time_full_mix.mp3",
+        "size": 1336352
+      },
+      {
+        "name": "Glory_Glory_full_mix.mp3",
+        "size": 368672
+      },
+      {
+        "name": "Here_To_Forever_full_mix_mp3.mp3",
+        "size": 986528
+      },
+      {
+        "name": "Mister_Magician_full_mix.mp3",
+        "size": 572768
+      },
+      {
+        "name": "Modern_Warriors_full_mix.mp3",
+        "size": 764192
+      },
+      {
+        "name": "Picket_Fences_full_mix.mp3",
+        "size": 1384232
+      },
+      {
+        "name": "Raise_Me_Up_full_mix.mp3",
+        "size": 667808
+      },
+      {
+        "name": "Suite_Trip_full_mix.mp3",
+        "size": 963104
+      },
+      {
+        "name": "Surreal_State_full_mix.mp3",
+        "size": 1376096
+      },
+      {
+        "name": "Survivors_full_mix.mp3",
+        "size": 1049120
+      },
+      {
+        "name": "Times_Of_Change_full_mix 2.mp3",
+        "size": 730784
+      },
+      {
+        "name": "Tomorrow_Here_full_mix_mp3.mp3",
+        "size": 1175648
+      },
+      {
+        "name": "beach-music.mp3",
+        "size": 1310240
+      },
+      {
+        "name": "mushroom_music.mp3",
+        "size": 1110752
+      },
+      {
+        "name": "spread your wings.mp3",
+        "size": 1092704
+      },
+      {
+        "name": "windmill-music.mp3",
+        "size": 1185632
+      }
+    ],
+    "gun sounds": [
+      {
+        "name": "M16.mp3",
+        "size": 2840
+      },
+      {
+        "name": "airsoft gun.mp3",
+        "size": 968
+      },
+      {
+        "name": "ak47.mp3",
+        "size": 7543
+      },
+      {
+        "name": "bazooka.mp3",
+        "size": 6944
+      },
+      {
+        "name": "bb gun.mp3",
+        "size": 4868
+      },
+      {
+        "name": "beholder gun.mp3",
+        "size": 4712
+      },
+      {
+        "name": "chaingun.mp3",
+        "size": 1040
+      },
+      {
+        "name": "corruptor.mp3",
+        "size": 4400
+      },
+      {
+        "name": "enforcer gun.mp3",
+        "size": 7052
+      },
+      {
+        "name": "es c90.mp3",
+        "size": 5180
+      },
+      {
+        "name": "kreeton gun.mp3",
+        "size": 6224
+      },
+      {
+        "name": "mac 10.mp3",
+        "size": 2840
+      },
+      {
+        "name": "machine gun.mp3",
+        "size": 2762
+      },
+      {
+        "name": "mp5.mp3",
+        "size": 1592
+      },
+      {
+        "name": "neoplasti blaster.mp3",
+        "size": 6918
+      },
+      {
+        "name": "paintball gun.mp3",
+        "size": 1112
+      },
+      {
+        "name": "pistol.mp3",
+        "size": 6428
+      },
+      {
+        "name": "potato gun.mp3",
+        "size": 1072
+      },
+      {
+        "name": "radiator gun.mp3",
+        "size": 3488
+      },
+      {
+        "name": "rayon beam.mp3",
+        "size": 3308
+      },
+      {
+        "name": "revolver.mp3",
+        "size": 2372
+      },
+      {
+        "name": "shotgun.mp3",
+        "size": 10952
+      },
+      {
+        "name": "skull bone gun.mp3",
+        "size": 7208
+      },
+      {
+        "name": "skullcrusher gun.mp3",
+        "size": 8144
+      },
+      {
+        "name": "sniper rifle.mp3",
+        "size": 10016
+      },
+      {
+        "name": "tommy gun.mp3",
+        "size": 2372
+      },
+      {
+        "name": "x8 rifle.mp3",
+        "size": 7179
+      }
+    ],
+    "SFX": [
+      {
+        "name": "HE GRENADE sound effect.mp3",
+        "size": 9932
+      },
+      {
+        "name": "Metal Hit 01 Sound Effects.mp3",
+        "size": 2216
+      },
+      {
+        "name": "NFF-choice-bad.mp3",
+        "size": 7832
+      },
+      {
+        "name": "NFF-fake-wind.mp3",
+        "size": 8300
+      },
+      {
+        "name": "NFF-menu-a.mp3",
+        "size": 2216
+      },
+      {
+        "name": "NFF-uncap.mp3",
+        "size": 2372
+      },
+      {
+        "name": "NFF-usb-yes.mp3",
+        "size": 3932
+      },
+      {
+        "name": "Sci Fi Ring Explosion.mp3",
+        "size": 16412
+      },
+      {
+        "name": "Thunder_Booming_SE.mp3",
+        "size": 18440
+      },
+      {
+        "name": "alert menu.mp3",
+        "size": 7832
+      },
+      {
+        "name": "beholder cannon.mp3",
+        "size": 6584
+      },
+      {
+        "name": "big dog bark.mp3",
+        "size": 2912
+      },
+      {
+        "name": "boing.mp3",
+        "size": 6922
+      },
+      {
+        "name": "bow_fire.mp3",
+        "size": 1748
+      },
+      {
+        "name": "bubble pop.mp3",
+        "size": 760
+      },
+      {
+        "name": "cash register.mp3",
+        "size": 8960
+      },
+      {
+        "name": "chomp.mp3",
+        "size": 3812
+      },
+      {
+        "name": "click.mp3",
+        "size": 1436
+      },
+      {
+        "name": "coin box hit.mp3",
+        "size": 2996
+      },
+      {
+        "name": "coin get.mp3",
+        "size": 2216
+      },
+      {
+        "name": "controller disconnect.mp3",
+        "size": 3932
+      },
+      {
+        "name": "controller.mp3",
+        "size": 3620
+      },
+      {
+        "name": "crunch 2.mp3",
+        "size": 2840
+      },
+      {
+        "name": "crunch.mp3",
+        "size": 5024
+      },
+      {
+        "name": "electric zap.mp3",
+        "size": 5492
+      },
+      {
+        "name": "epic hit 1.mp3",
+        "size": 6740
+      },
+      {
+        "name": "fart1.mp3",
+        "size": 4244
+      },
+      {
+        "name": "fart2.mp3",
+        "size": 1904
+      },
+      {
+        "name": "fart3.mp3",
+        "size": 2684
+      },
+      {
+        "name": "female grunt 1.mp3",
+        "size": 2684
+      },
+      {
+        "name": "female grunt 2.mp3",
+        "size": 2528
+      },
+      {
+        "name": "fireball.mp3",
+        "size": 11264
+      },
+      {
+        "name": "glass break.mp3",
+        "size": 5180
+      },
+      {
+        "name": "heal sound.mp3",
+        "size": 6740
+      },
+      {
+        "name": "heavy swing.mp3",
+        "size": 2840
+      },
+      {
+        "name": "high shine.mp3",
+        "size": 11984
+      },
+      {
+        "name": "item bought.mp3",
+        "size": 2528
+      },
+      {
+        "name": "item sold.mp3",
+        "size": 2372
+      },
+      {
+        "name": "jump.mp3",
+        "size": 3813
+      },
+      {
+        "name": "jump2.mp3",
+        "size": 3318
+      },
+      {
+        "name": "level up.mp3",
+        "size": 24524
+      },
+      {
+        "name": "light beam.mp3",
+        "size": 6428
+      },
+      {
+        "name": "lightning strike 2.mp3",
+        "size": 16412
+      },
+      {
+        "name": "lightning strike 3.mp3",
+        "size": 15320
+      },
+      {
+        "name": "little dog bark.mp3",
+        "size": 2528
+      },
+      {
+        "name": "logs.mp3",
+        "size": 7088
+      },
+      {
+        "name": "low drone.mp3",
+        "size": 19272
+      },
+      {
+        "name": "magic swing.mp3",
+        "size": 5648
+      },
+      {
+        "name": "magic.mp3",
+        "size": 5648
+      },
+      {
+        "name": "male grunt 1.mp3",
+        "size": 1488
+      },
+      {
+        "name": "male grunt 2.mp3",
+        "size": 1488
+      },
+      {
+        "name": "medium dog bark.mp3",
+        "size": 1904
+      },
+      {
+        "name": "monster growl.mp3",
+        "size": 6116
+      },
+      {
+        "name": "new chat message.mp3",
+        "size": 3152
+      },
+      {
+        "name": "new mission.mp3",
+        "size": 7676
+      },
+      {
+        "name": "new pm.mp3",
+        "size": 2996
+      },
+      {
+        "name": "new sign on.mp3",
+        "size": 5804
+      },
+      {
+        "name": "pet evolve.mp3",
+        "size": 14852
+      },
+      {
+        "name": "pickup.mp3",
+        "size": 2528
+      },
+      {
+        "name": "power up hit 1.mp3",
+        "size": 22208
+      },
+      {
+        "name": "power up impact hit.mp3",
+        "size": 24524
+      },
+      {
+        "name": "power up.mp3",
+        "size": 30764
+      },
+      {
+        "name": "proficient level up.mp3",
+        "size": 11264
+      },
+      {
+        "name": "quick hit.mp3",
+        "size": 2684
+      },
+      {
+        "name": "roar 3.mp3",
+        "size": 18032
+      },
+      {
+        "name": "rock fall.mp3",
+        "size": 17660
+      },
+      {
+        "name": "running.mp3",
+        "size": 2192
+      },
+      {
+        "name": "short zap.mp3",
+        "size": 3920
+      },
+      {
+        "name": "stick break.mp3",
+        "size": 14011
+      },
+      {
+        "name": "sword swoosh 1.mp3",
+        "size": 1748
+      },
+      {
+        "name": "sword swoosh 2.mp3",
+        "size": 2372
+      },
+      {
+        "name": "sword swoosh 3.mp3",
+        "size": 2528
+      },
+      {
+        "name": "take hit 1.mp3",
+        "size": 2912
+      },
+      {
+        "name": "take hit 2.mp3",
+        "size": 3932
+      },
+      {
+        "name": "teleport.mp3",
+        "size": 13448
+      },
+      {
+        "name": "text blip.mp3",
+        "size": 7627
+      },
+      {
+        "name": "water swish.mp3",
+        "size": 5024
+      },
+      {
+        "name": "wing flap.mp3",
+        "size": 6106
+      },
+      {
+        "name": "wood hit.mp3",
+        "size": 1904
+      },
+      {
+        "name": "wood hit2.mp3",
+        "size": 2060
+      },
+      {
+        "name": "wood split.mp3",
+        "size": 1592
+      },
+      {
+        "name": "woosh2.mp3",
+        "size": 3152
+      }
+    ],
+    "SFX/enemy sounds": [
+      {
+        "name": "aipster.mp3",
+        "size": 6176
+      },
+      {
+        "name": "beholder.mp3",
+        "size": 3632
+      },
+      {
+        "name": "block bot.mp3",
+        "size": 7364
+      },
+      {
+        "name": "bouncing mushroom.mp3",
+        "size": 2912
+      },
+      {
+        "name": "brick monster.mp3",
+        "size": 5492
+      },
+      {
+        "name": "bullopede.mp3",
+        "size": 5804
+      },
+      {
+        "name": "chirplet.mp3",
+        "size": 2840
+      },
+      {
+        "name": "crab.mp3",
+        "size": 2528
+      },
+      {
+        "name": "drill bot.mp3",
+        "size": 5336
+      },
+      {
+        "name": "fishurn.mp3",
+        "size": 4244
+      },
+      {
+        "name": "flockling.mp3",
+        "size": 6896
+      },
+      {
+        "name": "glorn.mp3",
+        "size": 5180
+      },
+      {
+        "name": "goo cube.mp3",
+        "size": 13720
+      },
+      {
+        "name": "great frog.mp3",
+        "size": 4088
+      },
+      {
+        "name": "green bouncer.mp3",
+        "size": 3464
+      },
+      {
+        "name": "green walker.mp3",
+        "size": 4244
+      },
+      {
+        "name": "hawk.mp3",
+        "size": 19376
+      },
+      {
+        "name": "horned monster.mp3",
+        "size": 4556
+      },
+      {
+        "name": "kraken.mp3",
+        "size": 9968
+      },
+      {
+        "name": "kraw.mp3",
+        "size": 5648
+      },
+      {
+        "name": "kreeton.mp3",
+        "size": 6896
+      },
+      {
+        "name": "lava dragon.mp3",
+        "size": 8612
+      },
+      {
+        "name": "leaflet2.mp3",
+        "size": 3620
+      },
+      {
+        "name": "leafling.mp3",
+        "size": 4172
+      },
+      {
+        "name": "lotus eye.mp3",
+        "size": 6584
+      },
+      {
+        "name": "mongrel.mp3",
+        "size": 10361
+      },
+      {
+        "name": "mushroom ball.mp3",
+        "size": 5492
+      },
+      {
+        "name": "mushroom bird.mp3",
+        "size": 5804
+      },
+      {
+        "name": "mushroom squish.mp3",
+        "size": 3308
+      },
+      {
+        "name": "omega fluff.mp3",
+        "size": 33720
+      },
+      {
+        "name": "orange crazy.mp3",
+        "size": 3620
+      },
+      {
+        "name": "penguin.mp3",
+        "size": 5336
+      },
+      {
+        "name": "plant monster.mp3",
+        "size": 4088
+      },
+      {
+        "name": "proteum.mp3",
+        "size": 13712
+      },
+      {
+        "name": "pumpkin.mp3",
+        "size": 6152
+      },
+      {
+        "name": "purple goo.mp3",
+        "size": 3464
+      },
+      {
+        "name": "red bouncer.mp3",
+        "size": 4244
+      },
+      {
+        "name": "repguana.mp3",
+        "size": 14228
+      },
+      {
+        "name": "sasquatch.mp3",
+        "size": 3992
+      },
+      {
+        "name": "stalker.mp3",
+        "size": 6584
+      },
+      {
+        "name": "vulture.mp3",
+        "size": 7518
+      },
+      {
+        "name": "yellow hairy.mp3",
+        "size": 2684
+      },
+      {
+        "name": "yellow puff.mp3",
+        "size": 2372
+      }
+    ],
+    "SFX/gun sounds": [
+      {
+        "name": "M16.mp3",
+        "size": 2840
+      },
+      {
+        "name": "airsoft gun.mp3",
+        "size": 968
+      },
+      {
+        "name": "ak47.mp3",
+        "size": 7543
+      },
+      {
+        "name": "bazooka.mp3",
+        "size": 6944
+      },
+      {
+        "name": "bb gun.mp3",
+        "size": 4868
+      },
+      {
+        "name": "beholder gun.mp3",
+        "size": 4712
+      },
+      {
+        "name": "chaingun.mp3",
+        "size": 1040
+      },
+      {
+        "name": "corruptor.mp3",
+        "size": 4400
+      },
+      {
+        "name": "enforcer gun.mp3",
+        "size": 7052
+      },
+      {
+        "name": "es c90.mp3",
+        "size": 5180
+      },
+      {
+        "name": "kreeton gun.mp3",
+        "size": 6224
+      },
+      {
+        "name": "mac 10.mp3",
+        "size": 2840
+      },
+      {
+        "name": "machine gun.mp3",
+        "size": 2762
+      },
+      {
+        "name": "mp5.mp3",
+        "size": 1592
+      },
+      {
+        "name": "neoplasti blaster.mp3",
+        "size": 6918
+      },
+      {
+        "name": "paintball gun.mp3",
+        "size": 1112
+      },
+      {
+        "name": "pistol.mp3",
+        "size": 6428
+      },
+      {
+        "name": "potato gun.mp3",
+        "size": 1072
+      },
+      {
+        "name": "radiator gun.mp3",
+        "size": 3488
+      },
+      {
+        "name": "rayon beam.mp3",
+        "size": 3308
+      },
+      {
+        "name": "revolver.mp3",
+        "size": 2372
+      },
+      {
+        "name": "shotgun.mp3",
+        "size": 10952
+      },
+      {
+        "name": "skull bone gun.mp3",
+        "size": 7208
+      },
+      {
+        "name": "skullcrusher gun.mp3",
+        "size": 8144
+      },
+      {
+        "name": "sniper rifle.mp3",
+        "size": 10016
+      },
+      {
+        "name": "tommy gun.mp3",
+        "size": 2372
+      },
+      {
+        "name": "x8 rifle.mp3",
+        "size": 7179
+      }
+    ]
+  },
+  "cut_scenes": [
+    {
+      "name": "helmet heros cutscene.swf",
+      "size": 1694492
+    },
+    {
+      "name": "helmethero cutscene2.swf",
+      "size": 300181
+    }
+  ],
+  "includes": [
+    {
+      "name": "getIP.php",
+      "size": 23,
+      "content": "country=US&ip=127.0.0.1"
+    },
+    {
+      "name": "getTotal.php",
+      "size": 66,
+      "content": "server1=1&server2=0&server3=0&server4=0&serverPVP=0&totalPlayers=1"
+    }
+  ],
+  "hht_maps_diff": [],
+  "client_maps_count": 144,
+  "repo_maps_count": 144,
+  "maps_diff_count": 0
+}

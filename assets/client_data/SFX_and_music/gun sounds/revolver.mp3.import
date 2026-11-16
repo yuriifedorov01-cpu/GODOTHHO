@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://58itavhha8dd"
+path="res://.godot/imported/revolver.mp3-bf0bb9764ebc864bf4003c1342accc10.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/gun sounds/revolver.mp3"
+dest_files=["res://.godot/imported/revolver.mp3-bf0bb9764ebc864bf4003c1342accc10.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

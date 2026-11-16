@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbw2isin3q60g"
+path="res://.godot/imported/skullcrusher gun.mp3-eb9d4fddb31816fae99a7e04676f07b5.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/skullcrusher gun.mp3"
+dest_files=["res://.godot/imported/skullcrusher gun.mp3-eb9d4fddb31816fae99a7e04676f07b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://m4hjbxe46t7i"
+path="res://.godot/imported/talk_font.fnt-84a11f0eb86e90bbafc89a27dcf8e201.fontdata"
+
+[deps]
+
+source_file="res://assets/client_data/dynamic_content/sprite_sheets/talk_font.fnt"
+dest_files=["res://.godot/imported/talk_font.fnt-84a11f0eb86e90bbafc89a27dcf8e201.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

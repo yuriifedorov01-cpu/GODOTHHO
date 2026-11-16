@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctdv4q7re5uv2"
+path="res://.godot/imported/vulture.mp3-bc4529b8f1d1a28d55dac54ecf77f360.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/vulture.mp3"
+dest_files=["res://.godot/imported/vulture.mp3-bc4529b8f1d1a28d55dac54ecf77f360.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

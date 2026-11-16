@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="snowflake.png">
+	<!-- Created with Adobe Animate version 15.1.1.13 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="snowflake" x="0" y="0" width="20" height="24" pivotX="10.1" pivotY="11.55"/>
+</TextureAtlas>

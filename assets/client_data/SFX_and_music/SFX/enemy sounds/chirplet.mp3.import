@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crastra1e2mhw"
+path="res://.godot/imported/chirplet.mp3-176443e96c681bf1771de07b2558569f.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/chirplet.mp3"
+dest_files=["res://.godot/imported/chirplet.mp3-176443e96c681bf1771de07b2558569f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

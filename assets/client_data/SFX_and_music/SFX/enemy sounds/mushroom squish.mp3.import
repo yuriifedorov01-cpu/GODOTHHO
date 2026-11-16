@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csgtyepwwgiqg"
+path="res://.godot/imported/mushroom squish.mp3-993c3251205dfa48bf0787e60c6e2d8e.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/mushroom squish.mp3"
+dest_files=["res://.godot/imported/mushroom squish.mp3-993c3251205dfa48bf0787e60c6e2d8e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8vhu6ol16lcc"
+path="res://.godot/imported/quick hit.mp3-b70058824d5dbd77568b100b924e05db.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/quick hit.mp3"
+dest_files=["res://.godot/imported/quick hit.mp3-b70058824d5dbd77568b100b924e05db.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

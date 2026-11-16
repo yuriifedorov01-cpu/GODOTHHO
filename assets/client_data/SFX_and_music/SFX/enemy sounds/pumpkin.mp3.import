@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://k0fyj8qhyum3"
+path="res://.godot/imported/pumpkin.mp3-44b903d3e4f87c2d08ed581780a57fea.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/pumpkin.mp3"
+dest_files=["res://.godot/imported/pumpkin.mp3-44b903d3e4f87c2d08ed581780a57fea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

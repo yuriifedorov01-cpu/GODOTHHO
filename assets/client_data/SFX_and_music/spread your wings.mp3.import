@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ksa5osotce0x"
+path="res://.godot/imported/spread your wings.mp3-75f5c12384448dd539650643fc7252fb.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/spread your wings.mp3"
+dest_files=["res://.godot/imported/spread your wings.mp3-75f5c12384448dd539650643fc7252fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

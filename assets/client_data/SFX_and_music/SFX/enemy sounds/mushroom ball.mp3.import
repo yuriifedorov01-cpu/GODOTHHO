@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbfklln4mbabi"
+path="res://.godot/imported/mushroom ball.mp3-4947e6f2df383bd6018852d0c1f103ec.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/mushroom ball.mp3"
+dest_files=["res://.godot/imported/mushroom ball.mp3-4947e6f2df383bd6018852d0c1f103ec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

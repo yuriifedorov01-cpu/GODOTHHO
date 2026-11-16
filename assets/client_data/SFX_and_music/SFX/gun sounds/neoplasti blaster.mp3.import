@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxnvh4ldpq781"
+path="res://.godot/imported/neoplasti blaster.mp3-457c7c07a40081abf939f6422b23c372.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/neoplasti blaster.mp3"
+dest_files=["res://.godot/imported/neoplasti blaster.mp3-457c7c07a40081abf939f6422b23c372.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

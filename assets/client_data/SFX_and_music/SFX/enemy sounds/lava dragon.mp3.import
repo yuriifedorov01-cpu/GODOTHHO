@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rt8t8viv4xxf"
+path="res://.godot/imported/lava dragon.mp3-3d216ec262bcb32b84c0b0e498685da8.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/lava dragon.mp3"
+dest_files=["res://.godot/imported/lava dragon.mp3-3d216ec262bcb32b84c0b0e498685da8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

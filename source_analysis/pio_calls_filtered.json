@@ -1,0 +1,2067 @@
+[
+  {
+    "file": "GameMain.as",
+    "line": 544,
+    "code": "PlayerIO.quickConnect.facebookOAuthConnectPopup(stage,\"hho-ygpra4ftumusohpifpdug\",\"_blank\",[],null,null,handleConnect,handleError);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 549,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"simpleconnection\",_loc1_,null,handleConnect,handleError);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 554,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"public\",_loc1_,null,handleConnect,handleError);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 566,
+    "code": "_loc1_.userToken = PlayerIOPublishingNetwork.token;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 598,
+    "code": "this.joinRoom();"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 608,
+    "code": "private function joinRoom() : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 676,
+    "code": "_loc5_.onPlayerIO = true;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 690,
+    "code": "this.theClient.multiplayer.createJoinRoom(this.starlingStage.controls.version_txt.text + \"-r\" + this.currentLevel + \"_\" + this.serverName,\"MyCode\",true,{},_loc5_,this.handleJoin,this.roomConnectError);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 927,
+    "code": "this.theClient.multiplayer.listRooms(\"MyCode\",{},500,0,this.roomInfoGot);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 941,
+    "code": "private function roomConnectError(param1:PlayerIOError) : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 950,
+    "code": "private function handleError(param1:PlayerIOError) : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 1212,
+    "code": "PlayerIO.quickConnect.simpleRecoverPassword(\"hho-ygpra4ftumusohpifpdug\",this.mMenu.recoverEmail_txt.text,this.passwordSent,this.passwordSentError);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 1220,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"simpleconnection\",tempConnectParams,null,null,this.passChangeAttempt);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 1230,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"simpleconnection\",tempConnectParams2,null,null,this.emailChangeAttempt);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 1320,
+    "code": "this.guildMenu.selectGuild(this.player.guild,this.player,this.theClient.connectUserId,flash.display.MovieClip(this.guildMenu.list_mc.getChildAt(this.i)));"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 1476,
+    "code": "this.pvMenu.gotoPlayerIOPurchase();"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2026,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2034,
+    "code": "this.miscString += this.theClient.connectUserId + \"&connection=public\";"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2041,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2053,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2063,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2073,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2083,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2093,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2103,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2113,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2123,
+    "code": "this.miscString += \"&connectuserid=\" + this.theClient.connectUserId;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2203,
+    "code": "case \"buyPlayerIO10_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2204,
+    "code": "this.pvMenu.buyFromPlayerIO(10,this);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2206,
+    "code": "case \"buyPlayerIO50_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2207,
+    "code": "this.pvMenu.buyFromPlayerIO(50,this);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2209,
+    "code": "case \"buyPlayerIO100_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2210,
+    "code": "this.pvMenu.buyFromPlayerIO(100,this);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2212,
+    "code": "case \"buyPlayerIO220_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2213,
+    "code": "this.pvMenu.buyFromPlayerIO(220,this);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2215,
+    "code": "case \"buyPlayerIO450_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2218,
+    "code": "case \"buyPlayerIO1300_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2219,
+    "code": "this.pvMenu.buyFromPlayerIO(1300,this);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2221,
+    "code": "case \"buyPlayerIO2800_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2222,
+    "code": "this.pvMenu.buyFromPlayerIO(2800,this);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2224,
+    "code": "case \"buyPlayerIO6000_btn\":"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2225,
+    "code": "this.pvMenu.buyFromPlayerIO(6000,this);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2425,
+    "code": "this.guildMenu.selectGuild(flash.display.MovieClip(e.target).name_txt.text,this.player,this.theClient.connectUserId,flash.display.MovieClip(e.target));"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2507,
+    "code": "private function passChangeAttempt(param1:PlayerIOError) : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 2517,
+    "code": "private function emailChangeAttempt(param1:PlayerIOError) : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 3948,
+    "code": "joinRoom();"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 3953,
+    "code": "joinRoom();"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 4450,
+    "code": "private function quickError(param1:PlayerIORegistrationError) : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 4588,
+    "code": "this.theClient.bigDB.load(\"PlayerObjects\",this.theClient.connectUserId,this.playerInfoLoadedScrolls);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 5038,
+    "code": "public function boughtPVError(param1:PlayerIOError) : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 5058,
+    "code": "this.pvMenu.gotoPlayerIOPurchase();"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 5319,
+    "code": "private function passwordSentError(param1:PlayerIOError) : void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 6873,
+    "code": "if(param5 == this.theClient.connectUserId || param5 == this.player.name)"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 6885,
+    "code": "if(param5 == this.theClient.connectUserId || param5 == this.player.name)"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 9759,
+    "code": "PlayerIO.useSecureApiRequests = true;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 9763,
+    "code": "PlayerIOPublishingNetwork.init(root);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 9825,
+    "code": "else if(PlayerIOPublishingNetwork.isOnNetworkSite())"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 9828,
+    "code": "this.test_txt.text = \"playing on PlayerIO publishing network\";"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 10039,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"public\",{\"userId\":\"adsfjhakf\"},null,function(param1:Client):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 10547,
+    "code": "joinRoom();"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 10626,
+    "code": "this.theClient.bigDB.load(\"PlayerObjects\",this.theClient.connectUserId,n_playerObjectLoaded);"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 10967,
+    "code": "if(VendingMachine(this.starlingStage.c_mc.getChildByName(this.itemMenu.vendorKey)).sellerName == this.theClient.connectUserId || Person.removeNamePrefix(VendingMachine(this.starlingStage.c_mc.getChildByName(this.itemMenu.vendorKey)).sellerName) == this.player.name)"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14101,
+    "code": "else if(_friendName == this.theClient.connectUserId)"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14270,
+    "code": "if(this.playingURL_string == \"armorgames.com\" || this.playingURL_string == \"facebook.com\" || this.playingURL_string == \"kongregate.com\" || this.playingURL_string == \"y8.com\" || this.playingURL_string == \"miniplay.com\" || this.playingURL_string == \"steampowered.com\" || Boolean(PlayerIOPublishingNetwork.isOnNetworkSite()))"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14281,
+    "code": "PlayerIO.quickConnect.facebookOAuthConnect(stage,\"hho-ygpra4ftumusohpifpdug\",Facebook.token,null,null,function(param1:Client, param2:String):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14319,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14327,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"public\",tempLoginObject,null,function(param1:Client):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14416,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14427,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"public\",tempLoginObject,null,function(param1:Client):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14488,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"public\",tempLoginObject,null,function(param1:Client):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14560,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"kongregateconnection\",tempLoginObject,null,function(param1:Client):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14607,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14618,
+    "code": "else if(PlayerIOPublishingNetwork.isOnNetworkSite())"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14620,
+    "code": "tempLoginObject.userToken = PlayerIOPublishingNetwork.token;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14622,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"publishingnetwork\",tempLoginObject,null,function(param1:Client):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14636,
+    "code": "usernameNoSpaces = PlayerIOPublishingNetwork.username.split(\" \").join(\"_\");"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14647,
+    "code": "if(PlayerIOPublishingNetwork.username != \"unnamed player\" && PlayerIOPublishingNetwork.username != \"unknown player\")"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14653,
+    "code": "charCreateMenu.password_txt.text = PlayerIOPublishingNetwork.token;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14675,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14677,
+    "code": "mMenu.fullScreen_txt.text = PlayerIOPublishingNetwork.token;"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14687,
+    "code": "PlayerIO.authenticate(stage,\"hho-ygpra4ftumusohpifpdug\",\"steamconnection\",tempLoginObject,null,function(param1:Client):void"
+  },
+  {
+    "file": "GameMain.as",
+    "line": 14726,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "com/apis/GooglePlay.as",
+    "line": 3,
+    "code": "import playerio.PlayerIOError;"
+  },
+  {
+    "file": "com/apis/GooglePlay.as",
+    "line": 96,
+    "code": "gameMain.createAlert(\"PlayerIO purchase success\",true);"
+  },
+  {
+    "file": "com/apis/GooglePlay.as",
+    "line": 97,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "com/apis/IOS.as",
+    "line": 3,
+    "code": "import playerio.PlayerIOError;"
+  },
+  {
+    "file": "com/apis/IOS.as",
+    "line": 70,
+    "code": "gameMain.createAlert(\"PlayerIO purchase succes: \" + param1.productId);"
+  },
+  {
+    "file": "com/apis/IOS.as",
+    "line": 71,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "com/apis/PlayerIOPublishingNetwork.as",
+    "line": 5,
+    "code": "public final class PlayerIOPublishingNetwork"
+  },
+  {
+    "file": "com/apis/PlayerIOPublishingNetwork.as",
+    "line": 10,
+    "code": "public function PlayerIOPublishingNetwork()"
+  },
+  {
+    "file": "com/apis/PlayerIOPublishingNetwork.as",
+    "line": 22,
+    "code": "if(LoaderInfo(root.stage.loaderInfo).parameters.onPlayerIO == undefined)"
+  },
+  {
+    "file": "com/apis/PlayerIOPublishingNetwork.as",
+    "line": 26,
+    "code": "return Boolean(LoaderInfo(root.stage.loaderInfo).parameters.onPlayerIO);"
+  },
+  {
+    "file": "com/menus/CreateMenu.as",
+    "line": 10,
+    "code": "import playerio.PlayerIOError;"
+  },
+  {
+    "file": "com/menus/CreateMenu.as",
+    "line": 724,
+    "code": "public function registerError(param1:PlayerIOError) : void"
+  },
+  {
+    "file": "com/menus/GuildMemberMenu.as",
+    "line": 300,
+    "code": "else if(this.whatToShow == \"pending members\" && (CommonCalls.returnObject(GuildMenu.guilds_array,this.__guild).leader == MainStarlingStage(root).gameMain.theClient.connectUserId || Person.removeNamePrefix(CommonCalls.returnObject(GuildMenu.guilds_array,this.__guild).leader) == MainStarlingStage(root).gameMain.player.name))"
+  },
+  {
+    "file": "com/menus/LotteryMenu.as",
+    "line": 113,
+    "code": "MainStarlingStage(root).gameMain.theClient.bigDB.load(\"lotteryTable\",MainStarlingStage(root).gameMain.theClient.connectUserId,function(param1:DatabaseObject):void"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 13,
+    "code": "import playerio.PlayerIOError;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 99,
+    "code": "public var buyPlayerIO100_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 101,
+    "code": "public var buyPlayerIO10_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 103,
+    "code": "public var buyPlayerIO1300_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 105,
+    "code": "public var buyPlayerIO220_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 107,
+    "code": "public var buyPlayerIO2800_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 109,
+    "code": "public var buyPlayerIO450_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 111,
+    "code": "public var buyPlayerIO50_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 113,
+    "code": "public var buyPlayerIO6000_btn:SimpleButton;"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 520,
+    "code": "public function gotoPlayerIOPurchase() : void"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 646,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 683,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 689,
+    "code": "public function buyFromPlayerIO(param1:uint, param2:GameMain) : void"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 701,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "com/menus/PayVaultMenu.as",
+    "line": 733,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "playerio/Achievements.as",
+    "line": 5,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/Achievements.as",
+    "line": 34,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access myAchievements before \\'achievements\\' has been loaded. Please refresh the achievements first\",playerio.PlayerIOError.AchievementsNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/Client.as",
+    "line": 24,
+    "code": "private var _gameFS:GameFS;"
+  },
+  {
+    "file": "playerio/Client.as",
+    "line": 54,
+    "code": "this._gameFS = new GameFS(param3,param4);"
+  },
+  {
+    "file": "playerio/Client.as",
+    "line": 101,
+    "code": "public function get gameFS() : GameFS"
+  },
+  {
+    "file": "playerio/Client.as",
+    "line": 103,
+    "code": "return this._gameFS;"
+  },
+  {
+    "file": "playerio/Connection.as",
+    "line": 8,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/Connection.as",
+    "line": 348,
+    "code": "var err:playerio.generated.PlayerIOError = null;"
+  },
+  {
+    "file": "playerio/Connection.as",
+    "line": 370,
+    "code": "err = new playerio.generated.PlayerIOError(e.message.getString(2),e.message.getInt(1));"
+  },
+  {
+    "file": "playerio/Connection.as",
+    "line": 410,
+    "code": "var _loc3_:playerio.generated.PlayerIOError = new playerio.generated.PlayerIOError(param1,param2);"
+  },
+  {
+    "file": "playerio/DatabaseObject.as",
+    "line": 115,
+    "code": "throw PlayerIOError.StaleVersion;"
+  },
+  {
+    "file": "playerio/DatabaseObject.as",
+    "line": 117,
+    "code": "errorHandler(PlayerIOError.StaleVersion);"
+  },
+  {
+    "file": "playerio/DatabaseObject.as",
+    "line": 129,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "playerio/DatabaseObject.as",
+    "line": 159,
+    "code": "},function(param1:PlayerIOError):void"
+  },
+  {
+    "file": "playerio/GameFS.as",
+    "line": 25,
+    "code": "throw new Error(\"GameFS paths must be absolute and start with a slash (/). IE client.gameFS.getURL(\\\"/folder/file.extention\\\")\",0);"
+  },
+  {
+    "file": "playerio/GameRequests.as",
+    "line": 4,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/GameRequests.as",
+    "line": 22,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access requests before refresh() has been called.\",playerio.PlayerIOError.GameRequestsNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/Multiplayer.as",
+    "line": 23,
+    "code": "public function joinRoom(param1:String, param2:Object, param3:Function = null, param4:Function = null) : void"
+  },
+  {
+    "file": "playerio/Multiplayer.as",
+    "line": 29,
+    "code": "_joinRoom(roomId,joinData,this._developmentServer != null,function(param1:String, param2:Array):void"
+  },
+  {
+    "file": "playerio/Multiplayer.as",
+    "line": 35,
+    "code": "public function createJoinRoom(param1:String, param2:String, param3:Boolean, param4:Object, param5:Object, param6:Function = null, param7:Function = null) : void"
+  },
+  {
+    "file": "playerio/Multiplayer.as",
+    "line": 44,
+    "code": "_createJoinRoom(roomId,roomType,visible,roomData,joinData,this._developmentServer != null,function(param1:String, param2:String, param3:Array):void"
+  },
+  {
+    "file": "playerio/Notifications.as",
+    "line": 4,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/Notifications.as",
+    "line": 24,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access \\'myNotifications\\' before refresh() is called.\",playerio.PlayerIOError.NotificationsNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/OneScore.as",
+    "line": 21,
+    "code": "throw new PlayerIOError(\"Cannot access Score before Refresh() has been called.\",PlayerIOError.OneScoreNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/OneScore.as",
+    "line": 30,
+    "code": "throw new PlayerIOError(\"Cannot access Percentile before Refresh() has been called.\",PlayerIOError.OneScoreNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/OneScore.as",
+    "line": 39,
+    "code": "throw new PlayerIOError(\"Cannot access TopRank before Refresh() has been called.\",PlayerIOError.OneScoreNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/PayVault.as",
+    "line": 4,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/PayVault.as",
+    "line": 28,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access coins before vault has been loaded. Please refresh the vault first\",50);"
+  },
+  {
+    "file": "playerio/PayVault.as",
+    "line": 37,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access items before vault has been loaded. Please refresh the vault first\",50);"
+  },
+  {
+    "file": "playerio/PayVault.as",
+    "line": 115,
+    "code": "throw new playerio.generated.PlayerIOError(\"Element is not a VaultItem: \" + items[a],2);"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 4,
+    "code": "import playerio.generated.PlayerIO;"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 5,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 9,
+    "code": "public final class PlayerIO extends playerio.generated.PlayerIO"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 16,
+    "code": "public function PlayerIO()"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 28,
+    "code": "new playerio.PlayerIO().connect(param1,param2,param3,param4,param5,param6,param7,param8,param9);"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 33,
+    "code": "new playerio.PlayerIO().authenticate(param1,param2,param3,param4,param5,param6,param7);"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 75,
+    "code": "public static function get quickConnect() : QuickConnect"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 80,
+    "code": "public static function gameFS(param1:String) : GameFS"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 137,
+    "code": "errorHandler(new playerio.generated.PlayerIOError(param1[\"error\"],playerio.PlayerIOError.GeneralError.errorID));"
+  },
+  {
+    "file": "playerio/PlayerIO.as",
+    "line": 141,
+    "code": "errorHandler(new playerio.generated.PlayerIOError(\"Missing userToken value in result, but no error message given.\",playerio.PlayerIOError.GeneralError.errorID));"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 3,
+    "code": "public class PlayerIOError extends Error"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 6,
+    "code": "public static const UnsupportedMethod:PlayerIOError = new PlayerIOError(\"The method requested is not supported\",0);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 8,
+    "code": "public static const GeneralError:PlayerIOError = new PlayerIOError(\"A general error occurred\",1);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 10,
+    "code": "public static const InternalError:PlayerIOError = new PlayerIOError(\"An unexpected error occurred inside the Player.IO webservice. Please try again.\",2);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 12,
+    "code": "public static const AccessDenied:PlayerIOError = new PlayerIOError(\"Access is denied\",3);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 14,
+    "code": "public static const InvalidMessageFormat:PlayerIOError = new PlayerIOError(\"The message is malformatted\",4);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 16,
+    "code": "public static const MissingValue:PlayerIOError = new PlayerIOError(\"A value is missing\",5);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 18,
+    "code": "public static const GameRequired:PlayerIOError = new PlayerIOError(\"A game is required to do this action\",6);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 20,
+    "code": "public static const ExternalError:PlayerIOError = new PlayerIOError(\"An error occurred while contacting an external service\",7);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 22,
+    "code": "public static const ArgumentOutOfRange:PlayerIOError = new PlayerIOError(\"The given argument value is outside the range of allowed values.\",8);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 24,
+    "code": "public static const GameDisabled:PlayerIOError = new PlayerIOError(\"The game has been disabled, most likely because of missing payment.\",9);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 26,
+    "code": "public static const UnknownGame:PlayerIOError = new PlayerIOError(\"The game requested is not known by the server\",10);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 28,
+    "code": "public static const UnknownConnection:PlayerIOError = new PlayerIOError(\"The connection requested is not known by the server\",11);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 30,
+    "code": "public static const InvalidAuth:PlayerIOError = new PlayerIOError(\"The auth given is invalid or malformatted\",12);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 32,
+    "code": "public static const NoServersAvailable:PlayerIOError = new PlayerIOError(\"There is no server in any of the selected server clusters for the game that are eligible to start a new room in (they\\'re all at full capacity or there are no servers in any of the clusters). Either change the selected clusters for your game in the admin panel, try again later or start some more servers for one of your clusters.\",13);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 34,
+    "code": "public static const RoomDataTooLarge:PlayerIOError = new PlayerIOError(\"The room data for the room was over the allowed size limit\",14);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 36,
+    "code": "public static const RoomAlreadyExists:PlayerIOError = new PlayerIOError(\"You are unable to create room because there is already a room with the specified id\",15);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 38,
+    "code": "public static const UnknownRoomType:PlayerIOError = new PlayerIOError(\"The game you\\'re connected to does not have a room type with the specified name\",16);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 40,
+    "code": "public static const UnknownRoom:PlayerIOError = new PlayerIOError(\"There is no room running with that id\",17);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 42,
+    "code": "public static const MissingRoomId:PlayerIOError = new PlayerIOError(\"You can\\'t join the room when the RoomID is null or the empty string\",18);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 44,
+    "code": "public static const RoomIsFull:PlayerIOError = new PlayerIOError(\"The room already has the maxmium amount of users in it.\",19);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 46,
+    "code": "public static const NotASearchColumn:PlayerIOError = new PlayerIOError(\"The key you specified is not set as searchable. You can change the searchable keys in the admin panel for the server type\",20);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 48,
+    "code": "public static const QuickConnectMethodNotEnabled:PlayerIOError = new PlayerIOError(\"The QuickConnect method (simple, facebook, kongregate...) is not enabled for the game. You can enable the various methods in the admin panel for the game\",21);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 50,
+    "code": "public static const UnknownUser:PlayerIOError = new PlayerIOError(\"The user is unknown\",22);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 52,
+    "code": "public static const InvalidPassword:PlayerIOError = new PlayerIOError(\"The password supplied is incorrect\",23);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 54,
+    "code": "public static const InvalidRegistrationData:PlayerIOError = new PlayerIOError(\"The supplied data is incorrect\",24);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 56,
+    "code": "public static const InvalidBigDBKey:PlayerIOError = new PlayerIOError(\"The key given for the BigDB object is not a valid BigDB key. Keys must be between 1 and 50 characters. Only letters, numbers, hyphens, underbars, and spaces are allowed.\",25);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 58,
+    "code": "public static const BigDBObjectTooLarge:PlayerIOError = new PlayerIOError(\"The object exceeds the maximum allowed size for BigDB objects.\",26);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 60,
+    "code": "public static const BigDBObjectDoesNotExist:PlayerIOError = new PlayerIOError(\"Could not locate the database object.\",27);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 62,
+    "code": "public static const UnknownTable:PlayerIOError = new PlayerIOError(\"The specified table does not exist.\",28);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 64,
+    "code": "public static const UnknownIndex:PlayerIOError = new PlayerIOError(\"The specified index does not exist.\",29);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 66,
+    "code": "public static const InvalidIndexValue:PlayerIOError = new PlayerIOError(\"The value given for the index, does not match the expected type.\",30);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 68,
+    "code": "public static const NotObjectCreator:PlayerIOError = new PlayerIOError(\"The operation was aborted because the user attempting the operation was not the original creator of the object accessed.\",31);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 70,
+    "code": "public static const KeyAlreadyUsed:PlayerIOError = new PlayerIOError(\"The key is in use by another database object\",32);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 72,
+    "code": "public static const StaleVersion:PlayerIOError = new PlayerIOError(\"BigDB object could not be saved using optimistic locks as it\\'s out of date.\",33);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 74,
+    "code": "public static const CircularReference:PlayerIOError = new PlayerIOError(\"Cannot create circular references inside database objects\",34);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 76,
+    "code": "public static const HeartbeatFailed:PlayerIOError = new PlayerIOError(\"The server could not complete the heartbeat\",40);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 78,
+    "code": "public static const InvalidGameCode:PlayerIOError = new PlayerIOError(\"The game code is invalid\",41);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 80,
+    "code": "public static const VaultNotLoaded:PlayerIOError = new PlayerIOError(\"Cannot access coins or items before vault has been loaded. Please refresh the vault first.\",50);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 82,
+    "code": "public static const UnknownPayVaultProvider:PlayerIOError = new PlayerIOError(\"There is no PayVault provider with the specified id\",51);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 84,
+    "code": "public static const DirectPurchaseNotSupportedByProvider:PlayerIOError = new PlayerIOError(\"The specified PayVault provider does not support direct purchase\",52);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 86,
+    "code": "public static const BuyingCoinsNotSupportedByProvider:PlayerIOError = new PlayerIOError(\"The specified PayVault provider does not support buying coins\",54);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 88,
+    "code": "public static const NotEnoughCoins:PlayerIOError = new PlayerIOError(\"The user does not have enough coins in the PayVault to complete the purchase or debit.\",55);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 90,
+    "code": "public static const ItemNotInVault:PlayerIOError = new PlayerIOError(\"The item does not exist in the vault.\",56);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 92,
+    "code": "public static const InvalidPurchaseArguments:PlayerIOError = new PlayerIOError(\"The chosen provider rejected one or more of the purchase arguments\",57);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 94,
+    "code": "public static const InvalidPayVaultProviderSetup:PlayerIOError = new PlayerIOError(\"The chosen provider is not configured correctly in the admin panel\",58);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 96,
+    "code": "public static const UnknownPartnerPayAction:PlayerIOError = new PlayerIOError(\"Unable to locate the custom PartnerPay action with the given key\",70);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 98,
+    "code": "public static const InvalidType:PlayerIOError = new PlayerIOError(\"The given type was invalid\",80);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 100,
+    "code": "public static const IndexOutOfBounds:PlayerIOError = new PlayerIOError(\"The index was out of bounds from the range of acceptable values\",81);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 102,
+    "code": "public static const InvalidIdentifier:PlayerIOError = new PlayerIOError(\"The given identifier does not match the expected format\",82);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 104,
+    "code": "public static const InvalidArgument:PlayerIOError = new PlayerIOError(\"The given argument did not have the expected value\",83);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 106,
+    "code": "public static const LoggedOut:PlayerIOError = new PlayerIOError(\"This client has been logged out\",84);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 108,
+    "code": "public static const InvalidSegment:PlayerIOError = new PlayerIOError(\"The given segment was invalid.\",90);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 110,
+    "code": "public static const GameRequestsNotLoaded:PlayerIOError = new PlayerIOError(\"Cannot access requests before Refresh() has been called.\",100);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 112,
+    "code": "public static const AchievementsNotLoaded:PlayerIOError = new PlayerIOError(\"Cannot access achievements before Refresh() has been called.\",110);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 114,
+    "code": "public static const UnknownAchievement:PlayerIOError = new PlayerIOError(\"Cannot find the achievement with the specified id.\",111);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 116,
+    "code": "public static const NotificationsNotLoaded:PlayerIOError = new PlayerIOError(\"Cannot access notification endpoints before Refresh() has been called.\",120);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 118,
+    "code": "public static const InvalidNotificationsEndpoint:PlayerIOError = new PlayerIOError(\"The given notifications endpoint is invalid\",121);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 120,
+    "code": "public static const NetworkIssue:PlayerIOError = new PlayerIOError(\"There is an issue with the network\",130);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 122,
+    "code": "public static const OneScoreNotLoaded:PlayerIOError = new PlayerIOError(\"Cannot access OneScore before Refresh() has been called.\",131);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 124,
+    "code": "public static const PublishingNetworkNotAvailable:PlayerIOError = new PlayerIOError(\"The Publishing Network features are only avaliable when authenticated to PlayerIO using Publishing Network authentication. Authentication methods are managed in the connections setting of your game in the admin panel on PlayerIO.\",200);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 126,
+    "code": "public static const PublishingNetworkNotLoaded:PlayerIOError = new PlayerIOError(\"Cannot access profile, friends, ignored before Publishing Network has been loaded. Please refresh Publishing Network first.\",201);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 128,
+    "code": "public static const DialogClosed:PlayerIOError = new PlayerIOError(\"The dialog was closed by the user\",301);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 130,
+    "code": "public static const AdTrackCheckCookie:PlayerIOError = new PlayerIOError(\"Check cookie required.\",302);"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 132,
+    "code": "protected var _type:PlayerIOError = null;"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 134,
+    "code": "public function PlayerIOError(param1:String, param2:int)"
+  },
+  {
+    "file": "playerio/PlayerIOError.as",
+    "line": 139,
+    "code": "public function get type() : PlayerIOError"
+  },
+  {
+    "file": "playerio/PlayerIORegistrationError.as",
+    "line": 3,
+    "code": "public class PlayerIORegistrationError extends PlayerIOError"
+  },
+  {
+    "file": "playerio/PlayerIORegistrationError.as",
+    "line": 14,
+    "code": "public function PlayerIORegistrationError(param1:String, param2:int, param3:String, param4:String, param5:String, param6:String)"
+  },
+  {
+    "file": "playerio/PlayerInsight.as",
+    "line": 3,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/PlayerInsight.as",
+    "line": 23,
+    "code": "throw new playerio.generated.PlayerIOError(\"The current connection does not have the rights required to read the playersonline variable.\",3);"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 6,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 30,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot show the \\'\" + param1 + \"\\' dialog. Dialogs aren\\'t supported in the current runtime environment:\" + Capabilities.playerType,playerio.PlayerIOError.GeneralError.errorID);"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 39,
+    "code": "throw new playerio.generated.PlayerIOError(\"ExternalInterface is not available!\",0);"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 46,
+    "code": "ExternalInterface.addCallback(\"JavascriptPlayerIOCallback\",javascriptPlayerIOCallback);"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 48,
+    "code": "_loc5_ += \"window.__PlayerIO_Flash_Callback__ = function(callbackId, result){\";"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 50,
+    "code": "_loc5_ += \"\\nresult[\\'__PlayerIO_Flash_CallbackId__\\'] = callbackId;\";"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 55,
+    "code": "_loc5_ += \"\\n\\t\\t\\ttry{list[i].JavascriptPlayerIOCallback(resultStr)}catch(e){};\";"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 63,
+    "code": "var _loc8_:String = \"function(r){window.__PlayerIO_Flash_Callback__(\\'\" + _loc6_ + \"\\',r)}\";"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 161,
+    "code": "private static function javascriptPlayerIOCallback(param1:String) : void"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 165,
+    "code": "var _loc4_:String = _loc3_[\"__PlayerIO_Flash_CallbackId__\"];"
+  },
+  {
+    "file": "playerio/PublishingNetworkDialog.as",
+    "line": 169,
+    "code": "delete _loc3_[\"__PlayerIO_Flash_CallbackId__\"];"
+  },
+  {
+    "file": "playerio/PublishingNetworkPayments.as",
+    "line": 3,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/PublishingNetworkPayments.as",
+    "line": 35,
+    "code": "errorCallback(new playerio.generated.PlayerIOError(param1[\"error\"],playerio.PlayerIOError.GeneralError.errorID));"
+  },
+  {
+    "file": "playerio/PublishingNetworkPayments.as",
+    "line": 58,
+    "code": "errorCallback(new playerio.generated.PlayerIOError(param1[\"error\"],playerio.PlayerIOError.GeneralError.errorID));"
+  },
+  {
+    "file": "playerio/PublishingNetworkProfiles.as",
+    "line": 3,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/PublishingNetworkProfiles.as",
+    "line": 22,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access profile before Publishing Network has loaded. Please call client.publishingnetwork.Refresh() first\",playerio.PlayerIOError.PublishingNetworkNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/PublishingNetworkRelations.as",
+    "line": 3,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/PublishingNetworkRelations.as",
+    "line": 59,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access friends before Publishing Network has loaded. Please call client.publishingnetwork.refresh() first.\",playerio.PlayerIOError.PublishingNetworkNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/PublishingNetworkRelations.as",
+    "line": 68,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access friends before Publishing Network has loaded. Please call client.publishingnetwork.refresh() first.\",playerio.PlayerIOError.PublishingNetworkNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/PublishingNetworkRelations.as",
+    "line": 77,
+    "code": "throw new playerio.generated.PlayerIOError(\"Cannot access friends before Publishing Network has loaded. Please call client.publishingnetwork.refresh() first.\",playerio.PlayerIOError.PublishingNetworkNotLoaded.errorID);"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 5,
+    "code": "import playerio.generated.PlayerIOError;"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 44,
+    "code": "var _loc7_:HTTPChannel = PlayerIO._internal_getChannel();"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 84,
+    "code": "var _loc7_:HTTPChannel = PlayerIO._internal_getChannel();"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 134,
+    "code": "var _loc8_:HTTPChannel = PlayerIO._internal_getChannel();"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 164,
+    "code": "var _loc6_:HTTPChannel = PlayerIO._internal_getChannel();"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 173,
+    "code": "var e:playerio.generated.PlayerIOError = null;"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 209,
+    "code": "e = new playerio.generated.PlayerIOError(\"The Player.IO Game id \\\"\" + gameId + \"\\\" contains invalid characters, did you insert your game id?\",1);"
+  },
+  {
+    "file": "playerio/QuickConnect.as",
+    "line": 254,
+    "code": "var _loc13_:* = PlayerIO._internal_getChannel();"
+  },
+  {
+    "file": "playerio/generated/Achievements.as",
+    "line": 46,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Achievements.as",
+    "line": 80,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Achievements.as",
+    "line": 115,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Achievements.as",
+    "line": 150,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Achievements.as",
+    "line": 185,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Achievements.as",
+    "line": 219,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 47,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 81,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 117,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 151,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 184,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 221,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 259,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/BigDB.as",
+    "line": 296,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/ErrorLog.as",
+    "line": 41,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/GameRequests.as",
+    "line": 48,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/GameRequests.as",
+    "line": 82,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/GameRequests.as",
+    "line": 116,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 50,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 60,
+    "code": "protected function _joinRoom(param1:String, param2:Object, param3:Boolean, param4:Function = null, param5:Function = null) : void"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 80,
+    "code": "client.handleCallbackError(\"Multiplayer.joinRoom\",e);"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 86,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 124,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 134,
+    "code": "protected function _createJoinRoom(param1:String, param2:String, param3:Boolean, param4:Object, param5:Object, param6:Boolean, param7:Function = null, param8:Function = null) : void"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 157,
+    "code": "client.handleCallbackError(\"Multiplayer.createJoinRoom\",e);"
+  },
+  {
+    "file": "playerio/generated/Multiplayer.as",
+    "line": 163,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Notifications.as",
+    "line": 46,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Notifications.as",
+    "line": 81,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Notifications.as",
+    "line": 115,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Notifications.as",
+    "line": 151,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Notifications.as",
+    "line": 186,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/OneScore.as",
+    "line": 45,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/OneScore.as",
+    "line": 79,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/OneScore.as",
+    "line": 113,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/OneScore.as",
+    "line": 147,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 48,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 83,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 118,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 154,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 190,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 226,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 261,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 297,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PayVault.as",
+    "line": 332,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerIO.as",
+    "line": 7,
+    "code": "public class PlayerIO extends MovieClip"
+  },
+  {
+    "file": "playerio/generated/PlayerIO.as",
+    "line": 10,
+    "code": "public function PlayerIO()"
+  },
+  {
+    "file": "playerio/generated/PlayerIO.as",
+    "line": 34,
+    "code": "callback(param1.token,param1.userId,param1.showBranding,param1.gameFSRedirectMap,param1.partnerId,param1.playerInsightState);"
+  },
+  {
+    "file": "playerio/generated/PlayerIO.as",
+    "line": 38,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerIO.as",
+    "line": 66,
+    "code": "callback(param1.token,param1.userId,param1.showBranding,param1.gameFSRedirectMap,param1.playerInsightState,param1.startDialogs,param1.isSocialNetworkUser,param1.newPlayCodes,param1.notificationClickPayload,param1.isInstalledByPublishingNetwork,param1.deprecated1,param1.apiSecurity,param1.apiServerHosts);"
+  },
+  {
+    "file": "playerio/generated/PlayerIO.as",
+    "line": 70,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 3,
+    "code": "import playerio.PlayerIOError;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 5,
+    "code": "public class PlayerIOError extends playerio.PlayerIOError"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 8,
+    "code": "public function PlayerIOError(param1:String, param2:int)"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 14,
+    "code": "this._type = playerio.PlayerIOError.UnsupportedMethod;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 17,
+    "code": "this._type = playerio.PlayerIOError.GeneralError;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 20,
+    "code": "this._type = playerio.PlayerIOError.InternalError;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 23,
+    "code": "this._type = playerio.PlayerIOError.AccessDenied;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 26,
+    "code": "this._type = playerio.PlayerIOError.InvalidMessageFormat;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 29,
+    "code": "this._type = playerio.PlayerIOError.MissingValue;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 32,
+    "code": "this._type = playerio.PlayerIOError.GameRequired;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 35,
+    "code": "this._type = playerio.PlayerIOError.ExternalError;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 38,
+    "code": "this._type = playerio.PlayerIOError.ArgumentOutOfRange;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 41,
+    "code": "this._type = playerio.PlayerIOError.GameDisabled;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 44,
+    "code": "this._type = playerio.PlayerIOError.UnknownGame;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 47,
+    "code": "this._type = playerio.PlayerIOError.UnknownConnection;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 50,
+    "code": "this._type = playerio.PlayerIOError.InvalidAuth;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 53,
+    "code": "this._type = playerio.PlayerIOError.NoServersAvailable;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 56,
+    "code": "this._type = playerio.PlayerIOError.RoomDataTooLarge;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 59,
+    "code": "this._type = playerio.PlayerIOError.RoomAlreadyExists;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 62,
+    "code": "this._type = playerio.PlayerIOError.UnknownRoomType;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 65,
+    "code": "this._type = playerio.PlayerIOError.UnknownRoom;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 68,
+    "code": "this._type = playerio.PlayerIOError.MissingRoomId;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 71,
+    "code": "this._type = playerio.PlayerIOError.RoomIsFull;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 74,
+    "code": "this._type = playerio.PlayerIOError.NotASearchColumn;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 77,
+    "code": "this._type = playerio.PlayerIOError.QuickConnectMethodNotEnabled;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 80,
+    "code": "this._type = playerio.PlayerIOError.UnknownUser;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 83,
+    "code": "this._type = playerio.PlayerIOError.InvalidPassword;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 86,
+    "code": "this._type = playerio.PlayerIOError.InvalidRegistrationData;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 89,
+    "code": "this._type = playerio.PlayerIOError.InvalidBigDBKey;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 92,
+    "code": "this._type = playerio.PlayerIOError.BigDBObjectTooLarge;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 95,
+    "code": "this._type = playerio.PlayerIOError.BigDBObjectDoesNotExist;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 98,
+    "code": "this._type = playerio.PlayerIOError.UnknownTable;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 101,
+    "code": "this._type = playerio.PlayerIOError.UnknownIndex;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 104,
+    "code": "this._type = playerio.PlayerIOError.InvalidIndexValue;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 107,
+    "code": "this._type = playerio.PlayerIOError.NotObjectCreator;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 110,
+    "code": "this._type = playerio.PlayerIOError.KeyAlreadyUsed;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 113,
+    "code": "this._type = playerio.PlayerIOError.StaleVersion;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 116,
+    "code": "this._type = playerio.PlayerIOError.CircularReference;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 119,
+    "code": "this._type = playerio.PlayerIOError.HeartbeatFailed;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 122,
+    "code": "this._type = playerio.PlayerIOError.InvalidGameCode;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 125,
+    "code": "this._type = playerio.PlayerIOError.VaultNotLoaded;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 128,
+    "code": "this._type = playerio.PlayerIOError.UnknownPayVaultProvider;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 131,
+    "code": "this._type = playerio.PlayerIOError.DirectPurchaseNotSupportedByProvider;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 134,
+    "code": "this._type = playerio.PlayerIOError.BuyingCoinsNotSupportedByProvider;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 137,
+    "code": "this._type = playerio.PlayerIOError.NotEnoughCoins;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 140,
+    "code": "this._type = playerio.PlayerIOError.ItemNotInVault;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 143,
+    "code": "this._type = playerio.PlayerIOError.InvalidPurchaseArguments;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 146,
+    "code": "this._type = playerio.PlayerIOError.InvalidPayVaultProviderSetup;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 149,
+    "code": "this._type = playerio.PlayerIOError.UnknownPartnerPayAction;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 152,
+    "code": "this._type = playerio.PlayerIOError.InvalidType;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 155,
+    "code": "this._type = playerio.PlayerIOError.IndexOutOfBounds;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 158,
+    "code": "this._type = playerio.PlayerIOError.InvalidIdentifier;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 161,
+    "code": "this._type = playerio.PlayerIOError.InvalidArgument;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 164,
+    "code": "this._type = playerio.PlayerIOError.LoggedOut;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 167,
+    "code": "this._type = playerio.PlayerIOError.InvalidSegment;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 170,
+    "code": "this._type = playerio.PlayerIOError.GameRequestsNotLoaded;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 173,
+    "code": "this._type = playerio.PlayerIOError.AchievementsNotLoaded;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 176,
+    "code": "this._type = playerio.PlayerIOError.UnknownAchievement;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 179,
+    "code": "this._type = playerio.PlayerIOError.NotificationsNotLoaded;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 182,
+    "code": "this._type = playerio.PlayerIOError.InvalidNotificationsEndpoint;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 185,
+    "code": "this._type = playerio.PlayerIOError.NetworkIssue;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 188,
+    "code": "this._type = playerio.PlayerIOError.OneScoreNotLoaded;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 191,
+    "code": "this._type = playerio.PlayerIOError.PublishingNetworkNotAvailable;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 194,
+    "code": "this._type = playerio.PlayerIOError.PublishingNetworkNotLoaded;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 197,
+    "code": "this._type = playerio.PlayerIOError.DialogClosed;"
+  },
+  {
+    "file": "playerio/generated/PlayerIOError.as",
+    "line": 200,
+    "code": "this._type = playerio.PlayerIOError.AdTrackCheckCookie;"
+  },
+  {
+    "file": "playerio/generated/PlayerIORegistrationError.as",
+    "line": 3,
+    "code": "import playerio.PlayerIORegistrationError;"
+  },
+  {
+    "file": "playerio/generated/PlayerIORegistrationError.as",
+    "line": 5,
+    "code": "public class PlayerIORegistrationError extends playerio.PlayerIORegistrationError"
+  },
+  {
+    "file": "playerio/generated/PlayerIORegistrationError.as",
+    "line": 8,
+    "code": "public function PlayerIORegistrationError(param1:String, param2:int, param3:String, param4:String, param5:String, param6:String)"
+  },
+  {
+    "file": "playerio/generated/PlayerInsight.as",
+    "line": 45,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerInsight.as",
+    "line": 79,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerInsight.as",
+    "line": 114,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerInsight.as",
+    "line": 148,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerInsight.as",
+    "line": 183,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerInsight.as",
+    "line": 216,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/PlayerInsight.as",
+    "line": 249,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 32,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 58,
+    "code": "callback(param1.token,param1.userId,param1.showBranding,param1.gameFSRedirectMap,param1.partnerId,param1.playerInsightState);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 62,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 89,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 120,
+    "code": "callback(param1.token,param1.userId,param1.showBranding,param1.gameFSRedirectMap,param1.partnerId,param1.playerInsightState);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 124,
+    "code": "var _loc2_:PlayerIORegistrationError = new PlayerIORegistrationError(param1.message,param1.errorCode,param1.usernameError,param1.passwordError,param1.emailError,param1.captchaError);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 150,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 176,
+    "code": "callback(param1.token,param1.userId,param1.showBranding,param1.gameFSRedirectMap,param1.playerInsightState);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 180,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 206,
+    "code": "callback(param1.token,param1.userId,param1.showBranding,param1.gameFSRedirectMap,param1.facebookUserId,param1.partnerId,param1.playerInsightState);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 210,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 236,
+    "code": "callback(param1.token,param1.userId,param1.showBranding,param1.gameFSRedirectMap,param1.partnerId,param1.playerInsightState);"
+  },
+  {
+    "file": "playerio/generated/QuickConnect.as",
+    "line": 240,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Social.as",
+    "line": 45,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/Social.as",
+    "line": 79,
+    "code": "var _loc2_:PlayerIOError = new PlayerIOError(param1.message,param1.errorCode);"
+  },
+  {
+    "file": "playerio/generated/messages/AuthenticateOutput.as",
+    "line": 14,
+    "code": "public var gameFSRedirectMap:String;"
+  },
+  {
+    "file": "playerio/generated/messages/AuthenticateOutput.as",
+    "line": 44,
+    "code": "registerField(\"gameFSRedirectMap\",\"\",9,1,4);"
+  },
+  {
+    "file": "playerio/generated/messages/ConnectOutput.as",
+    "line": 14,
+    "code": "public var gameFSRedirectMap:String;"
+  },
+  {
+    "file": "playerio/generated/messages/ConnectOutput.as",
+    "line": 28,
+    "code": "registerField(\"gameFSRedirectMap\",\"\",9,1,4);"
+  },
+  {
+    "file": "playerio/generated/messages/FacebookOAuthConnectOutput.as",
+    "line": 14,
+    "code": "public var gameFSRedirectMap:String;"
+  },
+  {
+    "file": "playerio/generated/messages/FacebookOAuthConnectOutput.as",
+    "line": 30,
+    "code": "registerField(\"gameFSRedirectMap\",\"\",9,1,4);"
+  },
+  {
+    "file": "playerio/generated/messages/KongregateConnectOutput.as",
+    "line": 14,
+    "code": "public var gameFSRedirectMap:String;"
+  },
+  {
+    "file": "playerio/generated/messages/KongregateConnectOutput.as",
+    "line": 26,
+    "code": "registerField(\"gameFSRedirectMap\",\"\",9,1,4);"
+  },
+  {
+    "file": "playerio/generated/messages/SimpleConnectOutput.as",
+    "line": 14,
+    "code": "public var gameFSRedirectMap:String;"
+  },
+  {
+    "file": "playerio/generated/messages/SimpleConnectOutput.as",
+    "line": 28,
+    "code": "registerField(\"gameFSRedirectMap\",\"\",9,1,4);"
+  },
+  {
+    "file": "playerio/generated/messages/SimpleRegisterOutput.as",
+    "line": 14,
+    "code": "public var gameFSRedirectMap:String;"
+  },
+  {
+    "file": "playerio/generated/messages/SimpleRegisterOutput.as",
+    "line": 28,
+    "code": "registerField(\"gameFSRedirectMap\",\"\",9,1,4);"
+  },
+  {
+    "file": "playerio/generated/messages/SteamConnectOutput.as",
+    "line": 14,
+    "code": "public var gameFSRedirectMap:String;"
+  },
+  {
+    "file": "playerio/generated/messages/SteamConnectOutput.as",
+    "line": 28,
+    "code": "registerField(\"gameFSRedirectMap\",\"\",9,1,4);"
+  },
+  {
+    "file": "playerio/utils/Converter.as",
+    "line": 76,
+    "code": "throw new PlayerIOError(\"itemKey not defined on parsed item\",2);"
+  },
+  {
+    "file": "playerio/utils/HTTPChannel.as",
+    "line": 74,
+    "code": "(messageError as Object).message = \"[PlayerIOError] \" + param1.text;"
+  },
+  {
+    "file": "playerio/utils/HTTPChannel.as",
+    "line": 85,
+    "code": "(messageError as Object).message = \"[PlayerIOError] \" + param1.message;"
+  },
+  {
+    "file": "starling/MainStarlingStage.as",
+    "line": 737,
+    "code": "else if(this.gameMain.itemMenu.vendorName != this.gameMain.theClient.connectUserId)"
+  },
+  {
+    "file": "starling/MainStarlingStage.as",
+    "line": 1396,
+    "code": "PlayerIO.authenticate(this.gameMain.stage,\"hho-ygpra4ftumusohpifpdug\",\"public\",tempSignInObject,null,function(param1:Client):void"
+  },
+  {
+    "file": "starling/MainStarlingStage.as",
+    "line": 1412,
+    "code": "PlayerIO.authenticate(gameMain.stage,\"hho-ygpra4ftumusohpifpdug\",\"simpleconnection\",_loc2_,null,gameMain.handleConnect,gameMain.charCreateMenu.registerError);"
+  },
+  {
+    "file": "starling/MainStarlingStage.as",
+    "line": 1502,
+    "code": "else if(PlayerIOPublishingNetwork.isOnNetworkSite())"
+  },
+  {
+    "file": "starling/MainStarlingStage.as",
+    "line": 2074,
+    "code": "miscString += \"&connectuserid=\" + this.gameMain.theClient.connectUserId;"
+  }
+]

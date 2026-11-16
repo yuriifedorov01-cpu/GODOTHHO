@@ -1,0 +1,584 @@
+[gd_scene load_steps=2 format=3 uid="uid://hh_main_menu_001"]
+
+[ext_resource type="Script" path="res://scripts/menus/MainMenuUI.gd" id="1_mainmenu"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mainmenu")
+
+[node name="SkyFallback" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.45, 0.72, 0.95, 1)
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CloudsLayer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Cloud1" type="TextureRect" parent="CloudsLayer"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 40.0
+offset_right = 369.0
+offset_bottom = 128.0
+mouse_filter = 2
+stretch_mode = 2
+
+[node name="Cloud2" type="TextureRect" parent="CloudsLayer"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 110.0
+offset_right = 749.0
+offset_bottom = 198.0
+mouse_filter = 2
+stretch_mode = 2
+
+[node name="GroundArt" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -240.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HeroArtLayer" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="FighterArt" type="TextureRect" parent="HeroArtLayer"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -120.0
+offset_right = -70.0
+offset_bottom = 50.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="SwordArt" type="TextureRect" parent="HeroArtLayer"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -290.0
+offset_top = -90.0
+offset_right = -170.0
+offset_bottom = 30.0
+rotation = -0.35
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="HelmetIcon" type="TextureRect" parent="HeroArtLayer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -295.0
+offset_top = 26.0
+offset_right = -230.0
+offset_bottom = 91.0
+grow_horizontal = 2
+mouse_filter = 2
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.0
+offset_top = 28.0
+offset_right = 260.0
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.88, 0.35, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 44
+text = "HELMET HEROES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 80.0
+offset_right = 200.0
+offset_bottom = 104.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.92, 0.96, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 15
+text = "Online 2D Action MMORPG"
+horizontal_alignment = 1
+
+[node name="OnlineLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -36.0
+offset_right = 260.0
+offset_bottom = -12.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.85, 1, 0.85, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 16
+text = "Players Online: 0"
+vertical_alignment = 1
+
+[node name="VersionButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = -42.0
+offset_right = -16.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "v9.50 Updates"
+
+[node name="VersionLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -260.0
+offset_top = -36.0
+offset_right = -146.0
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 16
+text = "9.50"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -62.0
+offset_right = 300.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -205.0
+offset_top = -205.0
+offset_right = 205.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LoginPanel" type="PanelContainer" parent="Panels"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panels/LoginPanel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="Label" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Account Sign In"
+horizontal_alignment = 1
+
+[node name="UserField" type="VBoxContainer" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panels/LoginPanel/VBox/UserField"]
+layout_mode = 2
+text = "Username:"
+
+[node name="LineEdit" type="LineEdit" parent="Panels/LoginPanel/VBox/UserField"]
+layout_mode = 2
+placeholder_text = "Enter username"
+
+[node name="PassField" type="VBoxContainer" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panels/LoginPanel/VBox/PassField"]
+layout_mode = 2
+text = "Password:"
+
+[node name="LineEdit" type="LineEdit" parent="Panels/LoginPanel/VBox/PassField"]
+layout_mode = 2
+secret = true
+placeholder_text = "Enter password"
+
+[node name="RememberCheckBox" type="CheckBox" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+text = "Remember Me"
+
+[node name="Buttons" type="HBoxContainer" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="LoginButton" type="Button" parent="Panels/LoginPanel/VBox/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sign In"
+
+[node name="ToRegisterButton" type="Button" parent="Panels/LoginPanel/VBox/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sign Up"
+
+[node name="SubButtons" type="HBoxContainer" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ForgotButton" type="Button" parent="Panels/LoginPanel/VBox/SubButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Forgot Pass"
+
+[node name="ServersButton" type="Button" parent="Panels/LoginPanel/VBox/SubButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Servers"
+
+[node name="OptionsButton" type="Button" parent="Panels/LoginPanel/VBox/SubButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Options"
+
+[node name="CreditsButton" type="Button" parent="Panels/LoginPanel/VBox/SubButtons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Credits"
+
+[node name="SelectedServerLabel" type="Label" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 13
+text = "Server: Pve Server"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Panels/LoginPanel/VBox"]
+layout_mode = 2
+
+[node name="OfflineSandboxButton" type="Button" parent="Panels/LoginPanel/VBox"]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.65, 1)
+theme_override_font_sizes/font_size = 16
+text = "Play Offline Sandbox"
+
+[node name="RegisterPanel" type="PanelContainer" parent="Panels"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panels/RegisterPanel"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Header" type="Label" parent="Panels/RegisterPanel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Create Account"
+horizontal_alignment = 1
+
+[node name="InfoLabel" type="Label" parent="Panels/RegisterPanel/VBox"]
+layout_mode = 2
+text = "Create a new Helmet Heroes account and customize your hero."
+autowrap_mode = 2
+horizontal_alignment = 1
+
+[node name="ProceedButton" type="Button" parent="Panels/RegisterPanel/VBox"]
+layout_mode = 2
+text = "Go to Character Creator"
+
+[node name="BackButton" type="Button" parent="Panels/RegisterPanel/VBox"]
+layout_mode = 2
+text = "Back"
+
+[node name="RecoverPanel" type="PanelContainer" parent="Panels"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panels/RecoverPanel"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Header" type="Label" parent="Panels/RecoverPanel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Password Recovery"
+horizontal_alignment = 1
+
+[node name="Field" type="VBoxContainer" parent="Panels/RecoverPanel/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panels/RecoverPanel/VBox/Field"]
+layout_mode = 2
+text = "Username or Email:"
+
+[node name="LineEdit" type="LineEdit" parent="Panels/RecoverPanel/VBox/Field"]
+layout_mode = 2
+placeholder_text = "Enter username or email"
+
+[node name="Buttons" type="HBoxContainer" parent="Panels/RecoverPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="SubmitButton" type="Button" parent="Panels/RecoverPanel/VBox/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Send Recovery"
+
+[node name="BackButton" type="Button" parent="Panels/RecoverPanel/VBox/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back"
+
+[node name="ServersPanel" type="PanelContainer" parent="Panels"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panels/ServersPanel"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="Label" parent="Panels/ServersPanel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Choose Server"
+horizontal_alignment = 1
+
+[node name="Server1Button" type="Button" parent="Panels/ServersPanel/VBox"]
+layout_mode = 2
+text = "Server 1 - Pve Server (Normal)"
+
+[node name="Server2Button" type="Button" parent="Panels/ServersPanel/VBox"]
+layout_mode = 2
+text = "Server 2 - Pve Server 2 (Normal)"
+
+[node name="Server3Button" type="Button" parent="Panels/ServersPanel/VBox"]
+layout_mode = 2
+text = "Server 3 - Pve Server 3 (Normal)"
+
+[node name="ServerPVPButton" type="Button" parent="Panels/ServersPanel/VBox"]
+layout_mode = 2
+text = "Server PvP - PvP Server (Hardcore)"
+
+[node name="BackButton" type="Button" parent="Panels/ServersPanel/VBox"]
+layout_mode = 2
+text = "Back"
+
+[node name="OptionsPanel" type="PanelContainer" parent="Panels"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panels/OptionsPanel"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Header" type="Label" parent="Panels/OptionsPanel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Options"
+horizontal_alignment = 1
+
+[node name="FullscreenButton" type="Button" parent="Panels/OptionsPanel/VBox"]
+layout_mode = 2
+text = "Toggle Fullscreen"
+
+[node name="SoundVolumeRow" type="VBoxContainer" parent="Panels/OptionsPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SoundLabel" type="Label" parent="Panels/OptionsPanel/VBox/SoundVolumeRow"]
+layout_mode = 2
+text = "Sound Volume: 20%"
+
+[node name="SoundSlider" type="HSlider" parent="Panels/OptionsPanel/VBox/SoundVolumeRow"]
+layout_mode = 2
+focus_mode = 0
+max_value = 1.0
+step = 0.01
+value = 0.2
+
+[node name="MusicVolumeRow" type="VBoxContainer" parent="Panels/OptionsPanel/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="MusicLabel" type="Label" parent="Panels/OptionsPanel/VBox/MusicVolumeRow"]
+layout_mode = 2
+text = "Music Volume: 20%"
+
+[node name="MusicSlider" type="HSlider" parent="Panels/OptionsPanel/VBox/MusicVolumeRow"]
+layout_mode = 2
+focus_mode = 0
+max_value = 1.0
+step = 0.01
+value = 0.2
+
+[node name="BackButton" type="Button" parent="Panels/OptionsPanel/VBox"]
+layout_mode = 2
+text = "Back"
+
+[node name="CreditsPanel" type="PanelContainer" parent="Panels"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panels/CreditsPanel"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Header" type="Label" parent="Panels/CreditsPanel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Credits"
+horizontal_alignment = 1
+
+[node name="Body" type="Label" parent="Panels/CreditsPanel/VBox"]
+layout_mode = 2
+text = "Helmet Heroes\nOriginal Game by Matt & Josh (Armor Games / Steam)\n\nGodot 4 Port & Offline Sandbox\nBuilt with Godot Engine 4.3"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="BackButton" type="Button" parent="Panels/CreditsPanel/VBox"]
+layout_mode = 2
+text = "Back"
+
+[node name="UpdatesPanel" type="PanelContainer" parent="Panels"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Panels/UpdatesPanel"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Header" type="Label" parent="Panels/UpdatesPanel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Version 9.50 Updates"
+horizontal_alignment = 1
+
+[node name="Body" type="Label" parent="Panels/UpdatesPanel/VBox"]
+layout_mode = 2
+text = "- Original MainMenu, Server Select, Options & Credits\n- Full Character Creator with class previews\n- Offline Sandbox mode with Quick Start or Custom Hero\n- Class starter stats & equipment"
+autowrap_mode = 2
+
+[node name="BackButton" type="Button" parent="Panels/UpdatesPanel/VBox"]
+layout_mode = 2
+text = "Close Updates"

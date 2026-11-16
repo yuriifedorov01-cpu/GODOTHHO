@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://do5540bbytg06"
+path="res://.godot/imported/fishurn.mp3-05fdac1a875739450f22b25d6578d3e8.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/fishurn.mp3"
+dest_files=["res://.godot/imported/fishurn.mp3-05fdac1a875739450f22b25d6578d3e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

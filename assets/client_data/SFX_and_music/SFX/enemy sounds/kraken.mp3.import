@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpwlc55bfpnat"
+path="res://.godot/imported/kraken.mp3-058b1e3375f58ca083df4d741dce189b.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/kraken.mp3"
+dest_files=["res://.godot/imported/kraken.mp3-058b1e3375f58ca083df4d741dce189b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

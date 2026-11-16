@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dthj5a8v6q38a"
+path="res://.godot/imported/stalker.mp3-feb675da6f1663016e2a3d06ae6036b6.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/stalker.mp3"
+dest_files=["res://.godot/imported/stalker.mp3-feb675da6f1663016e2a3d06ae6036b6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://dqqfwoqpbi2ho"
+path="res://.godot/imported/readable_font.fnt-8cbe9b3e7c41be9bf9a0221d2890453b.fontdata"
+
+[deps]
+
+source_file="res://assets/client_data/includes/readable_font.fnt"
+dest_files=["res://.godot/imported/readable_font.fnt-8cbe9b3e7c41be9bf9a0221d2890453b.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

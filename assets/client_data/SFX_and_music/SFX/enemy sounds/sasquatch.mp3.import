@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhw5yrhovp1f2"
+path="res://.godot/imported/sasquatch.mp3-51edf46a4ca9def69dee791b0417cfd7.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/sasquatch.mp3"
+dest_files=["res://.godot/imported/sasquatch.mp3-51edf46a4ca9def69dee791b0417cfd7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

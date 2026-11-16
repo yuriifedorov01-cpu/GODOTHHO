@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqop5sn13ewqm"
+path="res://.godot/imported/sword swoosh 3.mp3-d6bb1cd94f207dc2224e87f1c1eaa809.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/sword swoosh 3.mp3"
+dest_files=["res://.godot/imported/sword swoosh 3.mp3-d6bb1cd94f207dc2224e87f1c1eaa809.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

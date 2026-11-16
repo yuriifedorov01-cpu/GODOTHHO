@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://duclbp0wiiijk"
+path="res://.godot/imported/crunch 2.mp3-e6fc20692edc44b8fa34bd9f7b6ba665.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/crunch 2.mp3"
+dest_files=["res://.godot/imported/crunch 2.mp3-e6fc20692edc44b8fa34bd9f7b6ba665.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

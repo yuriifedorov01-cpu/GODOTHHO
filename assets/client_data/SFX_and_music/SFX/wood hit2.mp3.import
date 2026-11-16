@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://00spuo78jbvf"
+path="res://.godot/imported/wood hit2.mp3-b6b0e98a165ec792c7422cc150d89c41.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/wood hit2.mp3"
+dest_files=["res://.godot/imported/wood hit2.mp3-b6b0e98a165ec792c7422cc150d89c41.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

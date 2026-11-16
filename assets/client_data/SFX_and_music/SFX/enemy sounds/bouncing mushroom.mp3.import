@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mlql8c1d22fx"
+path="res://.godot/imported/bouncing mushroom.mp3-046b2f1eee2cf50fda2cb1d4bf55559b.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/bouncing mushroom.mp3"
+dest_files=["res://.godot/imported/bouncing mushroom.mp3-046b2f1eee2cf50fda2cb1d4bf55559b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d4nt3s384v5sc"
+path="res://.godot/imported/Times_Of_Change_full_mix 2.mp3-0460676d8113ceae19b711e100d488fa.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/Times_Of_Change_full_mix 2.mp3"
+dest_files=["res://.godot/imported/Times_Of_Change_full_mix 2.mp3-0460676d8113ceae19b711e100d488fa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://coskyn6e1rq18"
+path="res://.godot/imported/electric zap.mp3-89edad466c79ce4ce034815b2b533b76.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/electric zap.mp3"
+dest_files=["res://.godot/imported/electric zap.mp3-89edad466c79ce4ce034815b2b533b76.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

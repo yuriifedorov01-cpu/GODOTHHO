@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://co1vhbemfjag4"
+path="res://.godot/imported/enforcer gun.mp3-cfd1e0ed5678331fb38be387c68b0d69.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/enforcer gun.mp3"
+dest_files=["res://.godot/imported/enforcer gun.mp3-cfd1e0ed5678331fb38be387c68b0d69.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

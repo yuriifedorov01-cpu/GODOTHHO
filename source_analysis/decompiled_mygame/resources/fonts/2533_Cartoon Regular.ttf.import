@@ -1,0 +1,34 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://qx28sosfqkrf"
+path="res://.godot/imported/2533_Cartoon Regular.ttf-ae8ba84a28889008f588ca45d55af537.fontdata"
+
+[deps]
+
+source_file="res://source_analysis/decompiled_mygame/resources/fonts/2533_Cartoon Regular.ttf"
+dest_files=["res://.godot/imported/2533_Cartoon Regular.ttf-ae8ba84a28889008f588ca45d55af537.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

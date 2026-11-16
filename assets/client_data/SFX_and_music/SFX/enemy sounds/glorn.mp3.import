@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://duf4yrf0ekw2p"
+path="res://.godot/imported/glorn.mp3-8be6e0d522067a366f21686276ead0e8.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/glorn.mp3"
+dest_files=["res://.godot/imported/glorn.mp3-8be6e0d522067a366f21686276ead0e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

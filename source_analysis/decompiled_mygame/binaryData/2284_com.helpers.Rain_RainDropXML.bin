@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rain drop.png">
+	<!-- Created with Adobe Animate version 15.1.1.13 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="rain drop" x="0" y="0" width="159" height="6" />
+</TextureAtlas>

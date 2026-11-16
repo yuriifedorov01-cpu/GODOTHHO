@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bgxigv6ln3cv2"
+path="res://.godot/imported/mp5.mp3-20a44753810a032eb998c060e70ac4fe.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/gun sounds/mp5.mp3"
+dest_files=["res://.godot/imported/mp5.mp3-20a44753810a032eb998c060e70ac4fe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

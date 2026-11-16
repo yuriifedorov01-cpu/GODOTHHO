@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c20xpivlunl42"
+path="res://.godot/imported/kraw.mp3-22ea60fbf07d8ba410f1e0a21a47b2b3.mp3str"
+
+[deps]
+
+source_file="res://assets/client_data/SFX_and_music/SFX/enemy sounds/kraw.mp3"
+dest_files=["res://.godot/imported/kraw.mp3-22ea60fbf07d8ba410f1e0a21a47b2b3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
